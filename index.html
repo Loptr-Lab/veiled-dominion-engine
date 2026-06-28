@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veiled Dominion — We Are Building</title>
+    <style>
+        /* --- VEILED DOMINION DESIGN SYSTEM --- */
+        :root {
+            --void: #050505;          /* Near total black */
+            --text-primary: #e0e0e0;  /* Soft silver */
+            --text-muted: #666666;    /* Ash gray */
+            --the-light: #d4a853;     /* Warm amber/gold - Rebirth's glow */
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        /* --- RESET & BASE --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--void);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--the-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        a:hover {
+            border-bottom: 1px solid var(--the-light);
+        }
+
+        /* --- LAYOUT --- */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 120px 0;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 {
+            font-weight: 300;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-headline {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .hero-sub {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 480px;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--the-light);
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        p {
+            margin-bottom: 24px;
+            color: var(--text-muted);
+        }
+
+        /* --- THE GLOW EFFECT --- */
+        .glow-text {
+            color: var(--the-light);
+            text-shadow: 0 0 20px rgba(212, 168, 83, 0.3);
+        }
+
+        /* --- ROLES LIST --- */
+        .roles-list {
+            list-style: none;
+        }
+
+        .roles-list li {
+            margin-bottom: 32px;
+            padding-left: 20px;
+            border-left: 2px solid #1a1a1a;
+            transition: border-color 0.3s ease;
+        }
+
+        .roles-list li:hover {
+            border-left: 2px solid var(--the-light);
+        }
+
+        .role-title {
+            font-size: 1.25rem;
+            color: #fff;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .role-desc {
+            font-size: 0.95rem;
+            display: block;
+        }
+
+        /* --- FOOTER / CTA --- */
+        .cta-final {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 40px;
+        }
+        
+        .footer-note {
+            font-size: 0.75rem;
+            color: #333;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section>
+        <div class="container">
+            <h1 class="hero-headline">
+                Every game teaches you to become more powerful.<br>
+                <span class="glow-text">What if the lesson was the opposite?</span>
+            </h1>
+            <p class="hero-sub">
+                We are building *Veiled Dominion*: a 4-player chess variant where the most powerful piece on the board must learn restraint. It is a gothic art-object wrapped around a deeply unconventional strategy game.
+            </p>
+            <p class="hero-sub" style="margin-bottom: 0; font-size: 1rem; font-style: italic;">
+                We are looking for the people who just found out they have the time to build something dangerous.
+            </p>
+        </div>
+    </section>
+
+    <!-- THE PHILOSOPHY SECTION -->
+    <section>
+        <div class="container">
+            <span class="section-title">The Architecture</span>
+            <p>
+                This isn't a mobile slot machine. This isn't a live-service extraction shooter. This is a physical and digital hybrid born from a single mechanical thesis: <strong style="color:#fff;">The Radius of Ruin.</strong>
+            </p>
+            <p>
+                The protagonist is overpowered. Her presence disables her own allies. The win condition isn't just checkmate—it's accumulating points through "Merciful Maneuvers." You win by choosing not to destroy. 
+            </p>
+            <p>
+                We have the rulebook. We have the lore bible. We have the visual language (Musou Black voids, translucent resin, internal LED light). We need the engineers and artists to forge it.
+            </p>
+        </div>
+    </section>
+
+    <!-- THE ROLES SECTION -->
+    <section>
+        <div class="container">
+            <span class="section-title">Open Seats at the Board</span>
+            <ul class="roles-list">
+                <li>
+                    <span class="role-title">Prototype Engineer (Unity / Unreal)</span>
+                    <span class="role-desc">We need to prove the 4-player geometry and the "Radius of Ruin" aura mechanics work digitally before we commit to physical manufacturing. You will build the digital playtest sandbox.</span>
+                </li>
+                <li>
+                    <span class="role-title">3D Technical Artist (Blender / Resin Prep)</span>
+                    <span class="role-desc">You understand light absorption and translucency. You can take our concept art and output production-ready STLs for translucent resin printing and Musou Black application.</span>
+                </li>
+                <li>
+                    <span class="role-title">Sound Designer (Ambient / Drone)</span>
+                    <span class="role-desc">Think Jóhann Jóhannsson meets Colin Stetson. We need the audio equivalent of a void and a single, sustained piano note. No epic orchestral trailers. Silence is an instrument.</span>
+                </li>
+                <li>
+                    <span class="role-title">Systems Designer</span>
+                    <span class="role-desc">You look at "Martyr's Boon" and immediately start running the math on 4-player economy balance. You know how to break a game so we can fix it before production.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- THE CLOSE SECTION -->
+    <section style="border-bottom: none;">
+        <div class="container">
+            <span class="section-title">The Contact</span>
+            <p>
+                If you spent the last few years building worlds for players to lose themselves in, and you want to build something smaller, sharper, and unapologetically dark—reach out.
+            </p>
+            <p class="cta-final">
+                <a href="mailto:questions@loptrlab.com?subject=Veiled Dominion Inquiry">Let's talk.</a>
+            </p>
+        </div>
+    </section>
+
+    <div class="footer-note">
+        DADDY'S LITTLE MORTIS // VEILED DOMINION
+    </div>
+
+</body>
+</html>
