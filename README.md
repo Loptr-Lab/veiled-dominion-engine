@@ -1,5 +1,3 @@
-Copy the text in the block below and save it locally as `README.md`.
-
 ```markdown
 # ♟️ Veiled Dominion
 
