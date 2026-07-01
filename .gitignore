@@ -1,0 +1,95 @@
+# ====================================================================
+# VEILED DOMINION ENGINE - CORE SYSTEM GITIGNORE
+# Tech Stack: .NET 8 (C#) | Node.js (atproto) | IDEs & Containers
+# ====================================================================
+
+# --------------------------------------------------------------------
+# 🔐 Security, Credentials & Local Environment Rules (CRITICAL)
+# --------------------------------------------------------------------
+*.env
+*.env.local
+*.env.*.local
+.env
+.env.*
+*.pfx
+*.pem
+*.key
+*.secret
+credentials.json
+secrets.json
+.vshistory/
+
+# --------------------------------------------------------------------
+# 🏗️ .NET Core / C# Ecosystem Artifacts
+# --------------------------------------------------------------------
+# Build outputs
+[Bb]in/
+[Ob]ject/
+[Oo]bj/
+appsettings.Development.json
+
+# Tooling and CLI artifacts
+.dotnet/
+.packages/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+
+# MSTest / Test Platform execution outputs
+TestResults/
+*.sequor
+*.coverage
+
+# --------------------------------------------------------------------
+# 🕸️ Node.js & AT Protocol Network Layer Artifacts
+# --------------------------------------------------------------------
+node_modules/
+/src/network/atproto-layer/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+.turbo/
+dist/
+build/
+
+# --------------------------------------------------------------------
+# 💻 IDEs, Editors & OS Overrides
+# --------------------------------------------------------------------
+# VS Code local workspace settings (Keep .devcontainer/ tracked!)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Visual Studio Local Cache
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Operating System Trash Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --------------------------------------------------------------------
+# 🎮 Downstream Game Engine Target Fallbacks (Unity/Unreal Caches)
+# --------------------------------------------------------------------
+[Cc]ache/
+[Ll]og/
+[Ll]ogs/
+*.log
+DerivedDataCache/
+Intermediate/
+Saved/
+AutoSave/
+/Library/
+/Temp/
+/Obj/
