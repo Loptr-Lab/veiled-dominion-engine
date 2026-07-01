@@ -1,0 +1,113 @@
+```markdown
+# VEILED DOMINION — Rulebook v0.1
+**Format:** 4-Player Chess Variant (Digital Prototype Baseline)
+**Players:** 4 (1 Rebirth Player vs. 3 Mortal Players)
+**Focus:** Asymmetric AoE mechanics, state management, and alternative victory conditions.
+
+---
+
+## 1.0 Components (Digital Spec)
+*   **Board:** 14x14 cross-shaped grid (standard 4-player chess geometry).
+*   **Mortal Armies (x3):** Standard chess pieces (1 Leader, 1 Queen, 2 Rooks, 2 Bishops, 2 Knights, 8 Pawns).
+*   **Rebirth Army (x1):** 1 Leader, 1 Rebirth piece, 1 Death piece, 1 Rook, 2 Bishops, 2 Knights, 8 Pawns.
+
+---
+
+## 2.0 Setup
+1.  Mortal armies set up on three of the standard cross quadrants.
+2.  Rebirth army sets up on the remaining quadrant.
+3.  **Rebirth Piece:** Placed on the traditional Queen starting square.
+4.  **Death Piece:** Placed on one of the traditional Rook starting squares (Rebirth player's choice).
+5.  Play proceeds clockwise.
+
+---
+
+## 3.0 Standard Movement
+*   **Mortal Pieces:** Move and capture exactly as standard chess dictates.
+*   **Rebirth Army Standard Pieces:** Move and capture exactly as standard chess dictates.
+*   **Rebirth Pawns:** Promote upon reaching the far edge of their starting quadrant or an adjacent quadrant.
+
+---
+
+## 4.0 Unique Pieces
+
+### 4.1 Rebirth (The AoE Piece)
+*   **Movement:** Moves exactly like a standard Queen (unlimited orthogonal/diagonal).
+*   **Capture:** Captures by displacement (standard).
+*   **Immunity:** Immune to the "Veiled" status.
+
+### 4.2 Death (The Anchor Piece)
+*   **Movement:** Moves exactly like a standard King (1 square in any direction).
+*   **Immunity:** Cannot be captured. Enemy pieces cannot move to a square occupied by Death (treated as an illegal move).
+*   **Passable:** Friendly Rebirth pieces may move *through* Death as if he is empty space, but cannot end their turn on his square.
+
+---
+
+## 5.0 Core Mechanics
+
+### 5.1 Radius of Ruin (The Aura)
+Rebirth emits a 1-square aura (the 8 adjacent squares + her current square).
+*   **Trigger:** Evaluated at the end of the turn phase for any piece occupying the radius.
+*   **Effect:** An affected piece becomes **Veiled**.
+*   **Veiled Status:** 
+    *   Loses all special movement abilities.
+    *   Movement is restricted to exactly 1 square forward.
+    *   Cannot capture enemy pieces.
+    *   Duration: Lasts until the start of that piece's owner's next turn.
+
+### 5.2 Mentor's Sanctuary
+*   **Trigger:** Evaluated concurrently with the Radius of Ruin.
+*   **Effect:** Any friendly Rebirth piece positioned within 1 square of the Death piece is immune to the Veiled status, even if they are within the Radius of Ruin.
+
+### 5.3 Martyr’s Boon
+*   **Action:** On the Rebirth player's turn, they may *instead* of moving, remove one of their own pieces (excluding Rebirth, Death, or their Leader) from the board to the Graveyard.
+*   **Reward:** Gains 1 Boon Token.
+*   **Spend:** At the start of a turn, the Rebirth player may spend 1 Boon Token to completely disable the Radius of Ruin for that entire turn cycle.
+
+### 5.4 Soul Reservoir
+*   **Trigger:** Passive check during the Rebirth player's turn start.
+*   **Effect:** For every 3 friendly pieces in the Graveyard, Rebirth unlocks **Rebirth Dash**.
+*   **Rebirth Dash:** Rebirth may move through other pieces (friendly and enemy) as if they are empty space. She cannot end her movement on an occupied square.
+
+---
+
+## 6.0 Turn Structure
+1.  **Start Phase:** 
+    *   Rebirth player declares if spending a Boon Token.
+    *   Clear "Veiled" status from any of the current player's pieces (if it is their turn to be cleared).
+2.  **Movement Phase:** 
+    *   Player makes one standard move OR executes a Martyr's Boon sacrifice.
+3.  **Resolution Phase:** 
+    *   If Rebirth moved, evaluate the Radius of Ruin.
+    *   Apply "Veiled" status to valid targets.
+    *   Check for Victory Conditions.
+    *   Pass turn to the next player clockwise.
+
+---
+
+## 7.0 Victory Conditions
+
+### 7.1 Standard Checkmate
+*   If any player's **Leader** is placed in Checkmate, that player is eliminated.
+*   *Note:* Rebirth herself cannot be checkmated. Only her Leader can.
+*   *Elimination Protocol:* Eliminated player's pieces remain on the board as neutral obstacles (they do not move, but block movement and can be captured).
+
+### 7.2 Rebirth Player Victory (Leadership Points)
+*   The Rebirth player wins immediately upon reaching **10 Leadership Points (LP)**. Points are gained through "Merciful Maneuvers" (No captures involved):
+    *   **Withdrawal (1 LP):** Moving a friendly piece out of an enemy piece's attack range without capturing that enemy.
+    *   **Shielding (1 LP):** Moving a piece between an enemy and your Leader (or Rebirth), breaking the line of attack without capturing.
+    *   **Coexistence (1 LP):** Ending your turn with one of your pieces adjacent to an enemy piece, without capturing. *(Limit: 1 LP per turn from Coexistence).*
+
+### 7.3 Mortal Factions Victory (The Fall)
+*   If Rebirth accidentally applies the "Veiled" status to **5 of her own friendly pieces** over the course of the game, the Mortal factions win collectively.
+
+---
+
+## 8.0 Edge Cases & Engine Clarifications
+
+*   **Can Rebirth capture a Veiled piece?** Yes. A Veiled piece cannot capture, but it can still be captured by standard rules.
+*   **Enemy enters the Aura:** If an enemy piece moves *into* the Radius of Ruin, it becomes Veiled at the end of that enemy player's turn.
+*   **Aura Stacking:** A piece is either Veiled or it is not. Being within the radius for multiple turns does not extend the duration beyond the standard 1-turn cycle.
+*   **Rebirth Dash Interaction:** Pieces Rebirth passes through during a Dash are *not* affected by the Radius of Ruin. The Aura only applies to pieces within the 1-square radius of the square she *ends* her turn on.
+*   **Death Movement:** Death can freely move into squares attacked by enemies. He cannot be put in "Check."
+```
