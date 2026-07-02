@@ -31,10 +31,34 @@ If you're new to the project:
 1. Read this `README.md`
 2. Review `CONTRIBUTING.md`
 3. Check open issues, especially those labeled `good first issue`
-4. Use the GitHub issue templates for bugs and feature proposals
+4. Use the GitHub issue templates for bugs, feature requests, and variant proposals
 5. Open a pull request with the built-in PR template
 
 If you're reporting a security issue, do **not** open a public issue. Email **security@loptrlab.com** instead.
+
+## Where Should I Start?
+
+Use this quick routing guide:
+
+- **I found a bug**
+  - Open the bug report issue template
+
+- **I want to improve the engine, docs, or workflow**
+  - Open the feature request issue template
+
+- **I want to propose a new gameplay variant**
+  - Start with `docs/VARIANT_SUBMISSION_GUIDE.md`
+  - If your variant uses thematic source material, also review `docs/PUBLIC_DOMAIN_PROVENANCE.md`
+  - Open the variant proposal issue template
+
+- **I want to contribute code right away**
+  - Review `CONTRIBUTING.md`
+  - Pick a scoped open issue
+  - Follow the PR template and documentation requirements
+
+- **I want to work on Back in Derry**
+  - Review `docs/variants/BACK_IN_DERRY.md`
+  - Check the open issue for the first deterministic pressure rule implementation pass
 
 ## Ways to Contribute Right Now
 
