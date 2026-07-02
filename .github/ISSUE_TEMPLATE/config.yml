@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contribution questions
+    url: mailto:questions@loptrlab.com
+    about: Use this for contribution questions that are not yet actionable issues.
+  - name: Security reporting
+    url: mailto:security@loptrlab.com
+    about: Please report suspected vulnerabilities privately by email.
