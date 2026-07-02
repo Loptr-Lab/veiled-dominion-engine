@@ -1,0 +1,55 @@
+name: Feature request
+description: Propose an improvement to the engine, docs, workflow, or contributor experience.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing an improvement. Please keep requests concrete and scoped so contributors can act on them.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What problem should be solved, or what opportunity should be explored?
+      placeholder: The current workflow/rules/tooling makes it difficult to ...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change you want to see.
+      placeholder: We should add/update/build ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know this is done?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: dropdown
+    id: contribution_area
+    attributes:
+      label: Contribution area
+      options:
+        - Gameplay systems
+        - Architecture / engine
+        - Documentation
+        - CI / developer experience
+        - Community onboarding
+        - Website / presentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Related references
+      description: Link any relevant issues, PRs, docs, rules sections, or prototypes.
