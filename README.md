@@ -121,13 +121,12 @@ The signature mechanical engine is the **Radius of Ruin**—an area-of-effect (A
 * **The Board:** A 14x14 cross-shaped 4-player topology featuring a $2\times2$ neutral zone at the absolute center.
 * **Player Count:** 4 Players (Asymmetrical Free-For-All by default).
 * **Factions & Army Composition:**
-* **3x Mortal Armies:** Standard chess loadouts (1 Leader, 1 Queen, 2 Rooks, 2 Bishops, 2 Knights, 8 Pawns).
-* **1x Rebirth Army:** Modified loadout consisting of:
-* `1x Leader` (Standard King logic)
-* `1x Rebirth` (Replaces standard Queen)
-* `1x Death` (Replaces left-side Rook)
-* `1x Rook` / `2x Bishops` / `2x Knights` / `8x Pawns`
-
+  * **3x Mortal Armies:** Standard chess loadouts (1 Leader, 1 Queen, 2 Rooks, 2 Bishops, 2 Knights, 8 Pawns).
+  * **1x Rebirth Army:** Modified loadout consisting of:
+    * `1x Leader` (Standard King logic)
+    * `1x Rebirth` (Replaces standard Queen)
+    * `1x Death` (Replaces left-side Rook)
+    * `1x Rook` / `2x Bishops` / `2x Knights` / `8x Pawns`
 * **Resources:** Boon Tokens (Rebirth exclusive), Leadership Point (LP) Tracker.
 
 ### 2. Unique Piece Logic
@@ -195,10 +194,10 @@ Play transitions sequentially clockwise. Each player's turn executes across thre
 #### Path B: Leadership & Mercy (Rebirth Victory)
 
 * Rebirth wins immediately upon accumulating **10 Leadership Points (LP)**.
-* *LP Acquisition (+1 per action; maximum of 1 Coexistence LP per turn loop):*
-* **Withdrawal:** Moving your unit out of an active enemy threat vector without capturing.
-* **Shielding:** Interposing a unit directly between an enemy attack line and your Leader or Rebirth piece.
-* **Coexistence:** Settling a movement phase on a tile directly adjacent to an enemy unit without capturing it.
+* **LP Acquisition** (+1 per action; maximum of 1 Coexistence LP per turn loop):
+  * **Withdrawal:** Moving your unit out of an active enemy threat vector without capturing.
+  * **Shielding:** Interposing a unit directly between an enemy attack line and your Leader or Rebirth piece.
+  * **Coexistence:** Settling a movement phase on a tile directly adjacent to an enemy unit without capturing it.
 
 #### Path C: The Fall (Mortal Structural Victory)
 
@@ -219,35 +218,30 @@ Play transitions sequentially clockwise. Each player's turn executes across thre
 This repository serves as the digital prototyping sandbox, system state-machine engine, and foundational transmedia manifest for the *Daddy's Little Mortis* ecosystem.
 
 ```text
-## Repository Architecture
-
 veiled-dominion-engine/
 │
-├── docs/                           # Design, lore, and variant blueprints
-│   ├── design/
-│   │   └── GDD.md                 # Master Game Design Document Index
-│   ├── RULEBOOK_v0.1.md           # Core mechanical rules for the C# engine
-│   ├── FAQ_EDGE_CASES.md          # Logic clarifications
-│   ├── UNITY_INIT.md              # Unity 2022 URP setup & grey-box specs
-│   ├── COMMUNITY.md               # Non-code contribution guidelines
-│   └── variants/                  # Proof-of-concept mechanical stress tests
-│       ├── SYSTEMS_QUARTET_VARIANT.md
-│       ├── DARK_BAUHAUS_VARIANT.md
-│       ├── SICKBOI_VARIANT.md
-│       └── BACK_IN_DERRY_VARIANT.md
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.yml
+│   │   ├── feature_request.yml
+│   │   ├── variant_proposal.yml
+│   │   └── config.yml
+│   ├── workflows/
+│   │   └── repo-hygiene.yml
+│   └── pull_request_template.md
 │
-├── Assets/                        # [Unity Project Root - Managed by Engine Lead]
-│   └── _Project/
-│       ├── Scripts/
-│       │   ├── Core/              # BasePiece.cs, GridTopology.cs
-│       │   └── Systems/           # RadiusOfRuin.cs, VeiledStateManager.cs
-│       ├── Prefabs/Pieces/        # Future Grey-box primitives
-│       ├── Materials/Core/        # Musou Black & Rebirth Glow shaders
-│       └── Scenes/                # GreyBox_Test.unity
+├── docs/
+│   ├── CONTRIBUTOR_SKILLSET_AND_RESOURCES.md
+│   ├── DEVELOPMENT_ENVIRONMENT.md
+│   ├── PUBLIC_DOMAIN_PROVENANCE.md
+│   ├── VARIANT_SUBMISSION_GUIDE.md
+│   └── variants/
+│       ├── BACK_IN_DERRY.md
+│       └── VARIANT_TEMPLATE.md
 │
-├── LICENSE                        # CC BY-NC-SA 4.0
-├── CONTRIBUTING.md                # Strict engineering onboarding rules
-└── README.md                      # You are here
+├── CONTRIBUTING.md
+├── LICENSE.md
+└── README.md
 ```
 
 ---
