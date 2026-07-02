@@ -1,0 +1,119 @@
+name: Variant proposal
+description: Propose a new gameplay variant, including rules changes and provenance where applicable.
+title: "variant: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a variant. Please describe the mechanics clearly and include provenance details if the variant uses public-domain material.
+
+  - type: input
+    id: variant_name
+    attributes:
+      label: Variant name
+      description: What is the proposed name of the variant?
+      placeholder: Back in Derry
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Variant summary
+      description: Briefly summarize the variant and what makes it distinct.
+      placeholder: This variant changes...
+    validations:
+      required: true
+
+  - type: textarea
+    id: thesis
+    attributes:
+      label: Mechanical thesis
+      description: What gameplay experience or systems question is this variant exploring?
+      placeholder: This variant is intended to test...
+    validations:
+      required: true
+
+  - type: textarea
+    id: rules_delta
+    attributes:
+      label: Rules delta from baseline
+      description: Describe exactly what changes from the baseline ruleset.
+      placeholder: |
+        - Board/topology changes:
+        - Turn loop changes:
+        - Piece changes:
+        - Resource changes:
+        - Victory condition changes:
+    validations:
+      required: true
+
+  - type: textarea
+    id: edge_cases
+    attributes:
+      label: Edge cases and interaction notes
+      description: Document any conflicts, timing issues, overlap behavior, or ambiguity risks.
+      placeholder: |
+        - If X and Y happen simultaneously...
+        - Aura overlaps with...
+        - Illegal move handling...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contribution_type
+    attributes:
+      label: Contribution type
+      options:
+        - Documentation-only proposal
+        - Ready for implementation
+        - Needs design review first
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source_basis
+    attributes:
+      label: Source basis
+      options:
+        - Fully original
+        - Inspired by abstract historical/mythic material
+        - Based on public-domain source material
+    validations:
+      required: true
+
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Public-domain provenance
+      description: Required if public-domain source material is involved. Include source work, author, publication date, source link, rationale, and what is being used.
+      placeholder: |
+        Source work:
+        Original author/creator:
+        Publication date:
+        Source link:
+        Public domain rationale:
+        What is being used:
+        Adaptation status:
+        Notes / limitations:
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know this proposal is ready to implement or merge?
+      placeholder: |
+        - [ ] Rules are fully documented
+        - [ ] Edge cases are resolved
+        - [ ] Provenance is accepted (if applicable)
+        - [ ] Docs are updated
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Related references
+      description: Link related docs, issues, PRs, rules sections, or prototype files.
