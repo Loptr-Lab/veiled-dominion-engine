@@ -1,6 +1,6 @@
 # Contributing to Veiled Dominion Engine
 
-Thank you for helping us build **Veiled Dominion**, the asymmetrical 4-player tactical chess-variant engine. This repository houses the core state machine, spatial mechanics pipelines, and network primitives that power a unique alternative strategy framework.
+Thank you for helping us build **Veiled Dominion**, the asymmetrical 4-player tactical chess-variant engine. This repository houses the core state machine, spatial mechanics pipelines, and network synchronization systems powering the broader **Daddy's Little Mortis** ecosystem.
 
 By contributing to this project, you help scale an extensible, decentralized framework for alternative strategy games. Please review this document completely before opening an issue or a pull request.
 
@@ -14,20 +14,20 @@ To maintain a healthy open-source ecosystem while strictly protecting the commer
 
 All source code, public-domain design documentation, configuration tooling, and core state machine files in this repository are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License**.
 
-* **What this means for you:** You are completely free to share, copy, remix, transform, and build upon these engine frameworks for *non-commercial* purposes, provided you give appropriate credit and release derivative works under the same license.
+* **What this means for you:** You are completely free to share, copy, remix, transform, and build upon these engine frameworks for *non-commercial* purposes, provided you give appropriate credit and release derivatives under the same license.
 * **Commercial Exclusion:** You may *not* use this material for commercial advantage or monetary compensation without explicit written permission from Loptr Lab.
 * **Full License Text:** See [`LICENSE.md`](./LICENSE.md) in the repository root.
 
 ### B. Commercial Brand Core & Intellectual Property Restrictions
 
-The core narrative IP, specific fictional characters, visual world-building assets, and titles linked to the **Daddy's Little Mortis** digital ecosystem remain proprietary and are **not** licensed for reuse under the open engine framework.
+The core narrative IP, specific fictional characters, visual world-building assets, and titles linked to the **Daddy's Little Mortis** digital ecosystem remain proprietary and are **not** licensed under this repository's open-source terms.
 
 * **Scope:** Contributors may write open-source variant logic using generic or public-domain motifs, but must *never* commit proprietary assets or commercial brand artwork into this public engine repository.
-* **Enforcement:** Any pull request detected introducing commercial brand IP will be immediately rejected with a detailed explanation, and the contributor will be encouraged to apply to our design partner program separately.
+* **Enforcement:** Any pull request detected introducing commercial brand IP will be immediately rejected with a detailed explanation, and the contributor will be encouraged to apply to our design sandbox instead.
 
 ### C. Public Domain Literary Provenance Guardrails
 
-When contributing code comments, thematic variables, or rulesets derived from historical literature or philosophical texts (e.g., Seneca, Epicurus, Poe), you must confirm clean provenance to avoid contamination from copyrighted modern translations.
+When contributing code comments, thematic variables, or rulesets derived from historical literature or philosophical texts (e.g., Seneca, Epicurus, Poe), you must confirm clean provenance to avoid introducing modern copyrighted contamination.
 
 * **Rule:** Every pull request introducing literary citations must include a stable public-domain source archive link (e.g., Project Gutenberg, Internet Archive).
 * **Forbidden:** Modern copyrighted translations are strictly forbidden; only original texts or verifiably open public-domain translations may be used.
@@ -69,6 +69,8 @@ dotnet test
 
 For detailed environment documentation, see [`docs/DEVELOPMENT_ENVIRONMENT.md`](./docs/DEVELOPMENT_ENVIRONMENT.md).
 
+For engine and Unity prototype contributors, also review [`docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md) before writing code.
+
 ---
 
 ## 🎯 3. Core Architectural Principles
@@ -109,7 +111,7 @@ The `RadiusOfRuin` system is the game's primary technical challenge. When implem
 3. Apply state changes atomically at phase resolution time (not during player input).
 4. Log all Veil applications for "The Fall" counter tracking.
 
-For detailed architectural guidance, see [`README.md`](./README.md) and [`docs/DEVELOPMENT_ENVIRONMENT.md`](./docs/DEVELOPMENT_ENVIRONMENT.md).
+For detailed architectural guidance, see [`README.md`](./README.md), [`docs/DEVELOPMENT_ENVIRONMENT.md`](./docs/DEVELOPMENT_ENVIRONMENT.md), and [`docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md).
 
 ---
 
@@ -185,6 +187,9 @@ Before opening a pull request, ensure every item is satisfied:
 - [ ] **Documentation Updated:** 
   - Code comments are thorough and explain the *why* (not just the *what*)
   - If mechanics change, [`README.md`](./README.md) is updated to reflect truth
+
+- [ ] **Contributor Guide Reviewed:**
+  - Reviewed [`docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md) before implementing engine or prototype code
 
 - [ ] **Provenance Compliance:** (If applicable)
   - All literary citations include stable public-domain archive links
