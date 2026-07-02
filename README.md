@@ -10,11 +10,9 @@ One player assumes control of **Rebirth**—an entity of immense, terrifying pow
 
 ## Current Status
 
-This repository is in **early public prototype** stage.
-
-Right now, the project is strongest in:
+This repository is in an **early public prototype** stage, with the strongest current focus on:
 - rules and systems documentation
-- contribution scaffolding
+- contributor scaffolding
 - architecture planning
 - early engine and tooling groundwork
 
@@ -248,7 +246,7 @@ veiled-dominion-engine/
 
 ## 🤝 Open Seats (How to Contribute)
 
-We are hunting for systems-driven architecture thinkers who understand that constraints drive complex gameplay. If you have deep experience building deterministic grid logic, spatial math, or multi-agent state machines, step up.
+We welcome contributors who enjoy deterministic systems, spatial logic, state-machine design, documentation, and contributor tooling.
 
 ### Immediate Focus Areas:
 
@@ -260,7 +258,7 @@ We are hunting for systems-driven architecture thinkers who understand that cons
 
 1. Fork this repository.
 2. Spin up an explicit feature branch (`git checkout -b feature/radius-logic`).
-3. Write clean, heavily commented, deterministic code. **Crucial:** If your code alters game-loop mechanics, update *this* rules section in the `README.md` within the same commit.
+3. Write clean, deterministic, well-documented code. **Crucial:** If your code alters game-loop mechanics, update *this* rules section in the `README.md` within the same commit.
 4. Open a PR detailing exactly how your code hooks into the core *Turn Structure Loop*.
 
 ---
