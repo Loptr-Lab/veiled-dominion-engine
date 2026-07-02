@@ -19,6 +19,7 @@ Closes #[issue-number] (if applicable)
 - [ ] README.md updated (if mechanics changed)
 - [ ] Code comments thorough
 - [ ] Provenance links included (if literary references)
+- [ ] Variant submission docs updated (if variant rules or themed source material changed)
 
 ## ✅ Compliance Checklist
 - [ ] Code compiles without errors
