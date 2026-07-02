@@ -8,15 +8,78 @@ One player assumes control of **Rebirth**—an entity of immense, terrifying pow
 
 ---
 
+## Current Status
+
+This repository is in **early public prototype** stage.
+
+Right now, the project is strongest in:
+- rules and systems documentation
+- contribution scaffolding
+- architecture planning
+- early engine and tooling groundwork
+
+Active contributors are especially welcome for:
+- documentation improvements
+- CI / developer experience
+- architecture validation
+- gameplay systems prototyping
+
+## Start Here
+
+If you're new to the project:
+
+1. Read this `README.md`
+2. Review `CONTRIBUTING.md`
+3. Check open issues, especially those labeled `good first issue`
+4. Use the GitHub issue templates for bugs and feature proposals
+5. Open a pull request with the built-in PR template
+
+If you're reporting a security issue, do **not** open a public issue. Email **security@loptrlab.com** instead.
+
+## Ways to Contribute Right Now
+
+We are currently most ready for contributions in these areas:
+
+- **Documentation**
+  - clarify rules
+  - improve onboarding
+  - expand architecture and setup docs
+
+- **CI / Tooling**
+  - docs validation
+  - link-checking
+  - build/test automation
+  - contributor workflow polish
+
+- **Gameplay / Systems Design**
+  - edge-case validation
+  - rules consistency review
+  - balance proposals with clear acceptance criteria
+
+- **Prototype Engineering**
+  - deterministic grid logic
+  - state-machine implementation
+  - test scaffolding for movement and aura interactions
+
+## Contributor Expectations
+
+Before starting work:
+- look for an existing issue or open one with the appropriate template
+- prefer scoped, reviewable changes
+- follow branch naming and PR guidance in `CONTRIBUTING.md`
+- update docs when mechanics or workflows change
+
+Please keep contributions aligned with the repository's licensing and IP boundaries described in `CONTRIBUTING.md` and `LICENSE.md`.
+
+---
+
 ## 🌑 The Core Thesis: The Restraint Fantasy
 
 Traditional games follow a standard power escalation loop:
 
-
 $$\text{Start Weak} \longrightarrow \text{Gain Power} \longrightarrow \text{Win by Dominance}$$
 
 **Veiled Dominion** flips this paradigm into a **Restraint Fantasy**:
-
 
 $$\text{Start Overpowered} \longrightarrow \text{Suppress Power} \longrightarrow \text{Win by Coexistence}$$
 
@@ -37,9 +100,6 @@ The signature mechanical engine is the **Radius of Ruin**—an area-of-effect (A
 * `1x Rebirth` (Replaces standard Queen)
 * `1x Death` (Replaces left-side Rook)
 * `1x Rook` / `2x Bishops` / `2x Knights` / `8x Pawns`
-
-
-
 
 * **Resources:** Boon Tokens (Rebirth exclusive), Leadership Point (LP) Tracker.
 
@@ -70,12 +130,8 @@ The signature mechanical engine is the **Radius of Ruin**—an area-of-effect (A
 
 | Ability | Type | Resource Cost / Trigger | Mechanical Effect |
 | --- | --- | --- | --- |
-| **Martyr’s Boon** | Active Action | **Cost:** Consumes Turn <br>
-
-<br>**Target:** 1 Friendly Unit | Permanently sacrifices a friendly piece to the Graveyard to generate **1 Boon Token**. |
-| **Aura Suppression** | Active Action | **Cost:** 1 Boon Token <br>
-
-<br>**Trigger:** Turn Start | Disables the *Radius of Ruin* completely for the duration of the current turn. |
+| **Martyr’s Boon** | Active Action | **Cost:** Consumes Turn <br><br>**Target:** 1 Friendly Unit | Permanently sacrifices a friendly piece to the Graveyard to generate **1 Boon Token**. |
+| **Aura Suppression** | Active Action | **Cost:** 1 Boon Token <br><br>**Trigger:** Turn Start | Disables the *Radius of Ruin* completely for the duration of the current turn. |
 | **Soul Reservoir** | Passive | **Trigger:** Passive threshold at every 3 units in Graveyard (3, 6, 9...) | Unlocks **Rebirth Dash**. Rebirth can phase through occupied tiles as if empty. Passed units are unaffected by the *Radius of Ruin*. |
 
 ---
@@ -98,7 +154,6 @@ Play transitions sequentially clockwise. Each player's turn executes across thre
   └── Evaluate Radius of Ruin spatial coordinates
   └── Apply "Veiled" states to valid adjacent targets
   └── Check End-State / Victory Conditions
-
 ```
 
 ---
@@ -117,8 +172,6 @@ Play transitions sequentially clockwise. Each player's turn executes across thre
 * **Withdrawal:** Moving your unit out of an active enemy threat vector without capturing.
 * **Shielding:** Interposing a unit directly between an enemy attack line and your Leader or Rebirth piece.
 * **Coexistence:** Settling a movement phase on a tile directly adjacent to an enemy unit without capturing it.
-
-
 
 #### Path C: The Fall (Mortal Structural Victory)
 
@@ -162,7 +215,7 @@ veiled-dominion-engine/
 │       │   ├── Core/              # BasePiece.cs, GridTopology.cs
 │       │   └── Systems/           # RadiusOfRuin.cs, VeiledStateManager.cs
 │       ├── Prefabs/Pieces/        # Future Grey-box primitives
-│       ├── Materials/Core/         # Musou Black & Rebirth Glow shaders
+│       ├── Materials/Core/        # Musou Black & Rebirth Glow shaders
 │       └── Scenes/                # GreyBox_Test.unity
 │
 ├── LICENSE                        # CC BY-NC-SA 4.0
