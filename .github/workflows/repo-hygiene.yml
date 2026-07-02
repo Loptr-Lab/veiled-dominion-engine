@@ -1,0 +1,43 @@
+name: Repo Hygiene
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  repo-hygiene:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required contributor files exist
+        run: |
+          test -f README.md
+          test -f CONTRIBUTING.md
+          test -f .github/pull_request_template.md
+          test -f .github/ISSUE_TEMPLATE/bug_report.yml
+          test -f .github/ISSUE_TEMPLATE/feature_request.yml
+          test -f .github/ISSUE_TEMPLATE/variant_proposal.yml
+          test -f docs/VARIANT_SUBMISSION_GUIDE.md
+          test -f docs/PUBLIC_DOMAIN_PROVENANCE.md
+          test -f docs/variants/BACK_IN_DERRY.md
+          test -f docs/variants/VARIANT_TEMPLATE.md
+
+      - name: Validate markdown file presence for core docs
+        run: |
+          ls README.md CONTRIBUTING.md docs/*.md docs/variants/*.md > /dev/null
+
+      - name: Check for accidental untiy3d topic typo reference in docs
+        run: |
+          if grep -Rin "untiy3d" .; then
+            echo "Found typo: untiy3d"
+            exit 1
+          fi
+
+      - name: Validate issue template config exists
+        run: |
+          test -f .github/ISSUE_TEMPLATE/config.yml
