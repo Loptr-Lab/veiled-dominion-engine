@@ -100,7 +100,7 @@ Please keep contributions aligned with the repository's licensing and IP boundar
 
 ---
 
-## ��� The Core Thesis: The Restraint Fantasy
+## 🌒 The Core Thesis: The Restraint Fantasy
 
 Traditional games follow a standard power escalation loop:
 
