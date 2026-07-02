@@ -1,6 +1,6 @@
 # Contributing to Veiled Dominion Engine
 
-Thank you for helping us build **Veiled Dominion**, the asymmetrical 4-player tactical chess-variant engine. This repository houses the core state machine, spatial mechanics pipelines, and network synchronization layers that power our broader transmedia ecosystem.
+Thank you for helping us build **Veiled Dominion**, the asymmetrical 4-player tactical chess-variant engine. This repository houses the core state machine, spatial mechanics pipelines, and network primitives that power a unique alternative strategy framework.
 
 By contributing to this project, you help scale an extensible, decentralized framework for alternative strategy games. Please review this document completely before opening an issue or a pull request.
 
@@ -12,22 +12,22 @@ To maintain a healthy open-source ecosystem while strictly protecting the commer
 
 ### A. The Engine Code and Public Assets (`CC BY-NC-SA 4.0`)
 
-All source code, public-domain design documentation, configuration tooling, and core state machine files in this repository are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International** license.
+All source code, public-domain design documentation, configuration tooling, and core state machine files in this repository are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License**.
 
-* **What this means for you:** You are completely free to share, copy, remix, transform, and build upon these engine frameworks for *non-commercial* purposes, provided you give appropriate credit and distribute your contributions under this exact same license.
+* **What this means for you:** You are completely free to share, copy, remix, transform, and build upon these engine frameworks for *non-commercial* purposes, provided you give appropriate credit and release derivative works under the same license.
 * **Commercial Exclusion:** You may *not* use this material for commercial advantage or monetary compensation without explicit written permission from Loptr Lab.
 * **Full License Text:** See [`LICENSE.md`](./LICENSE.md) in the repository root.
 
 ### B. Commercial Brand Core & Intellectual Property Restrictions
 
-The core narrative IP, specific fictional characters, visual world-building assets, and titles linked to the **Daddy's Little Mortis** digital ecosystem (including but not limited to the manga *The Diary of Death's Daughter* and the *Source Code* apparel collection) are explicitly excluded from this open-source grant.
+The core narrative IP, specific fictional characters, visual world-building assets, and titles linked to the **Daddy's Little Mortis** digital ecosystem remain proprietary and are **not** licensed for reuse under the open engine framework.
 
 * **Scope:** Contributors may write open-source variant logic using generic or public-domain motifs, but must *never* commit proprietary assets or commercial brand artwork into this public engine repository.
-* **Enforcement:** Any pull request detected introducing commercial brand IP will be immediately rejected with a detailed explanation, and the contributor will be encouraged to apply to our design team directly at **questions@loptrlab.com**.
+* **Enforcement:** Any pull request detected introducing commercial brand IP will be immediately rejected with a detailed explanation, and the contributor will be encouraged to apply to our design partner program separately.
 
 ### C. Public Domain Literary Provenance Guardrails
 
-When contributing code comments, thematic variables, or rulesets derived from historical literature or philosophical texts (e.g., Seneca, Epicurus, Poe), you must confirm clean provenance to avoid copyright risk.
+When contributing code comments, thematic variables, or rulesets derived from historical literature or philosophical texts (e.g., Seneca, Epicurus, Poe), you must confirm clean provenance to avoid contamination from copyrighted modern translations.
 
 * **Rule:** Every pull request introducing literary citations must include a stable public-domain source archive link (e.g., Project Gutenberg, Internet Archive).
 * **Forbidden:** Modern copyrighted translations are strictly forbidden; only original texts or verifiably open public-domain translations may be used.
@@ -113,7 +113,59 @@ For detailed architectural guidance, see [`README.md`](./README.md) and [`docs/D
 
 ---
 
-## 🛠️ 4. Pull Request Submission Workflow
+## 🧩 4. Variant Contributions
+
+This repository accepts contributions for:
+- baseline engine improvements
+- documentation and workflow improvements
+- original gameplay variants
+- approved public-domain-based variants
+
+If you are proposing or implementing a variant, you must review:
+- [`docs/VARIANT_SUBMISSION_GUIDE.md`](./docs/VARIANT_SUBMISSION_GUIDE.md)
+- [`docs/PUBLIC_DOMAIN_PROVENANCE.md`](./docs/PUBLIC_DOMAIN_PROVENANCE.md)
+
+### When to Open a Variant Proposal
+Open a variant proposal issue before implementation when your contribution:
+- changes board topology
+- changes victory conditions
+- adds or modifies core piece behavior
+- introduces new status systems or resource systems
+- adds themed material derived from public-domain sources
+
+Use the **Variant proposal** issue template in GitHub:
+- `.github/ISSUE_TEMPLATE/variant_proposal.yml`
+
+### Variant Contribution Requirements
+All variant submissions must:
+- define a clear mechanical thesis
+- document rules delta from the baseline game
+- describe deterministic behavior and edge cases
+- include testing notes or validation scenarios
+- include provenance details if public-domain material is involved
+
+### Public-Domain-Themed Variants
+If your variant uses public-domain characters, texts, mythic figures, or symbolic frameworks, you must document:
+- source work
+- original creator
+- publication date
+- source/archive link
+- public-domain rationale
+- what exactly is being used
+- whether the work is adapted or directly referenced
+
+Submissions that rely on modern copyrighted adaptations, trademarked depictions, or unclear provenance may be rejected.
+
+### PR Expectations for Variants
+If a pull request includes a variant contribution:
+- update relevant docs under `docs/variants/`
+- update `README.md` if baseline understanding changes
+- include provenance notes where required
+- explain the mechanical and state-machine impact clearly in the PR description
+
+---
+
+## 🛠️ 5. Pull Request Submission Workflow
 
 ### Pre-Submission Checklist
 
@@ -171,6 +223,7 @@ Closes #[issue-number] (if applicable)
 - [ ] README.md updated (if mechanics changed)
 - [ ] Code comments thorough
 - [ ] Provenance links included (if literary references)
+- [ ] Variant submission docs updated (if variant rules or themed source material changed)
 
 ## ✅ Compliance Checklist
 - [ ] Code compiles without errors
@@ -182,7 +235,7 @@ Closes #[issue-number] (if applicable)
 
 ---
 
-## 📊 5. GitHub Project Board Structure
+## 📊 6. GitHub Project Board Structure
 
 All development activity flows through our GitHub Project Board using this status pipeline:
 
@@ -210,7 +263,7 @@ All development activity flows through our GitHub Project Board using this statu
 
 ---
 
-## 🤝 6. Community Guidelines & Conduct
+## 🤝 7. Community Guidelines & Conduct
 
 ### Be Respectful
 This is a collaborative game design and engineering community. We value:
@@ -237,7 +290,7 @@ This project welcomes questions. If you're stuck:
 
 ---
 
-## 📬 7. Contact & Escalation
+## 📬 8. Contact & Escalation
 
 ### For Contribution Questions
 - **GitHub Issues:** Open an issue with the `question` label
@@ -254,7 +307,7 @@ This project welcomes questions. If you're stuck:
 
 ---
 
-## ✨ Recognition
+## ✨ 9. Recognition
 
 Contributors who land merged PRs will be:
 - Added to the **CONTRIBUTORS.md** file (coming soon)
@@ -265,6 +318,6 @@ Thank you for helping build the future of constraint-based game design. 🎮♟�
 
 ---
 
-**Last Updated:** 2026-07-01  
+**Last Updated:** 2026-07-02  
 **Maintained by:** Loptr Lab (@ibloud)  
 **License:** CC BY-NC-SA 4.0
