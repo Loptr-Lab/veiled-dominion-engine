@@ -30,9 +30,10 @@ If you're new to the project:
 
 1. Read this `README.md`
 2. Review `CONTRIBUTING.md`
-3. Check open issues, especially those labeled `good first issue`
-4. Use the GitHub issue templates for bugs, feature requests, and variant proposals
-5. Open a pull request with the built-in PR template
+3. Review `docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md` if you plan to contribute to the engine or Unity prototype
+4. Check open issues, especially those labeled `good first issue`
+5. Use the GitHub issue templates for bugs, feature requests, and variant proposals
+6. Open a pull request with the built-in PR template
 
 If you're reporting a security issue, do **not** open a public issue. Email **security@loptrlab.com** instead.
 
@@ -53,6 +54,7 @@ Use this quick routing guide:
 
 - **I want to contribute code right away**
   - Review `CONTRIBUTING.md`
+  - Review `docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`
   - Pick a scoped open issue
   - Follow the PR template and documentation requirements
 
@@ -91,13 +93,14 @@ Before starting work:
 - look for an existing issue or open one with the appropriate template
 - prefer scoped, reviewable changes
 - follow branch naming and PR guidance in `CONTRIBUTING.md`
+- review `docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md` before writing engine or prototype code
 - update docs when mechanics or workflows change
 
 Please keep contributions aligned with the repository's licensing and IP boundaries described in `CONTRIBUTING.md` and `LICENSE.md`.
 
 ---
 
-## 🌑 The Core Thesis: The Restraint Fantasy
+## ��� The Core Thesis: The Restraint Fantasy
 
 Traditional games follow a standard power escalation loop:
 
