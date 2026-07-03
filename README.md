@@ -29,9 +29,10 @@ If you're new to the project:
 1. Read this `README.md`
 2. Review `CONTRIBUTING.md`
 3. Review `docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md` if you plan to contribute to the engine or Unity prototype
-4. Check open issues, especially those labeled `good first issue`
-5. Use the GitHub issue templates for bugs, feature requests, and variant proposals
-6. Open a pull request with the built-in PR template
+4. Review `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` if you plan to touch rendering, shaders, post-processing, animation timing, or WebGL export settings
+5. Check open issues, especially those labeled `good first issue`
+6. Use the GitHub issue templates for bugs, feature requests, and variant proposals
+7. Open a pull request with the built-in PR template
 
 If you're reporting a security issue, do **not** open a public issue. Email **security@loptrlab.com** instead.
 
@@ -47,12 +48,14 @@ Use this quick routing guide:
 
 - **I want to propose a new gameplay variant**
   - Start with `docs/VARIANT_SUBMISSION_GUIDE.md`
+  - Review existing variant docs such as `docs/variants/BACK_IN_DERRY.md` and `docs/variants/SICKBOI_EXE.md`
   - If your variant uses thematic source material, also review `docs/PUBLIC_DOMAIN_PROVENANCE.md`
   - Open the variant proposal issue template
 
 - **I want to contribute code right away**
   - Review `CONTRIBUTING.md`
   - Review `docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`
+  - Review `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` if your work touches visuals, rendering, shaders, or export behavior
   - Pick a scoped open issue
   - Follow the PR template and documentation requirements
 
@@ -92,6 +95,7 @@ Before starting work:
 - prefer scoped, reviewable changes
 - follow branch naming and PR guidance in `CONTRIBUTING.md`
 - review `docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md` before writing engine or prototype code
+- review `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` before changing rendering, shader, animation, or export behavior
 - update docs when mechanics or workflows change
 
 Please keep contributions aligned with the repository's licensing and IP boundaries described in `CONTRIBUTING.md` and `LICENSE.md`.
@@ -231,10 +235,12 @@ veiled-dominion-engine/
 ├── docs/
 │   ├── CONTRIBUTOR_SKILLSET_AND_RESOURCES.md
 │   ├── DEVELOPMENT_ENVIRONMENT.md
+│   ├── ENGINE_ACCESSIBILITY_A11Y_PARADOX.md
 │   ├── PUBLIC_DOMAIN_PROVENANCE.md
 │   ├── VARIANT_SUBMISSION_GUIDE.md
 │   └── variants/
 │       ├── BACK_IN_DERRY.md
+│       ├── SICKBOI_EXE.md
 │       └── VARIANT_TEMPLATE.md
 │
 ├── CONTRIBUTING.md
