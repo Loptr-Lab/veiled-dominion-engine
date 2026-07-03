@@ -250,6 +250,23 @@ veiled-dominion-engine/
 
 ---
 
+## 📖 For Contributors
+
+Veiled Dominion is an open prototype. Contributions are welcome across engine, systems design, and technical art.
+
+| Document | Purpose |
+|---|---|
+| [ARCHITECTURE_OVERVIEW.md](./ARCHITECTURE_OVERVIEW.md) | Runtime sequencing, engine pipeline, snapshot contract |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | PR workflow, licensing boundaries, contributor checklist |
+| [docs/DEVELOPMENT_ENVIRONMENT.md](./docs/DEVELOPMENT_ENVIRONMENT.md) | Local setup and Codespaces quickstart |
+| [docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md) | Role descriptions and recommended background reading |
+
+**Open roles:** See issues labeled `help wanted` or `good first issue`.
+
+If `README.md` and `ARCHITECTURE_OVERVIEW.md` ever disagree, treat it as a bug and flag it in an issue.
+
+---
+
 ## 🤝 Open Seats (How to Contribute)
 
 We welcome contributors who enjoy deterministic systems, spatial logic, state-machine design, documentation, and contributor tooling.
