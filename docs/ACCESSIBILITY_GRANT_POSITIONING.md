@@ -1,6 +1,13 @@
 # Accessibility Grant Positioning Brief
 ## Veiled Dominion Engine — Loptr Lab
 
+> Veiled Dominion is an open-source strategy game engine prototype exploring how
+> visually dark, high-contrast game aesthetics can be implemented without excluding
+> players with photosensitive, vestibular, or cognitive accessibility needs. The
+> project combines deterministic engine architecture, explicit accessibility
+> constraints, WebGL safety review, and plain-language contributor documentation
+> so that accessibility work is visible, testable, and funding-legible.
+
 ---
 
 ## Problem Statement

@@ -2,6 +2,18 @@
 
 > *"Every game teaches you to become more powerful. What if the lesson was the opposite?"*
 
+## About This Project
+
+Veiled Dominion is an open-source strategy game engine prototype exploring how
+visually dark, high-contrast game aesthetics can be implemented without excluding
+players with photosensitive, vestibular, or cognitive accessibility needs. The
+project combines deterministic engine architecture, explicit accessibility
+constraints, WebGL safety review, and plain-language contributor documentation
+so that accessibility work is visible, testable, and funding-legible. Current
+milestones include safe state-transition behavior, shader/accessibility
+constraints for key pieces, a WebGL safety checklist, and contributor-ready
+issue tracks for engineering, testing, technical art, and documentation.
+
 **Veiled Dominion** is an asymmetrical, 4-player chess variant serving as the mechanical and narrative anchor of the **Daddy's Little Mortis (DLM)** universe. It reimagines the traditional board game not as an arena of conquest, but as an exercise in structural restraint.
 
 One player assumes control of **Rebirth**—an entity of immense, terrifying power who must win by learning mechanical restraint. The remaining three players command standard **Mortal Factions** attempting to survive her proximity, exploit her tactical inexperience, or achieve checkmate before she masters her aura.
