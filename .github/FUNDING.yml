@@ -3,6 +3,6 @@
 # Fill in active platforms and replace placeholder URLs before publishing.
 
 buy_me_a_coffee: loptrlab
+patreon: LoptrLab
 custom:
   - "https://github.com/sponsors/Loptr-Lab"
-  - "https://www.patreon.com/c/LoptrLab/"
