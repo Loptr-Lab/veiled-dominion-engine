@@ -273,6 +273,7 @@ Veiled Dominion is an open prototype. Contributions are welcome across engine, s
 | [docs/DEVELOPMENT_ENVIRONMENT.md](./docs/DEVELOPMENT_ENVIRONMENT.md) | Local setup and Codespaces quickstart |
 | [docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md) | Role descriptions and recommended background reading |
 | [docs/ACCESSIBILITY_GRANT_POSITIONING.md](./docs/ACCESSIBILITY_GRANT_POSITIONING.md) | Plain-language brief for accessibility-minded contributors, grant reviewers, and funding partners |
+| [docs/FELLOWSHIP.md](./docs/FELLOWSHIP.md) | Engineering Fellowship — open tracks, problems, and how to apply |
 
 **Open roles:** See issues labeled `help wanted` or `good first issue`.
 
