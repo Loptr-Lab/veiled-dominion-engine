@@ -34,6 +34,21 @@ Active contributors are especially welcome for:
 - architecture validation
 - gameplay systems prototyping
 
+## Funding and Sustainability
+
+Loptr Lab is building toward a recurring sponsorship model that supports
+infrastructure, maintenance, accessibility engineering, and long-term open
+prototype development.
+
+If you want to support this work, review:
+- `docs/ACCESSIBILITY_GRANT_POSITIONING.md`
+- `docs/FELLOWSHIP.md`
+- `docs/SPONSORSHIP_STRATEGY.md`
+- `docs/SPONSORS.md`
+
+Our goal is to move from one-time donations to a predictable monthly structure
+that supports contributors, maintenance, and accessibility-first engine work.
+
 ## Start Here
 
 If you're new to the project:
