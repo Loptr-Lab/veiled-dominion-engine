@@ -64,6 +64,22 @@ Possible incentives:
 
 ---
 
+## Suggested Public Tier Matrix
+
+| Tier | Monthly Amount | Intended Sponsor | Suggested Positioning |
+|---|---|---|---|
+| Ashen Witness | $2 / month | Individual supporters | A simple way to help keep the work alive |
+| Veiled Supporter | $5 / month | Community supporters | Recurring support for maintenance, docs, and stability |
+| Circle of Restraint | $10 / month | Highly engaged individuals | Support for deeper architecture and accessibility work |
+| Working Contributor | $25 / month | Freelancers / indie contributors | Helps sustain maintenance and roadmap continuity |
+| Production Supporter | $50 / month | Professionals / small studios | Supports issue triage, documentation, and release-path stability |
+| Studio Ally | $100 / month | Small studios / consultants | Helps fund recurring engineering time and sustainability planning |
+| Infrastructure Patron | $250 / month | Organizations | Supports durable infrastructure and long-horizon maintenance |
+| Strategic Sponsor | $500 / month | Companies / production teams | Supports predictable core maintenance and continuity |
+| Foundational Sponsor | $1,000 / month | Institutional / enterprise sponsors | Strengthens long-term independence and engineering capacity |
+
+---
+
 ## Sustainability Milestones
 
 Monthly goals should be framed around what specific funding levels unlock for
