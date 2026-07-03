@@ -1,11 +1,8 @@
 # Veiled Dominion — Loptr Lab
-# Add or remove platforms as applicable.
 # Supported keys: github, patreon, open_collective, ko_fi, tidelift, community_bridge, liberapay, issuehunt, otechie, polar, buy_me_a_coffee, custom
+# Fill in active platforms and replace placeholder URLs before publishing.
 
-# Uncomment and fill in whichever apply:
-
-# github: []
-# ko_fi: your_ko_fi_username
-# patreon: your_patreon_username
-# open_collective: your_collective_slug
-# custom: ["https://your-donation-link.com"]
+buy_me_a_coffee: loptrlab
+custom:
+  - "https://github.com/sponsors/Loptr-Lab"
+  - "https://www.loptrlab.com"

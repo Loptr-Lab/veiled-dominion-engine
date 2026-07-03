@@ -7,14 +7,13 @@
     <style>
         /* --- VEILED DOMINION DESIGN SYSTEM --- */
         :root {
-            --void: #050505;          /* Near total black */
-            --text-primary: #e0e0e0;  /* Soft silver */
-            --text-muted: #666666;    /* Ash gray */
-            --the-light: #d4a853;     /* Warm amber/gold - Rebirth's glow */
+            --void: #050505;
+            --text-primary: #e0e0e0;
+            --text-muted: #666666;
+            --the-light: #d4a853;
             --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
-        /* --- RESET & BASE --- */
         * {
             margin: 0;
             padding: 0;
@@ -44,7 +43,6 @@
             border-bottom: 1px solid var(--the-light);
         }
 
-        /* --- LAYOUT --- */
         .container {
             max-width: 720px;
             margin: 0 auto;
@@ -56,7 +54,6 @@
             border-bottom: 1px solid #1a1a1a;
         }
 
-        /* --- TYPOGRAPHY --- */
         h1, h2, h3 {
             font-weight: 300;
             letter-spacing: -0.02em;
@@ -71,8 +68,8 @@
         .hero-sub {
             font-size: 1.25rem;
             color: var(--text-muted);
-            max-width: 480px;
-            margin-bottom: 60px;
+            max-width: 560px;
+            margin-bottom: 32px;
         }
 
         .section-title {
@@ -89,47 +86,65 @@
             color: var(--text-muted);
         }
 
-        /* --- THE GLOW EFFECT --- */
         .glow-text {
             color: var(--the-light);
             text-shadow: 0 0 20px rgba(212, 168, 83, 0.3);
         }
 
-        /* --- ROLES LIST --- */
-        .roles-list {
+        .roles-list,
+        .funding-list {
             list-style: none;
         }
 
-        .roles-list li {
+        .roles-list li,
+        .funding-list li {
             margin-bottom: 32px;
             padding-left: 20px;
             border-left: 2px solid #1a1a1a;
             transition: border-color 0.3s ease;
         }
 
-        .roles-list li:hover {
+        .roles-list li:hover,
+        .funding-list li:hover {
             border-left: 2px solid var(--the-light);
         }
 
-        .role-title {
+        .role-title,
+        .funding-title {
             font-size: 1.25rem;
             color: #fff;
             margin-bottom: 8px;
             display: block;
         }
 
-        .role-desc {
+        .role-desc,
+        .funding-desc {
             font-size: 0.95rem;
             display: block;
+            color: var(--text-muted);
         }
 
-        /* --- FOOTER / CTA --- */
         .cta-final {
             font-size: 1.5rem;
             color: #fff;
             margin-top: 40px;
         }
-        
+
+        .button-link {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 1px solid var(--the-light);
+            color: var(--the-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .button-link:hover {
+            background: rgba(212, 168, 83, 0.08);
+        }
+
         .footer-note {
             font-size: 0.75rem;
             color: #333;
@@ -141,12 +156,10 @@
             display: inline-block;
             margin-top: 10px;
         }
-
     </style>
 </head>
 <body>
 
-    <!-- HERO SECTION -->
     <section>
         <div class="container">
             <h1 class="hero-headline">
@@ -154,77 +167,106 @@
                 <span class="glow-text">What if the lesson was the opposite?</span>
             </h1>
             <p class="hero-sub">
-                We are building *Veiled Dominion*: a 4-player chess variant where the most powerful piece on the board must learn restraint. It is a gothic art-object wrapped around a deeply unconventional game system.
+                Veiled Dominion is an open-source strategy game engine prototype exploring how
+                visually dark, high-contrast game aesthetics can be implemented without excluding
+                players with photosensitive, vestibular, or cognitive accessibility needs.
+            </p>
+            <p class="hero-sub">
+                The project combines deterministic engine architecture, explicit accessibility
+                constraints, WebGL safety review, and contributor-ready documentation so that the
+                work is visible, testable, and funding-legible.
             </p>
             <p class="hero-sub" style="margin-bottom: 0; font-size: 1rem; font-style: italic;">
-                We are looking for the people who just found out they have the time to build something dangerous.
+                We are building something dangerous. We are trying to build it responsibly.
             </p>
         </div>
     </section>
 
-    <!-- THE PHILOSOPHY SECTION -->
     <section>
         <div class="container">
             <span class="section-title">The Architecture</span>
             <p>
-                This isn't a mobile slot machine. This isn't a live-service extraction shooter. This is a physical and digital hybrid born from a single mechanical thesis: <strong style="color:#fff; font-weight:400;">an overpowered protagonist learning mercy through restraint.</strong>
+                This is not a disposable prototype or a moodboard pretending to be a game.
+                Veiled Dominion is a deterministic engine problem built around a central paradox:
+                the most visually intense and thematically dark aesthetic choices are often the same
+                choices most likely to exclude the players drawn to them.
             </p>
             <p>
-                The protagonist is overpowered. Her presence disables her own allies. The win condition isn't just checkmate—it's accumulating points through "Merciful Maneuvers." You win by choosing not to dominate when you easily could.
+                Rebirth is overpowered. Her presence disables her own allies. The win condition is
+                not conquest, but restraint. That means the engine, rendering behavior, timing rules,
+                and accessibility constraints all have to agree with each other.
             </p>
             <p>
-                We have the rulebook. We have the lore bible. We have the visual language (Musou Black voids, translucent resin, internal LED light). We need the engineers and artists to forge it into a playable artifact.
+                We are building documented architecture, contributor-facing issue tracks, shader and
+                safety constraints, and a system other engineers, artists, and funders can actually
+                evaluate.
             </p>
         </div>
     </section>
 
-    <!-- THE ROLES SECTION -->
     <section>
         <div class="container">
             <span class="section-title">Open Seats at the Board</span>
             <ul class="roles-list">
                 <li>
-                    <span class="role-title">Prototype Engineer (Unity / Unreal)</span>
-                    <span class="role-desc">We need to prove the 4-player geometry and the "Radius of Ruin" aura mechanics work digitally before we commit to physical manufacturing. You will build the graybox truth machine.</span>
+                    <span class="role-title">Engine Engineering</span>
+                    <span class="role-desc">Deterministic turn flow, state lifecycle management, snapshot correctness, and the `RadiusOfRuin` spatial evaluation path.</span>
                 </li>
                 <li>
-                    <span class="role-title">3D Technical Artist (Blender / Resin Prep)</span>
-                    <span class="role-desc">You understand light absorption and translucency. You can take our concept art and output production-ready STLs for translucent resin printing and Musou Black finishes.</span>
+                    <span class="role-title">Technical Art / Shader Engineering</span>
+                    <span class="role-desc">Death and Rebirth rendering work inside explicit accessibility constraints, including safe-mode fallbacks and contrast-safe implementation.</span>
                 </li>
                 <li>
-                    <span class="role-title">Sound Designer (Ambient / Drone)</span>
-                    <span class="role-desc">Think Jóhann Jóhannsson meets Colin Stetson. We need the audio equivalent of a void and a single, sustained piano note. No epic orchestral trailers. Pure dread.</span>
+                    <span class="role-title">Systems Design</span>
+                    <span class="role-desc">Asymmetric multiplayer balance, Martyr's Boon economy tuning, LP scaling, and self-veil threshold pressure testing.</span>
                 </li>
                 <li>
-                    <span class="role-title">Systems Designer</span>
-                    <span class="role-desc">You look at "Martyr's Boon" and immediately start running the math on 4-player economy balance. You know how to break a game so we can fix it before production.</span>
+                    <span class="role-title">WebGL / Frame Safety Engineering</span>
+                    <span class="role-desc">Frame pacing validation, visual transition safety review, and render-layer implementation against the documented WebGL checklist.</span>
                 </li>
             </ul>
         </div>
     </section>
-    
-<section style="padding: 80px 0; border-top: 1px solid #1a1a1a; text-align: center;">
-    <div class="container">
-        <span class="section-title">Here's the ☕️</span>
-        <p class="hero-sub" style="margin: 0 auto 30px auto; text-align: center;">
-            We are building this without publishers, without VCs, and without Hollywood gatekeepers. 
-            If you want to see this obsidian board become a reality, fund the process.
-        </p>
-        <a href="https://www.buymeacoffee.com/loptrlab" style="display: inline-block; padding: 15px 40px; border: 1px solid var(--the-light); color: var(--the-light); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='rgba(212, 168, 83, 0.1)'" onmouseout="this.style.backgroundColor='transparent'">
-            Fund The Prototype
-        </a>
-        <p style="margin-top: 20px; font-size: 0.75rem; color: #444;">
-            All funds are tracked transparently. Every dollar goes directly to engineers and 3D artists.
-        </p>
-    </div>
-</section>
-    
-    <!-- THE CLOSE SECTION -->
+
+    <section>
+        <div class="container">
+            <span class="section-title">Funding the Work</span>
+            <p>
+                Loptr Lab is building toward recurring support instead of relying on unpredictable
+                one-time donations. The goal is simple: stable infrastructure, predictable
+                maintenance, protected engineering time, and a funding model that does not collapse
+                if a single supporter disappears.
+            </p>
+            <ul class="funding-list">
+                <li>
+                    <span class="funding-title">Community Layer</span>
+                    <span class="funding-desc">Small recurring support from individual developers and readers who want to keep the work alive and visible.</span>
+                </li>
+                <li>
+                    <span class="funding-title">Professional Layer</span>
+                    <span class="funding-desc">Support from freelancers, consultants, and small studios who benefit from durable maintenance, clear documentation, and ongoing continuity.</span>
+                </li>
+                <li>
+                    <span class="funding-title">Enterprise Layer</span>
+                    <span class="funding-desc">Support from organizations that would rather sustain active open maintenance than absorb the cost of carrying everything alone.</span>
+                </li>
+            </ul>
+            <p>
+                If you want to support the project, review the sponsorship strategy and funding docs,
+                or reach out directly for larger sponsorship, invoicing, or partnership conversations.
+            </p>
+            <p style="margin-bottom: 0;">
+                <a class="button-link" href="https://www.buymeacoffee.com/loptrlab">Support Loptr Lab</a>
+            </p>
+        </div>
+    </section>
+
     <section style="border-bottom: none;">
         <div class="container">
             <span class="section-title">The Contact</span>
             <p>
-                If you spent the last few years building worlds for players to lose themselves in, and you want to build something smaller, sharper, and unapologetically dark—reach out.
+                If you want to contribute, collaborate, sponsor, or help build a safer model for
+                dark, high-contrast strategy game aesthetics, reach out.
             </p>
             <p class="cta-final">
                 <a href="mailto:questions@loptrlab.com?subject=Veiled Dominion Inquiry">Let's talk.</a>

@@ -44,6 +44,8 @@ If you want to support this work, review:
 - `docs/ACCESSIBILITY_GRANT_POSITIONING.md`
 - `docs/FELLOWSHIP.md`
 - `docs/SPONSORSHIP_STRATEGY.md`
+- `docs/GITHUB_SPONSORS_PROFILE.md`
+- `docs/FUNDING_PLATFORM_COPY.md`
 - `docs/SPONSORS.md`
 
 Our goal is to move from one-time donations to a predictable monthly structure
@@ -289,6 +291,10 @@ Veiled Dominion is an open prototype. Contributions are welcome across engine, s
 | [docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md) | Role descriptions and recommended background reading |
 | [docs/ACCESSIBILITY_GRANT_POSITIONING.md](./docs/ACCESSIBILITY_GRANT_POSITIONING.md) | Plain-language brief for accessibility-minded contributors, grant reviewers, and funding partners |
 | [docs/FELLOWSHIP.md](./docs/FELLOWSHIP.md) | Engineering Fellowship — open tracks, problems, and how to apply |
+| [docs/SPONSORSHIP_STRATEGY.md](./docs/SPONSORSHIP_STRATEGY.md) | Recurring support model, sponsorship ladder, and sustainability targets |
+| [docs/GITHUB_SPONSORS_PROFILE.md](./docs/GITHUB_SPONSORS_PROFILE.md) | Paste-ready GitHub Sponsors profile and tier copy |
+| [docs/FUNDING_PLATFORM_COPY.md](./docs/FUNDING_PLATFORM_COPY.md) | Funding-page copy for Buy Me a Coffee, Patreon, and similar platforms |
+| [docs/SPONSORS.md](./docs/SPONSORS.md) | Sponsor recognition structure and acknowledgment page |
 
 **Open roles:** See issues labeled `help wanted` or `good first issue`.
 
