@@ -74,6 +74,7 @@ Do not write code until you have read the following files in the `src/` director
 - `src/Board/BoardCoordinate.cs` (Understand the cross-shaped geometry).
 - `src/Pieces/Piece.cs` (Understand the base properties).
 - `src/Systems/RadiusOfRuinSystem.cs` (Understand the core AoE logic).
+- `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` (Required if your work touches rendering, shaders, post-processing, animation timing, or WebGL export settings).
 
 ## 6. The #A11y Paradox: Engine-Level Safety
 
@@ -90,6 +91,8 @@ Contributors MUST adhere to the following rendering rules:
 - **Z-Fighting Prevention:** The Musou Black material (0.0 specular, 1.0 roughness) is highly susceptible to Z-fighting with other dark materials. You MUST use offset shadow bias or camera near-clip planes to ensure the Death piece never flickers against the board.
 - **Frame Pacing:** The WebGL export MUST lock its framerate or implement a robust V-Sync. A dropped frame during an aura movement is a seizure trigger.
 
+For the full rendering safety guidance, see `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md`.
+
 ### 3. The "Sickboi.EXE" Exception
 
 We already designed the Sickboi variant to intentionally use screen-tearing, Z-fighting, and harsh glitch effects.
@@ -98,10 +101,12 @@ This creates a fascinating design constraint: The main game must be medically sa
 
 **The Rule:** The Sickboi variant cannot be shipped without a mandatory, unskippable "Photosensitivity Warning" UI screen at startup, and a hard-coded "Safe Mode" toggle in the settings menu that replaces all VHS glitches with static, solid-color grey screens while keeping the gameplay logic identical.
 
+See `docs/variants/SICKBOI_EXE.md` for the internal concept framing of this variant.
+
 ### 4. The Funding Angle (The Masterstroke)
 
 This is how you turn the paradox into money. Organizations like AbleGamers Charity and Epic MegaGrants actively look for projects doing R&D in accessible gaming.
 
 If you write a grant proposal titled: **"Solving the #A11y Paradox: Building a High-Contrast Rendering Pipeline that Prevents Photosensitive Epilepsy in Dark-Mode Games,"** you are no longer pitching "a cool chess game." You are pitching a proprietary engine solution that solves a known industry problem.
 
-**Action Item:** Create a markdown file in your repo: `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md`. Copy the technical rules above into it.
+**Action Item:** Treat `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` as the source-of-truth reference when proposing rendering, shader, post-processing, or export pipeline changes.
