@@ -24,3 +24,9 @@ The original Gale rule ("cannot end on the same row/column it started on") was w
 **Burning expiry:** if a piece becomes Burning as a result of a move made during turn T, it remains Burning during turns T, T+1, and T+2, and is no longer Burning from turn T+3 onward. `advanceTurn()` is the only function that increments the turn counter and performs expiry — `applyMove()` should not do either.
 
 These contracts are deliberately spelled out in full here so that "my interpretation of the rule was reasonable" isn't a valid defense for a failing test — the test file already encodes the one true interpretation.
+
+## Accessibility Docs
+
+- [ENGINE_ACCESSIBILITY_A11Y_PARADOX.md](docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md)
+- [ENGINE_ACCESSIBILITY_AUDIO_AURA.md](docs/ENGINE_ACCESSIBILITY_AUDIO_AURA.md)
+- [ACCESSIBILITY_GRANT_POSITIONING.md](docs/ACCESSIBILITY_GRANT_POSITIONING.md)
