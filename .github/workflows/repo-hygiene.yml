@@ -32,12 +32,11 @@ jobs:
           ls README.md CONTRIBUTING.md docs/*.md docs/variants/*.md > /dev/null
 
       - name: Check for accidental untiy3d topic typo reference in docs
-  run: |
-    # Exclude workflow files so this check doesn't match its own grep pattern.
-    if grep -Rin --exclude-dir=.git --exclude-dir=.github "untiy3d" .; then
-      echo "Found typo: untiy3d"
-      exit 1
-    fi
+        run: |
+          if grep -Rin --exclude-dir=.git --exclude-dir=.github "untiy3d" .; then
+            echo "Found typo: untiy3d"
+            exit 1
+          fi
 
       - name: Validate issue template config exists
         run: |
