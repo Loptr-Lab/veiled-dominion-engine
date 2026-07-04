@@ -75,6 +75,13 @@ to open GitHub issues with acceptance criteria and test targets.
 
 ---
 
+## Related Accessibility Specifications
+
+- [Visual safety specification](./ENGINE_ACCESSIBILITY_A11Y_PARADOX.md)
+- [Audio accessibility for Radius of Ruin / Veiled / Sanctuary](./ENGINE_ACCESSIBILITY_AUDIO_AURA.md)
+
+---
+
 ## Why This Matters to Funders
 
 Accessibility in games is an active and underfunded area. Most accessibility
