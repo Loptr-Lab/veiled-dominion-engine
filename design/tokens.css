@@ -1,0 +1,148 @@
+:root {
+  /* =========================================
+     Veiled Dominion // Loptr Lab
+     Design Tokens v1
+     ========================================= */
+
+  /* Color Tokens */
+  --color-bg-base: #0D0C0E;
+  --color-surface-concrete: #1A191C;
+  --color-accent-crimson: #9E1B1B;
+  --color-accent-gold: #D4AF37;
+  --color-text-primary: #F5F5F7;
+
+  /* Optional utility neutrals (derived, non-brand) */
+  --color-border-strong: #2A2830;
+  --color-border-soft: #222126;
+  --color-text-muted: #B7B7BE;
+
+  /* Typography Families */
+  --font-family-sans: "Inter", "SF Pro Display", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-family-mono: "Roboto Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* Typography Scale */
+  --font-size-display: 24px;
+  --font-size-h2: 14px;
+  --font-size-body: 10px;
+  --font-size-data: 9px;
+
+  --font-weight-display: 700;
+  --font-weight-h2: 600;
+  --font-weight-body: 400;
+  --font-weight-data: 400;
+
+  --line-height-body: 1.5;
+  --letter-spacing-display: 0.1em;
+
+  /* Borders + Layout Constraints */
+  --border-width-strap: 1px;
+  --border-width-section-accent: 2px;
+  --radius-none: 0px;
+
+  /* State Distribution Rules */
+  --ui-monochrome-ratio: 0.9; /* target 90% monochrome usage */
+
+  /* Veil Hatch Pattern */
+  --veil-hatch-angle: 45deg;
+  --veil-hatch-stripe: 1px;
+  --veil-hatch-gap: 6px;
+  --veil-hatch-color: rgba(245, 245, 247, 0.18);
+
+  /* Motion (restrained) */
+  --motion-fast: 80ms;
+  --motion-standard: 140ms;
+  --motion-emphasis: 220ms;
+  --easing-linear: linear;
+  --easing-snapped: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Layering */
+  --z-base: 0;
+  --z-overlay: 10;
+  --z-alert: 20;
+}
+
+/* =========================================
+   Semantic Usage Aliases
+   ========================================= */
+:root {
+  --ui-bg: var(--color-bg-base);
+  --ui-surface: var(--color-surface-concrete);
+  --ui-text: var(--color-text-primary);
+  --ui-border: var(--color-border-strong);
+
+  --ui-danger-bg: var(--color-accent-crimson);
+  --ui-mastered-bg: var(--color-accent-gold);
+}
+
+/* =========================================
+   Base Structural Rules (Brutalist Constraint)
+   ========================================= */
+.vd-panel {
+  background: var(--ui-surface);
+  color: var(--ui-text);
+  border: var(--border-width-strap) solid var(--ui-border);
+  border-radius: var(--radius-none);
+}
+
+.vd-title {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-display);
+  letter-spacing: var(--letter-spacing-display);
+  text-transform: uppercase;
+}
+
+.vd-h2 {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  border-left: var(--border-width-section-accent) solid var(--ui-border);
+  padding-left: 8px;
+}
+
+.vd-body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
+  line-height: var(--line-height-body);
+}
+
+.vd-data {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-data);
+  font-weight: var(--font-weight-data);
+  text-align: left;
+}
+
+/* Crimson flash block: use only for critical state calls */
+.vd-state-critical {
+  background: var(--ui-danger-bg);
+  color: var(--ui-text);
+}
+
+/* Veil state: rigid 45-degree hatch overlay */
+.vd-veil {
+  position: relative;
+}
+.vd-veil::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    var(--veil-hatch-angle),
+    var(--veil-hatch-color) 0,
+    var(--veil-hatch-color) var(--veil-hatch-stripe),
+    transparent var(--veil-hatch-stripe),
+    transparent var(--veil-hatch-gap)
+  );
+}
+
+/* Y-axis split component */
+.vd-y-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.vd-y-split > .left {
+  border-right: var(--border-width-strap) solid var(--ui-border);
+}
