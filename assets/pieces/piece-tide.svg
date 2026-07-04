@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tide piece">
+  <circle cx="32" cy="32" r="30" fill="#1c1c1c" stroke="#4db3ff" stroke-width="3"/>
+  <path d="M10 34c4-5 8-5 12 0s8 5 12 0 8-5 12 0 8 5 12 0" fill="none" stroke="#4db3ff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M10 24c4-5 8-5 12 0s8 5 12 0 8-5 12 0 8 5 12 0" fill="none" stroke="#8fd1ff" stroke-width="3" stroke-linecap="round"/>
+</svg>
