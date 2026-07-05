@@ -18,34 +18,6 @@ Radius of Ruin: Rebirth emits a 1-square aura. Any piece (friendly or enemy) end
 The Sanctuary: Death (Rebirth's mentor) provides a 1-square safe zone where the aura cannot reach.
 Martyr's Boon: Voluntarily sacrificing an ally grants a token to temporarily disable the aura.
 Soul Reservoir: For every 3 friendly pieces in the Graveyard, Rebirth unlocks the ability to phase through other pieces.
-4. The Document Matrix
-
-This repository is modular. Dig deeper into the systems via the following files:
-
-Systems & Rules
-
-→ RULEBOOK_v0.1.md — The playable, text-based rulebook. Piece movements, turn structure, and win conditions.
-→ FAQ_EDGE_CASES.md — Clarifications on the Veiled state, Rebirth Dash, and 4-player interactions.
-Engineering & Architecture
-
-→ UNITY_INIT.md — Unity 2022 LTS URP environment setup, folder structure, and grey-box visual specs.
-Note: C# Logic (BasePiece.cs, RadiusOfRuin.cs, VeiledStateManager.cs) is located in /src/.
-Variant Proof-of-Concepts
-
-We use variants to prove the underlying logic engine can handle any thematic skin, not just our core gothic lore.
-
-→ SYSTEMS_QUARTET_VARIANT.md — Mapping the engine to socio-economic philosophy (Veblen, Fresco).
-→ DARK_BAUHAUS_VARIANT.md — Abstract geometric gallery edition & UI/UX status effect testing.
-→ SICKBOI_VARIANT.md — Glitch/Corrupted ROM aesthetic for viral short-form video.
-Narrative & Lore
-
-To maintain a clean, systems-focused public repo, the lore bible (The Daughter's Diary, The Queen's Song, Daddy's Little Mortis branding) is kept strictly internal. See the private Google Drive 00_INTERNAL folder for narrative assets.
-5. Visual Language
-
-Death (The Void): Musou Black / Black 4.0. Ultra-matte, light-absorbing void.
-Rebirth (The Spark): Translucent resin with internal LEDs. Warm amber glow.
-The Board: Polished obsidian or dark glass. The board is a reflection of the player.
-Project: Loptr Lab | License: CC BY-NC-SA 4.0 (Open Process)
 
 ## 4. The Document Matrix
 
@@ -57,6 +29,7 @@ This repository is modular. Dig deeper into the systems via the following files:
 
 ### Engineering & Architecture
 → `docs/UNITY_INIT.md` — Unity 2022 LTS URP environment setup, folder structure, and grey-box visual specs.
+→ `docs/PLAYER_IDENTITY_AND_RANKED_INTEGRATION.md` — Planned player-profile and ranked-play architecture using AT Protocol (rpg.actor) for portable identity, with server-side authority preserved for competitive integrity.
 ⚠️ *Note: `docs/UNITY_PROJECT_SETUP.md` also exists — confirm whether this is a duplicate of `UNITY_INIT.md` or covers different scope, and merge/rename accordingly.*
 Note: C# logic (`BasePiece.cs`, `RadiusOfRuin.cs`, `VeiledStateManager.cs`) is located in `/src/`.
 ⚠️ *Still conflicts with `CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`'s uppercase paths — fix that doc to match real casing.*
@@ -64,7 +37,7 @@ Note: C# logic (`BasePiece.cs`, `RadiusOfRuin.cs`, `VeiledStateManager.cs`) is l
 ### Variant Proof-of-Concepts
 → `docs/variants/SICKBOI_EXE.md` — Glitch/Corrupted ROM aesthetic for viral short-form video.
 ⚠️ *`SYSTEMS_QUARTET_VARIANT.md` and `DARK_BAUHAUS_VARIANT.md` don't exist — either write them or remove these lines.*
-⚠️ *Both `docs/variants/BACK_IN_DERRY.md` and `docs/variants/BACK_IN_DERRY_VARIANT.md` exist and neither is listed here — confirm which is canonical, delete/redirect the other, then add the real one to this matrix.*
+⚠️ *Both `docs/variants/BACK_IN_DERRY.md` and `docs/variants/BACK_IN_DERRY_VARIANT.md` exist and neither is listed here — confirm which is canonical, delete/redirect the other, then add the survivor here.*
 
 ### Narrative & Lore
 Kept internal per the existing note — no change needed.

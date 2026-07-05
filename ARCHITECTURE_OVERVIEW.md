@@ -9,6 +9,7 @@ It exists to help contributors understand:
 - where piece logic is validated and applied
 - how variant-specific behaviors can hook into the engine
 - how deterministic replay and snapshotting should work
+- how planned player identity, matchmaking, and ranked-play systems should preserve competitive integrity
 
 This file is intentionally implementation-facing. It complements the rulebook in `README.md` and the contribution standards in `CONTRIBUTING.md`.
 
@@ -29,6 +30,9 @@ The engine should preserve the following constraints:
 
 4. **Headless testability**
    - board geometry, movement validation, aura logic, and state transitions must be testable without rendering dependencies
+
+5. **Server authority for competitive systems**
+   - planned ranked play, matchmaking, and player-profile integration must preserve server-side authority for outcomes that affect standings, progression, or anti-cheat decisions
 
 ---
 
@@ -145,6 +149,33 @@ Replay / Persistence / UI Refresh
 
 - **Replay / Persistence / UI Refresh**
   - consumers should react to snapshots rather than reconstruct engine state from partial events
+
+---
+
+## Planned Online Systems & Player Identity
+
+**Status:** 📋 Planned — design direction only. Ranked play, matchmaking, and player profile systems do not yet exist in the engine.
+
+If online systems are added, they should use portable identity only where it does not compromise deterministic play or competitive integrity.
+
+### Design direction
+
+- portable player identity may be linked through AT Protocol / `rpg.actor`
+- remote profile data may inform UX, cosmetics, and pre-match metadata
+- ranked outcomes, standings, progression, and anti-cheat decisions must remain server-authoritative
+- any imported profile payload must be validated, normalized, versioned, and bounded before use
+- stale, replayed, or rollbacked remote profile data must be rejected in competitive paths
+
+### Integration boundary
+
+A future adapter may:
+- resolve a DID
+- fetch `actor.rpg.stats` for the Veiled Dominion namespace
+- validate `$type`, `system`, and supported `schemaVersion`
+- normalize allowed fields into a local engine-facing contract
+- cache a last-known-good profile for resilience and deterministic fallback
+
+This integration direction is described in more detail in `docs/PLAYER_IDENTITY_AND_RANKED_INTEGRATION.md`.
 
 ---
 
@@ -327,6 +358,8 @@ Good candidates for system-level isolation:
 - graveyard manager
 - variant modifier resolver
 - replay serializer
+- matchmaking/session orchestrator for future online play
+- profile-integration adapter boundary for future player identity systems
 
 This keeps the engine:
 - deterministic
@@ -357,6 +390,9 @@ To move from scaffold to playable prototype, the highest-priority engine additio
    - aura application
    - Veiled clearing timing
    - self-veil loss threshold
+
+6. **Defer online/ranked systems until core local determinism exists**
+   - do not implement matchmaking, rankings, or remote profile authority before the single-engine snapshot contract is stable
 
 ---
 
