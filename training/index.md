@@ -10,14 +10,28 @@ permalink: /training/
 **Program type:** Applied technical training in game design, software engineering, and digital art
 **Format:** Self-paced, project-based, with milestone checkpoints
 **Sponsoring project:** [Veiled Dominion Engine](https://github.com/Loptr-Lab/veiled-dominion-engine) — an open-source 4-player asymmetric strategy game
+**Hands-on exercise repo:** [Loptr-Lab/Training](https://github.com/Loptr-Lab/Training) — the separate training and exercise repository used for milestone-based practice and candidate evaluation
+
+---
+
+## Repository Distinction
+
+This curriculum references two related but different repositories:
+
+- **Engine project:** the real Veiled Dominion game/engine repository, used for architecture, design, systems, and production-facing development.
+- **Training repo:** a separate, self-contained repository for training materials, milestone-based exercises, and candidate evaluation.
+
+Participants following Track A may use the training repo for structured programming practice before contributing to the full engine project.
+
+**Canonical location note:** For now, this curriculum page remains in the engine repository as the public program overview, while the hands-on exercise materials live in the separate training repository.
 
 ---
 
 ## Program Overview
 
-This curriculum trains participants in professional game development skills — programming, systems design, and technical art — through structured, hands-on contribution to a real, in-development software project. Rather than working through disconnected tutorials, participants build competency by implementing actual features for a shipping product, under a defined skills progression with clear milestones.
+This curriculum trains participants in professional game development skills — programming, systems design, and technical art — through structured, hands-on contribution to a real, in-development project.
 
-The program was developed by Loptr Lab, a creative studio building game design and IP development work, with a founding focus on accessibility within creative and maker industries. This curriculum reflects that focus: it is designed to be pursued at an individualized pace, with flexible entry points for participants with varying prior technical experience, and is structured to produce documentable, verifiable skill outcomes suitable for supporting vocational rehabilitation and workforce development goals.
+The program was developed by Loptr Lab, a creative studio building game design and IP development work, with a founding focus on accessibility within creative and maker industries. This curriculum is intended to support both independent learners and participants whose training activity must be documented for vocational rehabilitation, grant, or workforce-development purposes.
 
 **This program is intended for participants who are:**
 - Pursuing self-directed technical skills training as part of a vocational rehabilitation plan
@@ -29,7 +43,7 @@ The program was developed by Loptr Lab, a creative studio building game design a
 
 ## Program Structure
 
-The curriculum consists of a shared foundational phase, followed by three specialized tracks. Participants may complete one track or progress through multiple, depending on their training plan and goals.
+The curriculum consists of a shared foundational phase, followed by three specialized tracks. Participants may complete one track or progress through multiple, depending on their training plan and prior experience.
 
 | Component | Estimated Duration | Format |
 |---|---|---|
@@ -38,7 +52,7 @@ The curriculum consists of a shared foundational phase, followed by three specia
 | Track B: Systems Designer | 3 weeks / ~40–60 hours | Game economy modeling, playtesting, balance analysis |
 | Track C: Technical Artist | 2–3 weeks / ~40–60 hours | Shader programming, real-time rendering |
 
-*Hours are estimates for a participant with no prior programming background progressing at a moderate, sustainable pace; actual duration will vary by individual and should be adjusted in coordination with a training plan or VRS counselor.*
+*Hours are estimates for a participant with no prior programming background progressing at a moderate, sustainable pace; actual duration will vary by individual and should be adjusted in coordination with a counselor, case manager, or training supervisor where applicable.*
 
 ---
 
@@ -112,7 +126,7 @@ The curriculum consists of a shared foundational phase, followed by three specia
 
 For participants using this curriculum to satisfy training-hour or activity documentation requirements:
 
-- Each module includes a defined completion checkpoint that can be independently verified (e.g., working code committed to the project repository, a written or recorded explanation, a playtest report, or a delivered asset).
+- Each module includes a defined completion checkpoint that can be independently verified (e.g., working code committed to the relevant repository, a written or recorded explanation, a playtest report, or a reviewed visual deliverable).
 - Participants are encouraged to log hours and dated deliverables against each module as they progress.
 - Loptr Lab can provide a signed verification of completed modules and estimated training hours upon request.
 
@@ -132,5 +146,6 @@ Participants with specific accommodation needs are encouraged to contact Loptr L
 ## Contact
 
 **Program sponsor:** Loptr Lab
-**Project repository:** [github.com/Loptr-Lab/veiled-dominion-engine](https://github.com/Loptr-Lab/veiled-dominion-engine)
+**Engine project:** [github.com/Loptr-Lab/veiled-dominion-engine](https://github.com/Loptr-Lab/veiled-dominion-engine)
+**Training repo:** [github.com/Loptr-Lab/Training](https://github.com/Loptr-Lab/Training)
 **Contact:** [questions/(404) 890-0132]
