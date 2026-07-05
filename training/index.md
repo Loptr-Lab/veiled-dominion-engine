@@ -4,7 +4,7 @@ description: A structured technical training program in game design and developm
 permalink: /training/
 ---
 
-# Veiled Dominion Engine: Game Development Training Curriculum
+# Veiled Dominion Engine: Game Development Training Curriculum #
 
 **Offered by:** Loptr Lab
 **Program type:** Applied technical training in game design, software engineering, and digital art
