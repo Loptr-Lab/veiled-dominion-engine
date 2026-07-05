@@ -1,12 +1,17 @@
-Here is the cleaned-up, public-facing version of the Pennywise variant, formatted specifically for your GitHub repository. 
+# Back in Derry Variant — Superseded
 
-I’ve stripped out the "Internal Only" warnings and reframed it to appeal directly to the engineers and designers reading the repo by highlighting *why* this variant is a critical stress-test for the C# engine.
+> **This file has been superseded.**
+> The canonical Back in Derry variant document is:
+> **[`docs/variants/BACK_IN_DERRY.md`](./BACK_IN_DERRY.md)**
+>
+> `BACK_IN_DERRY.md` is the documentation-first, deterministic design spec
+> and the reference example for future variant submissions.
+> This file is a retained draft and should not be updated.
 
-Save this as `docs/variants/BACK_IN_DERRY_VARIANT.md` in your repo.
+---
 
-***
+<!-- Original draft content preserved below for reference -->
 
-```markdown
 # Variant: Back in Derry (Horror-Core Edition)
 
 ## 1.0 Concept Overview
