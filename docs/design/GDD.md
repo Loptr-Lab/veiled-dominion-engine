@@ -11,6 +11,7 @@ The Thesis: Every game teaches you to become more powerful. What if the lesson w
 Asymmetry: One player (Rebirth) plays by completely different rules than the other three (Mortal Factions).
 Restraint as a Mechanic: The most powerful piece on the board is a liability to her own team.
 Alternative Victory: You can win the game without capturing a single enemy piece via the "Mercy" system.
+
 3. The Signature Mechanics
 
 Radius of Ruin: Rebirth emits a 1-square aura. Any piece (friendly or enemy) ending its turn within it is "Veiled" (stripped to Pawn-level movement for 1 turn).
@@ -45,3 +46,25 @@ Death (The Void): Musou Black / Black 4.0. Ultra-matte, light-absorbing void.
 Rebirth (The Spark): Translucent resin with internal LEDs. Warm amber glow.
 The Board: Polished obsidian or dark glass. The board is a reflection of the player.
 Project: Loptr Lab | License: CC BY-NC-SA 4.0 (Open Process)
+
+## 4. The Document Matrix
+
+This repository is modular. Dig deeper into the systems via the following files:
+
+### Systems & Rules
+→ `RULEBOOK_v0.1` — The playable, text-based rulebook. Piece movements, turn structure, and win conditions.
+→ *(FAQ/edge-case doc not yet written — remove this link until one exists, or create `docs/FAQ_EDGE_CASES.md`)*
+
+### Engineering & Architecture
+→ `docs/UNITY_INIT.md` — Unity 2022 LTS URP environment setup, folder structure, and grey-box visual specs.
+⚠️ *Note: `docs/UNITY_PROJECT_SETUP.md` also exists — confirm whether this is a duplicate of `UNITY_INIT.md` or covers different scope, and merge/rename accordingly.*
+Note: C# logic (`BasePiece.cs`, `RadiusOfRuin.cs`, `VeiledStateManager.cs`) is located in `/src/`.
+⚠️ *Still conflicts with `CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`'s uppercase paths — fix that doc to match real casing.*
+
+### Variant Proof-of-Concepts
+→ `docs/variants/SICKBOI_EXE.md` — Glitch/Corrupted ROM aesthetic for viral short-form video.
+⚠️ *`SYSTEMS_QUARTET_VARIANT.md` and `DARK_BAUHAUS_VARIANT.md` don't exist — either write them or remove these lines.*
+⚠️ *Both `docs/variants/BACK_IN_DERRY.md` and `docs/variants/BACK_IN_DERRY_VARIANT.md` exist and neither is listed here — confirm which is canonical, delete/redirect the other, then add the real one to this matrix.*
+
+### Narrative & Lore
+Kept internal per the existing note — no change needed.
