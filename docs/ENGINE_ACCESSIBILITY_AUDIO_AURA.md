@@ -1,5 +1,7 @@
 # Audio Accessibility: The Sound of the Aura
 
+**Status:** This is a design specification, not yet implemented. See `ACCESSIBILITY_GRANT_POSITIONING.md` for current build status.
+
 ## Purpose
 
 This document defines an audio design layer for the Radius of Ruin and related
@@ -20,11 +22,10 @@ piece's model. A player who cannot see the board has no way to know how close
 they are to being Veiled, where Rebirth currently is, or when Death's
 Sanctuary is protecting them.
 
-This is a gap the existing accessibility framework doesn't cover. The grant
-positioning brief already stakes out "accessibility built in from the ground
-up, not retrofitted" as the project's core technical claim — an audio-only
-channel for the game's signature mechanic is a direct, concrete extension of
-that claim, not a nice-to-have.
+This is a gap the existing visual accessibility work doesn't cover. An
+audio-only channel for the game's signature mechanic would be a direct,
+concrete extension of the project's broader accessibility goals — not a
+nice-to-have, if it gets built.
 
 ## Design Principle: Diegetic, Not Bolted-On
 
@@ -104,24 +105,28 @@ explicitly scoped to a variant whose palette calls for it.
 
 ## What This Does Not Solve
 
-This system solves "sense Rebirth's danger zone and Death's safe zone
-non-visually." It does not solve the larger problem of representing full
-board state — piece positions, legal moves, whose turn it is — to a player
-who cannot see the board at all. That is a separate, larger accessibility
-project. This document should not be cited as evidence the game is fully
-playable blind; it's one coherent, lore-justified piece of that picture.
+This system, if built, would solve "sense Rebirth's danger zone and Death's
+safe zone non-visually." It would not solve the larger problem of
+representing full board state — piece positions, legal moves, whose turn it
+is — to a player who cannot see the board at all. That is a separate, larger
+accessibility project. This document should not be cited as evidence the
+game is or will be fully playable blind; it's one coherent, lore-justified
+piece of that larger picture, and only once implemented and tested.
 
-## Why This Matters Strategically
+## Why This Work Matters
 
-The existing grant positioning brief lists "visual safety — particularly
-around temporal contrast and motion" as an underfunded area the project
-addresses. Blindness/low-vision accessibility in strategy games is at least
-as underfunded, and almost entirely unaddressed by the photosensitivity/
-vestibular framing already documented. Adding a concrete, engineering-backed
-proposal for non-visual play — tied to a signature mechanic rather than a
-generic screen-reader afterthought — strengthens the same funding case
-`ACCESSIBILITY_GRANT_POSITIONING.md` already makes, and closes an obvious gap
-a reviewer familiar with accessibility work would otherwise notice.
+Blindness/low-vision accessibility in strategy games is underexplored, and
+isn't addressed at all by the photosensitivity/vestibular work described in
+`ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` — that document solves for a different
+population of players entirely. A concrete, engineering-backed design for
+non-visual play, tied to a signature mechanic rather than a generic
+screen-reader afterthought, would close a real gap in the project's
+accessibility coverage.
+
+As with the visual safety work, the value of this design lies in it actually
+being built and tested — a specification alone doesn't make the game
+accessible to blind players, and shouldn't be described as though it does
+until there's a working, testable implementation behind it.
 
 ## Contributor Requirement
 
