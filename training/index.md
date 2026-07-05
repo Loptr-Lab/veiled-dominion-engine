@@ -10,7 +10,7 @@ permalink: /training/
 **Program type:** Applied technical training in game design, software engineering, and digital art
 **Format:** Self-paced, project-based, with milestone checkpoints
 **Sponsoring project:** [Veiled Dominion Engine](https://github.com/Loptr-Lab/veiled-dominion-engine) — an open-source 4-player asymmetric strategy game
-**Hands-on exercise repo:** [Loptr-Lab/Training](https://github.com/Loptr-Lab/Training) — the separate training and exercise repository used for milestone-based practice and candidate evaluation
+**Hands-on exercise repo:** [Loptr-Lab/training](https://github.com/Loptr-Lab/training) — the separate training and exercise repository used for milestone-based practice and candidate evaluation
 
 ---
 
@@ -147,5 +147,5 @@ Participants with specific accommodation needs are encouraged to contact Loptr L
 
 **Program sponsor:** Loptr Lab
 **Engine project:** [github.com/Loptr-Lab/veiled-dominion-engine](https://github.com/Loptr-Lab/veiled-dominion-engine)
-**Training repo:** [github.com/Loptr-Lab/Training](https://github.com/Loptr-Lab/Training)
+**Training repo:** [github.com/Loptr-Lab/training](https://github.com/Loptr-Lab/training)
 **Contact:** [questions/(404) 890-0132]
