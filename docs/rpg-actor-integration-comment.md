@@ -1,5 +1,10 @@
 ### rpg.actor integration scope for Veiled Dominion
 
+**Status:** 📋 Planned — design/integration scope, not yet implemented. Ranked play, matchmaking, and player profile systems do not yet exist in the engine.
+
+This file has been superseded by `docs/PLAYER_IDENTITY_AND_RANKED_INTEGRATION.md`.
+Keep that document as the canonical location for planned player identity and ranked-play integration.
+
 We should integrate **valid, portable parts** of rpg.actor as a profile interoperability layer, while keeping Veiled Dominion server-authoritative for competitive integrity.
 
 #### Best use case

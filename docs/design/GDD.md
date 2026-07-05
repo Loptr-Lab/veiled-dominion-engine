@@ -34,6 +34,9 @@ This repository is modular. Dig deeper into the systems via the following files:
 Note: C# logic (`BasePiece.cs`, `RadiusOfRuin.cs`, `VeiledStateManager.cs`) is located in `/src/`.
 ⚠️ *Still conflicts with `CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`'s uppercase paths — fix that doc to match real casing.*
 
+### Online Systems & Player Identity
+→ `docs/PLAYER_IDENTITY_AND_RANKED_INTEGRATION.md` — Planned player-profile and ranked-play architecture using AT Protocol (rpg.actor) for portable identity, with server-side authority preserved for competitive integrity.
+
 ### Variant Proof-of-Concepts
 → `docs/variants/SICKBOI_EXE.md` — Glitch/Corrupted ROM aesthetic for viral short-form video.
 ⚠️ *`SYSTEMS_QUARTET_VARIANT.md` and `DARK_BAUHAUS_VARIANT.md` don't exist — either write them or remove these lines.*
