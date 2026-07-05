@@ -1,4 +1,4 @@
-# Unity Project Setup — Superseded
+# UNITY_PROJECT_SETUP — Superseded
 
 > **This file has been superseded.**
 > The canonical Unity setup guide for engine contributors is:

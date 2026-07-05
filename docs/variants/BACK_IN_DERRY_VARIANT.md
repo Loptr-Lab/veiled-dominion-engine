@@ -1,4 +1,4 @@
-# Back in Derry Variant — Superseded
+# BACK_IN_DERRY_VARIANT — Superseded
 
 > **This file has been superseded.**
 > The canonical Back in Derry variant document is:
