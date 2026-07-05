@@ -8,7 +8,7 @@ of the same subdirectory names:
 | Uppercase (legacy)    | Lowercase (canonical)  |
 |-----------------------|------------------------|
 | `src/Board/`          | `src/board/`           |
-| `src/Pieces/`         | `src/Pieces/`          |
+| `src/Pieces/`         | `src/pieces/`          |
 | `src/Systems/`        | `src/systems/`         |
 
 This creates a contributor hazard on **case-insensitive filesystems** (macOS,
