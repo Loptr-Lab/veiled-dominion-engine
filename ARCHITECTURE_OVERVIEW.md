@@ -11,7 +11,7 @@ It exists to help contributors understand:
 - how deterministic replay and snapshotting should work
 - how planned player identity, matchmaking, and ranked-play systems should preserve competitive integrity
 
-This file is intentionally implementation-facing. It complements the rulebook in `README.md` and the contribution standards in `CONTRIBUTING.md`.
+This file is intentionally implementation-facing. It complements the rulebook in `docs/RULEBOOK_v0.1` and the contribution standards in `CONTRIBUTING.md`.
 
 ---
 
@@ -377,7 +377,7 @@ To move from scaffold to playable prototype, the highest-priority engine additio
    - start/action/resolution phases
 
 2. **Leadership Point tracker**
-   - baseline LP scoring model from the README
+   - baseline LP scoring model from `docs/RULEBOOK_v0.1`
 
 3. **Validated move execution path**
    - intent → validation → apply → resolution
@@ -398,7 +398,7 @@ To move from scaffold to playable prototype, the highest-priority engine additio
 
 ## Final Note
 
-If this file and `README.md` ever disagree, treat that as a repository bug and fix both together.
+If this file and `RULEBOOK_v0.1` ever disagree, treat that as a repository bug and fix both together.
 
 The rulebook defines gameplay truth.
 This file defines runtime sequencing truth.

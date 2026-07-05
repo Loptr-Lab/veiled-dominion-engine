@@ -103,10 +103,25 @@ This creates a fascinating design constraint: The main game must be medically sa
 
 See `docs/variants/SICKBOI_EXE.md` for the internal concept framing of this variant.
 
-### 4. The Funding Angle (The Masterstroke)
+### 4. Accessibility Work: Why It's Worth Doing Well
 
-This is how you turn the paradox into money. Organizations like AbleGamers Charity and Epic MegaGrants actively look for projects doing R&D in accessible gaming.
+Building a rendering pipeline that supports extreme, high-contrast visual
+design while actively managing photosensitive-epilepsy risk factors is a
+genuinely hard, underexplored engineering problem — worth solving well on
+its own terms.
 
-If you write a grant proposal titled: **"Solving the #A11y Paradox: Building a High-Contrast Rendering Pipeline that Prevents Photosensitive Epilepsy in Dark-Mode Games,"** you are no longer pitching "a cool chess game." You are pitching a proprietary engine solution that solves a known industry problem.
+Organizations like AbleGamers Charity and Epic MegaGrants do fund accessible-
+gaming R&D, and this work may be a fit for that kind of support — **once
+there's a working, tested implementation to point to.** A grant pitch
+written around what's specified rather than what's built and verified would
+overstate the project's current state.
 
-**Action Item:** Treat `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` as the source-of-truth reference when proposing rendering, shader, post-processing, or export pipeline changes.
+Avoid language claiming this work "prevents" photosensitive epilepsy —
+seizure triggers are individually variable and clinically defined; documented
+rendering constraints reduce known risk factors, which is a different and
+more honest claim than "prevents."
+
+**Action Item:** Treat `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` as the
+source-of-truth reference when proposing rendering, shader, post-processing,
+or export pipeline changes — and keep its status markers current as
+implementation progresses.
