@@ -1,3 +1,17 @@
+# UNITY_PROJECT_SETUP — Superseded
+
+> **This file has been superseded.**
+> The canonical Unity setup guide for engine contributors is:
+> **[`docs/UNITY_INIT.md`](./UNITY_INIT.md)**
+>
+> `UNITY_INIT.md` covers environment specs, folder structure, C# script integration,
+> grey-box scene setup, and the first milestone for the Unity prototype.
+> This file is retained for reference only and should not be updated.
+
+---
+
+<!-- Original content preserved below for reference -->
+
 # Unity 2022 LTS + URP Project Setup Guide
 
 ## 🎮 Project Configuration

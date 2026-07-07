@@ -28,19 +28,15 @@ This repository is modular. Dig deeper into the systems via the following files:
 → *(FAQ/edge-case doc not yet written — remove this link until one exists, or create `docs/FAQ_EDGE_CASES.md`)*
 
 ### Engineering & Architecture
-→ `docs/UNITY_INIT.md` — Unity 2022 LTS URP environment setup, folder structure, and grey-box visual specs.
-→ `docs/PLAYER_IDENTITY_AND_RANKED_INTEGRATION.md` — Planned player-profile and ranked-play architecture using AT Protocol (rpg.actor) for portable identity, with server-side authority preserved for competitive integrity.
-⚠️ *Note: `docs/UNITY_PROJECT_SETUP.md` also exists — confirm whether this is a duplicate of `UNITY_INIT.md` or covers different scope, and merge/rename accordingly.*
+→ `docs/UNITY_INIT.md` — Unity 2022 LTS URP environment setup, folder structure, and grey-box visual specs. (`docs/UNITY_PROJECT_SETUP.md` is a superseded duplicate; `UNITY_INIT.md` is the canonical doc.)
 Note: C# logic (`BasePiece.cs`, `RadiusOfRuin.cs`, `VeiledStateManager.cs`) is located in `/src/`.
-⚠️ *Still conflicts with `CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`'s uppercase paths — fix that doc to match real casing.*
 
 ### Online Systems & Player Identity
 → `docs/PLAYER_IDENTITY_AND_RANKED_INTEGRATION.md` — Planned player-profile and ranked-play architecture using AT Protocol (rpg.actor) for portable identity, with server-side authority preserved for competitive integrity.
 
 ### Variant Proof-of-Concepts
+→ `docs/variants/BACK_IN_DERRY.md` — High-pressure positional variant; the reference example for documentation-first variant submissions. (`docs/variants/BACK_IN_DERRY_VARIANT.md` is a superseded draft; `BACK_IN_DERRY.md` is the canonical doc.)
 → `docs/variants/SICKBOI_EXE.md` — Glitch/Corrupted ROM aesthetic for viral short-form video.
-⚠️ *`SYSTEMS_QUARTET_VARIANT.md` and `DARK_BAUHAUS_VARIANT.md` don't exist — either write them or remove these lines.*
-⚠️ *Both `docs/variants/BACK_IN_DERRY.md` and `docs/variants/BACK_IN_DERRY_VARIANT.md` exist and neither is listed here — confirm which is canonical, delete/redirect the other, then add the survivor here.*
 
 ### Narrative & Lore
 Kept internal per the existing note — no change needed.
