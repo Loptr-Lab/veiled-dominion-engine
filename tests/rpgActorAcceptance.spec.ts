@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach } from '@jest/globals';
 import { syncProfile } from '../src/integration/rpgActor/syncProfile';
 import { createRpgActorTestDeps, makeValidEnvelope } from './helpers/rpgActorFakes';
 
@@ -408,11 +408,11 @@ describe('rpg.actor acceptance criteria', () => {
     if (result.ok) {
       expect(result.profile.did).toBe(did);
       expect(result.profile.system).toBe('veiled-dominion');
-      expect(result.profile.schemaVersion).toBeTypeOf('number');
+      expect(typeof result.profile.schemaVersion).toBe('number');
       expect(result.profile.stats).toBeDefined();
-      expect(result.profile.sourceCid).toBeTypeOf('string');
-      expect(result.profile.sourceUri).toBeTypeOf('string');
-      expect(result.profile.fetchedAt).toBeTypeOf('string');
+      expect(typeof result.profile.sourceCid).toBe('string');
+      expect(typeof result.profile.sourceUri).toBe('string');
+      expect(typeof result.profile.fetchedAt).toBe('string');
     }
   });
 
