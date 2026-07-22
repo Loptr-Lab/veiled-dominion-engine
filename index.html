@@ -72,6 +72,13 @@
             margin-bottom: 32px;
         }
 
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 8px;
+        }
+
         .section-title {
             font-size: 0.8rem;
             text-transform: uppercase;
@@ -145,6 +152,17 @@
             background: rgba(212, 168, 83, 0.08);
         }
 
+        .button-link.ghost {
+            border-color: #1a1a1a;
+            color: var(--text-primary);
+        }
+
+        .button-link.ghost:hover {
+            border-color: var(--the-light);
+            color: var(--the-light);
+            background: transparent;
+        }
+
         .secondary-link {
             display: inline-block;
             margin-top: 18px;
@@ -161,6 +179,13 @@
         .footer-link {
             display: inline-block;
             margin-top: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -185,6 +210,10 @@
             <p class="hero-sub" style="margin-bottom: 0; font-size: 1rem; font-style: italic;">
                 We are building something dangerous. We are trying to build it responsibly.
             </p>
+            <div class="hero-ctas">
+                <a class="button-link" href="https://duet.loptrlab.com">Play Duet — the working prototype</a>
+                <a class="button-link ghost" href="https://github.com/Loptr-Lab/veiled-dominion-engine">View the architecture</a>
+            </div>
         </div>
     </section>
 
@@ -205,7 +234,8 @@
             <p>
                 We are building documented architecture, contributor-facing issue tracks, shader and
                 safety constraints, and a system other engineers, artists, and funders can actually
-                evaluate.
+                evaluate. <a href="https://duet.loptrlab.com">Duet</a> is the first playable piece of
+                that system — a 2-player build of the Rebirth/Death mechanic, live today.
             </p>
         </div>
     </section>
@@ -285,9 +315,10 @@
 
     <div class="footer-note">
         <div>DADDY'S LITTLE MORTIS // VEILED DOMINION</div>
-        <a class="footer-link" href="https://github.com/Loptr-Lab/veiled-dominion-engine">
-            View the GitHub Repository
-        </a>
+        <div class="footer-links">
+            <a class="footer-link" href="https://duet.loptrlab.com">Play Duet</a>
+            <a class="footer-link" href="https://github.com/Loptr-Lab/veiled-dominion-engine">View the GitHub Repository</a>
+        </div>
     </div>
 
 </body>
