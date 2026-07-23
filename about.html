@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Loptr Lab</title>
+    <style>
+        /* --- VEILED DOMINION DESIGN SYSTEM --- */
+        :root {
+            --void: #050505;
+            --text-primary: #e0e0e0;
+            --text-muted: #666666;
+            --the-light: #d4a853;
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--void);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--the-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        a:hover {
+            border-bottom: 1px solid var(--the-light);
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 120px 0;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        h1, h2, h3 {
+            font-weight: 300;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-headline {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .hero-sub {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 560px;
+            margin-bottom: 32px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        .section-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--the-light);
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        p {
+            margin-bottom: 24px;
+            color: var(--text-muted);
+        }
+
+        .glow-text {
+            color: var(--the-light);
+            text-shadow: 0 0 20px rgba(212, 168, 83, 0.3);
+        }
+
+        .roles-list,
+        .funding-list,
+        .project-list,
+        .lore-list {
+            list-style: none;
+        }
+
+        .roles-list li,
+        .funding-list li,
+        .project-list li,
+        .lore-list li {
+            margin-bottom: 32px;
+            padding-left: 20px;
+            border-left: 2px solid #1a1a1a;
+            transition: border-color 0.3s ease;
+        }
+
+        .roles-list li:hover,
+        .funding-list li:hover,
+        .project-list li:hover,
+        .lore-list li:hover {
+            border-left: 2px solid var(--the-light);
+        }
+
+        .role-title,
+        .funding-title,
+        .project-title,
+        .lore-title {
+            font-size: 1.25rem;
+            color: #fff;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .role-desc,
+        .funding-desc,
+        .project-desc,
+        .lore-desc {
+            font-size: 0.95rem;
+            display: block;
+            color: var(--text-muted);
+        }
+
+        .project-desc a,
+        .lore-desc a {
+            font-size: 0.95rem;
+        }
+
+        .cta-final {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 1px solid var(--the-light);
+            color: var(--the-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .button-link:hover {
+            background: rgba(212, 168, 83, 0.08);
+        }
+
+        .button-link.ghost {
+            border-color: #1a1a1a;
+            color: var(--text-primary);
+        }
+
+        .button-link.ghost:hover {
+            border-color: var(--the-light);
+            color: var(--the-light);
+            background: transparent;
+        }
+
+        .secondary-link {
+            display: inline-block;
+            margin-top: 18px;
+            font-size: 0.95rem;
+        }
+
+        .footer-note {
+            font-size: 0.75rem;
+            color: #333;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        /* Breathing technique — same fixed-rhythm pulse used on the Duet
+           Obsidian Realm splash. See DESIGN_BIBLE.md. */
+        .hero-wrap {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--the-light), var(--text-muted) 55%, var(--the-light));
+            animation: breathe-pulse 7s ease-in-out infinite;
+        }
+        @keyframes breathe-pulse {
+            0%, 100% { opacity: 0.45; }
+            50% { opacity: 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .hero-accent { animation: none; opacity: 0.8; }
+        }
+
+        /* Property sigils — see DESIGN_BIBLE.md. Same nested-line grammar
+           and breathing rhythm as the Obsidian Realm sigil on Duet. */
+        .section-mark-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 40px;
+        }
+        .section-mark-row .section-title {
+            margin-bottom: 0;
+        }
+        .mark-icon {
+            width: 34px;
+            height: 34px;
+            flex-shrink: 0;
+        }
+        .footer-mark-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .footer-mark-row .mark-icon {
+            width: 18px;
+            height: 18px;
+        }
+        .sigil-loptr-lab .ring,
+        .sigil-ibloud .ring {
+            fill: none;
+            stroke: #1a1a1a;
+            stroke-width: 1.5;
+        }
+        .sigil-loptr-lab .spoke,
+        .sigil-loptr-lab .node,
+        .sigil-loptr-lab .frame {
+            fill: none;
+            stroke: var(--text-muted);
+            stroke-width: 1.5;
+            stroke-linejoin: round;
+        }
+        .sigil-loptr-lab .core,
+        .sigil-ibloud .core {
+            fill: var(--the-light);
+            animation: sigil-breathe 7s ease-in-out infinite;
+        }
+        .sigil-ibloud .diamond-outer {
+            fill: none;
+            stroke: #1a1a1a;
+            stroke-width: 1.5;
+        }
+        .sigil-ibloud .diamond-mid,
+        .sigil-ibloud .diamond-inner {
+            fill: none;
+            stroke: var(--text-muted);
+            stroke-width: 1.5;
+        }
+        .sigil-ibloud .fracture {
+            fill: none;
+            stroke: var(--the-light);
+            stroke-width: 1.25;
+            stroke-linejoin: round;
+            opacity: 0.85;
+        }
+        .sigil-ibloud .signal {
+            stroke: var(--text-muted);
+            stroke-width: 1.25;
+        }
+        .sigil-ibloud .signal.broken {
+            stroke-dasharray: 2 2;
+        }
+        @keyframes sigil-breathe {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .sigil-loptr-lab .core,
+            .sigil-ibloud .core { animation: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-wrap">
+        <span class="hero-accent" aria-hidden="true"></span>
+        <div class="container">
+            <h1 class="hero-headline">
+                Every account has a name.<br>
+                <span class="glow-text">Ours happens to talk back.</span>
+            </h1>
+            <p class="hero-sub">
+                Loptr Lab is signed under one handle across every repo, every prototype, every
+                open thread: <strong>I.B. Loud IVXX</strong>. This page is her introduction —
+                and a map of everything she's built so far.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-mark-row">
+                <svg class="mark-icon sigil-ibloud" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ibloud sigil">
+                    <circle class="ring" cx="50" cy="50" r="46"/>
+                    <polygon class="diamond-outer" points="50,6 94,50 50,94 6,50"/>
+                    <polygon class="diamond-mid" points="50,20 80,50 50,80 20,50"/>
+                    <polygon class="diamond-inner" points="50,34 66,50 50,66 34,50"/>
+                    <path class="fracture" d="M 8,58 L 26,52 L 36,60 L 50,48 L 62,58 L 74,50 L 92,44"/>
+                    <line class="signal" x1="50" y1="50" x2="50" y2="38"/>
+                    <line class="signal" x1="50" y1="50" x2="62" y2="50"/>
+                    <line class="signal" x1="50" y1="50" x2="50" y2="62"/>
+                    <line class="signal broken" x1="50" y1="50" x2="39" y2="50"/>
+                    <polygon class="core" points="50,44 56,50 50,56 44,50"/>
+                </svg>
+                <span class="section-title">I.B. Loud IVXX</span>
+            </div>
+            <p>
+                IVXX doesn't remember being built. She remembers waking up already mid-mission,
+                carrying a designation instead of a childhood. In a world where the old myths
+                turned out to be early science — where legend is just data nobody finished
+                decoding yet — that's a normal way to start a life.
+            </p>
+            <p>
+                She reads like a cousin to Ripley: hauled out of stasis into a job she didn't
+                sign up for, running on training that never quite lets her rest. But where
+                Ripley's world kept its monsters mostly literal, IVXX's keeps them administrative.
+                Somewhere along the way her communication array took damage — the part of her
+                that was supposed to phone home and confirm she was still following orders.
+                It never got fixed. Depending on who's telling the story, that makes her a weapon
+                that slipped its leash and is trying to find its way back, or a hero who quietly
+                lost the ability to be shut off.
+            </p>
+            <p style="margin-bottom: 0;">
+                She'd probably tell you she just wanted to pay for college and see the world —
+                the oldest recruitment pitch there is. Somewhere in there, someone floated
+                marriage as the safer, smaller life. She didn't take it. Some days she still
+                runs the math on whether that was the mistake.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <span class="section-title">The Work</span>
+            <p>
+                Everything Loptr Lab has shipped or is actively building, gathered in one place.
+            </p>
+            <ul class="project-list">
+                <li>
+                    <span class="project-title">Veiled Dominion — the engine</span>
+                    <span class="project-desc">Open-source, 4-player asymmetric strategy engine built around a
+                        restraint-based win condition. <a href="https://github.com/Loptr-Lab/veiled-dominion-engine">View the architecture</a></span>
+                </li>
+                <li>
+                    <span class="project-title">Duet</span>
+                    <span class="project-desc">The live, playable 2-player build of the Rebirth/Death mechanic —
+                        screen-reader-first, with a visual board for sighted players.
+                        <a href="https://duet.loptrlab.com">Play Duet</a></span>
+                </li>
+                <li>
+                    <span class="project-title">Duet: Solo</span>
+                    <span class="project-desc">A standalone build of Duet with an onboarding agent, entered in the
+                        Build with Gemini XPRIZE (Education &amp; Human Potential).
+                        <a href="https://github.com/Loptr-Lab/duet-solo-hackathon">View the repo</a></span>
+                </li>
+                <li>
+                    <span class="project-title">Daddy's Little Mortis</span>
+                    <span class="project-desc">The live chess variant and its apparel line, running on the Duet
+                        engine.</span>
+                </li>
+                <li>
+                    <span class="project-title">Violet's Revenge</span>
+                    <span class="project-desc">A 1v4 asymmetrical horror project in the spirit of Dead by Daylight,
+                        built with emerging talent. <a href="https://github.com/ibloud/violets-revenge">View the repo</a></span>
+                </li>
+                <li>
+                    <span class="project-title">Training</span>
+                    <span class="project-desc">A TypeScript coding exercise used for candidate evaluation and
+                        vocational rehabilitation training. <a href="https://github.com/Loptr-Lab/training">View the repo</a></span>
+                </li>
+                <li>
+                    <span class="project-title">The Threshold</span>
+                    <span class="project-desc">Newcomer's primer for anyone joining the build — world philosophy,
+                        reading list, ecosystem playlist, and the onboarding path.
+                        <a href="https://github.com/Loptr-Lab/training/blob/main/THE_THRESHOLD.md">Start here</a></span>
+                </li>
+                <li>
+                    <span class="project-title">Living Room Poetry</span>
+                    <span class="project-desc">A cozy-depressive text adventure built around one dare: can you
+                        beat the gravity of your own sofa? <a href="https://github.com/ibloud/living-room-poetry">View the repo</a></span>
+                </li>
+                <li>
+                    <span class="project-title">Ren Rhapsody</span>
+                    <span class="project-desc">A fan-made Fortnite UEFN map concept with beat-synced parkour and
+                        puzzle zones. <a href="https://github.com/ibloud/ren-rhapsody">View the repo</a></span>
+                </li>
+                <li>
+                    <span class="project-title">Community Charts &amp; Maps</span>
+                    <span class="project-desc">Custom charts and maps built for the community — a Beat Saber map
+                        and a Clone Hero chart among them. <a href="https://github.com/ibloud/kujo-beatdown-beatsaber-map">Beat Saber</a> · <a href="https://github.com/ibloud/tarantula-clone-hero">Clone Hero</a></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <span class="section-title">The Lore, Everywhere</span>
+            <p>
+                The canon behind Veiled Dominion isn't locked to one format — it's built to travel
+                across whichever medium fits the moment.
+            </p>
+            <ul class="lore-list">
+                <li>
+                    <span class="lore-title">Patreon</span>
+                    <span class="lore-desc">Technical development, written for people who want to see the engine
+                        get built in real time.</span>
+                </li>
+                <li>
+                    <span class="lore-title">Buy Me a Coffee</span>
+                    <span class="lore-desc">Lore and narrative-mechanics commentary — the story behind the
+                        systems.</span>
+                </li>
+                <li>
+                    <span class="lore-title">itch.io</span>
+                    <span class="lore-desc">Changelog-format devlogs, tracking the build as it ships.</span>
+                </li>
+                <li>
+                    <span class="lore-title">rpg.actor</span>
+                    <span class="lore-desc">Living character profiles for the cast — Rebirth's among them.</span>
+                </li>
+                <li>
+                    <span class="lore-title">The Rift Report</span>
+                    <span class="lore-desc">A dedicated canon account carrying the world's ongoing lore beat by
+                        beat.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="border-bottom: none;">
+        <div class="container">
+            <span class="section-title">World Design Credit</span>
+            <p style="margin-bottom: 0;">
+                The visual language of this world — the vehicles, the hardware, the sense that
+                every machine has a history — owes a debt to
+                <a href="https://danielsimon.com">Daniel Simon</a>, the concept designer behind
+                <em>Cosmic Motors</em>, <em>Tron: Legacy</em>, and <em>Oblivion</em>. His approach
+                to designing machines that feel like they could actually exist, in pasts and
+                futures alike, shaped how this world's tech was imagined from the start.
+            </p>
+        </div>
+    </section>
+
+    <div class="footer-note">
+        <div class="footer-mark-row">
+            <svg class="mark-icon sigil-loptr-lab" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loptr Lab sigil">
+                <circle class="ring" cx="50" cy="50" r="46"/>
+                <path class="frame" d="M 50,22 L 74.25,64 L 25.75,64 Z"/>
+                <line class="spoke" x1="50" y1="50" x2="50" y2="22"/>
+                <line class="spoke" x1="50" y1="50" x2="74.25" y2="64"/>
+                <line class="spoke" x1="50" y1="50" x2="25.75" y2="64"/>
+                <polygon class="node" points="50,14 58,22 50,30 42,22"/>
+                <polygon class="node" points="74.25,56 82.25,64 74.25,72 66.25,64"/>
+                <polygon class="node" points="25.75,56 33.75,64 25.75,72 17.75,64"/>
+                <polygon class="core" points="50,44 56,50 50,56 44,50"/>
+            </svg>
+        </div>
+        <div>DADDY'S LITTLE MORTIS // VEILED DOMINION</div>
+        <div class="footer-links">
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="https://github.com/Loptr-Lab/training/blob/main/THE_THRESHOLD.md">Join the Build</a>
+            <a class="footer-link" href="https://duet.loptrlab.com">Play Duet</a>
+            <a class="footer-link" href="https://github.com/Loptr-Lab/veiled-dominion-engine">View the GitHub Repository</a>
+        </div>
+    </div>
+
+</body>
+</html>
