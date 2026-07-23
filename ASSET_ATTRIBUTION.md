@@ -1,4 +1,3 @@
-```markdown name=ASSET_ATTRIBUTION.md
 # Asset Attribution
 
 This file tracks third-party assets used in the project.
@@ -25,3 +24,11 @@ At present, `assets/` contains placeholder SVGs created for scaffolding and inte
 - Source: `https://game-icons.net/`
 - License: `CC BY 3.0`
 - Notes: `Attribution required in credits/documentation`
+
+## Current entries
+
+- Asset: `sigils/sigil-loptr-lab.svg`, `sigils/sigil-ibloud.svg`
+- Author: original, built for this project
+- Source: n/a (original work, not third-party)
+- License: same as repo (MIT)
+- Notes: derived from the studio's existing dolphin/dragon marks and the Obsidian Realm sigil grammar; see `docs/design/DESIGN_BIBLE.md`
