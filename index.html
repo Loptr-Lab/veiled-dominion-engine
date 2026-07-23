@@ -187,6 +187,45 @@
             gap: 24px;
             flex-wrap: wrap;
         }
+
+        /* Property sigils — see DESIGN_BIBLE.md. Same nested-line grammar
+           and breathing rhythm as the Obsidian Realm sigil on Duet. */
+        .footer-mark-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .mark-icon {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+        .sigil-loptr-lab .ring {
+            fill: none;
+            stroke: #1a1a1a;
+            stroke-width: 1.5;
+        }
+        .sigil-loptr-lab .spoke,
+        .sigil-loptr-lab .node,
+        .sigil-loptr-lab .frame {
+            fill: none;
+            stroke: var(--text-muted);
+            stroke-width: 1.5;
+            stroke-linejoin: round;
+        }
+        .sigil-loptr-lab .core {
+            fill: var(--the-light);
+            animation: sigil-breathe 7s ease-in-out infinite;
+        }
+        @keyframes sigil-breathe {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .sigil-loptr-lab .core { animation: none; }
+        }
     </style>
 </head>
 <body>
@@ -243,6 +282,11 @@
     <section>
         <div class="container">
             <span class="section-title">Open Seats at the Board</span>
+            <p>
+                New here? Start with
+                <a href="https://github.com/Loptr-Lab/training/blob/main/THE_THRESHOLD.md">The Threshold</a> —
+                the world's philosophy, reading list, and onboarding path — before picking a seat below.
+            </p>
             <ul class="roles-list">
                 <li>
                     <span class="role-title">Engine Engineering</span>
@@ -314,8 +358,23 @@
     </section>
 
     <div class="footer-note">
+        <div class="footer-mark-row">
+            <svg class="mark-icon sigil-loptr-lab" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loptr Lab sigil">
+                <circle class="ring" cx="50" cy="50" r="46"/>
+                <path class="frame" d="M 50,22 L 74.25,64 L 25.75,64 Z"/>
+                <line class="spoke" x1="50" y1="50" x2="50" y2="22"/>
+                <line class="spoke" x1="50" y1="50" x2="74.25" y2="64"/>
+                <line class="spoke" x1="50" y1="50" x2="25.75" y2="64"/>
+                <polygon class="node" points="50,14 58,22 50,30 42,22"/>
+                <polygon class="node" points="74.25,56 82.25,64 74.25,72 66.25,64"/>
+                <polygon class="node" points="25.75,56 33.75,64 25.75,72 17.75,64"/>
+                <polygon class="core" points="50,44 56,50 50,56 44,50"/>
+            </svg>
+        </div>
         <div>DADDY'S LITTLE MORTIS // VEILED DOMINION</div>
         <div class="footer-links">
+            <a class="footer-link" href="about.html">About</a>
+            <a class="footer-link" href="https://github.com/Loptr-Lab/training/blob/main/THE_THRESHOLD.md">Join the Build</a>
             <a class="footer-link" href="https://duet.loptrlab.com">Play Duet</a>
             <a class="footer-link" href="https://github.com/Loptr-Lab/veiled-dominion-engine">View the GitHub Repository</a>
         </div>
