@@ -1,0 +1,44 @@
+<svg class="sigil sigil-loptr-lab" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loptr Lab sigil">
+    <style>
+        .sigil-loptr-lab .ring {
+            fill: none;
+            stroke: var(--border-hairline, #333333);
+            stroke-width: 1.25;
+        }
+        .sigil-loptr-lab .spoke,
+        .sigil-loptr-lab .node,
+        .sigil-loptr-lab .frame {
+            fill: none;
+            stroke: var(--text-muted, #666666);
+            stroke-width: 1.5;
+            stroke-linejoin: round;
+        }
+        .sigil-loptr-lab .core {
+            fill: var(--the-light, #d4a853);
+            animation: sigil-breathe 7s ease-in-out infinite;
+        }
+        @keyframes sigil-breathe {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .sigil-loptr-lab .core { animation: none; }
+        }
+    </style>
+
+    <!-- Three properties, one signal: every Loptr Lab project is its own
+         node, tied back to a single shared light at the center. -->
+    <circle class="ring" cx="50" cy="50" r="46"/>
+
+    <path class="frame" d="M 50,22 L 74.25,64 L 25.75,64 Z"/>
+
+    <line class="spoke" x1="50" y1="50" x2="50" y2="22"/>
+    <line class="spoke" x1="50" y1="50" x2="74.25" y2="64"/>
+    <line class="spoke" x1="50" y1="50" x2="25.75" y2="64"/>
+
+    <polygon class="node" points="50,14 58,22 50,30 42,22"/>
+    <polygon class="node" points="74.25,56 82.25,64 74.25,72 66.25,64"/>
+    <polygon class="node" points="25.75,56 33.75,64 25.75,72 17.75,64"/>
+
+    <polygon class="core" points="50,44 56,50 50,56 44,50"/>
+</svg>
