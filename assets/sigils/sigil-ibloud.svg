@@ -1,0 +1,63 @@
+<svg class="sigil sigil-ibloud" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ibloud sigil">
+    <style>
+        .sigil-ibloud .ring {
+            fill: none;
+            stroke: var(--border-hairline, #333333);
+            stroke-width: 1.25;
+        }
+        .sigil-ibloud .diamond-outer {
+            fill: none;
+            stroke: var(--border-hairline, #333333);
+            stroke-width: 1.5;
+        }
+        .sigil-ibloud .diamond-mid,
+        .sigil-ibloud .diamond-inner {
+            fill: none;
+            stroke: var(--text-muted, #666666);
+            stroke-width: 1.5;
+        }
+        .sigil-ibloud .fracture {
+            fill: none;
+            stroke: var(--the-light, #d4a853);
+            stroke-width: 1.25;
+            stroke-linejoin: round;
+            opacity: 0.85;
+        }
+        .sigil-ibloud .signal {
+            stroke: var(--text-muted, #666666);
+            stroke-width: 1.25;
+        }
+        .sigil-ibloud .signal.broken {
+            stroke-dasharray: 2 2;
+        }
+        .sigil-ibloud .core {
+            fill: var(--the-light, #d4a853);
+            animation: sigil-breathe 7s ease-in-out infinite;
+        }
+        @keyframes sigil-breathe {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .sigil-ibloud .core { animation: none; }
+        }
+    </style>
+
+    <!-- IVXX's array: the nested-diamond eye, same grammar as the Obsidian
+         Realm sigil, but split by the fracture that took her comms out.
+         Three of the four signal lines still reach the eye. One doesn't. -->
+    <circle class="ring" cx="50" cy="50" r="46"/>
+
+    <polygon class="diamond-outer" points="50,6 94,50 50,94 6,50"/>
+    <polygon class="diamond-mid" points="50,20 80,50 50,80 20,50"/>
+    <polygon class="diamond-inner" points="50,34 66,50 50,66 34,50"/>
+
+    <path class="fracture" d="M 8,58 L 26,52 L 36,60 L 50,48 L 62,58 L 74,50 L 92,44"/>
+
+    <line class="signal" x1="50" y1="50" x2="50" y2="38"/>
+    <line class="signal" x1="50" y1="50" x2="62" y2="50"/>
+    <line class="signal" x1="50" y1="50" x2="50" y2="62"/>
+    <line class="signal broken" x1="50" y1="50" x2="39" y2="50"/>
+
+    <polygon class="core" points="50,44 56,50 50,56 44,50"/>
+</svg>
