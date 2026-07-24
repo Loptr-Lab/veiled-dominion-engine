@@ -59,6 +59,34 @@
             letter-spacing: -0.02em;
         }
 
+        /* Hero mark — the sigil, tagline, and opening line above the headline.
+           Reuses the exact sigil-loptr-lab paint classes and breathing
+           animation defined below (see .footer-mark-row), just scaled up.
+           See DESIGN_BIBLE.md. */
+        .hero-sigil-row {
+            margin-bottom: 28px;
+        }
+        .hero-sigil {
+            width: 96px;
+            height: 96px;
+            display: block;
+        }
+        .hero-eyebrow {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--the-light);
+            display: block;
+            margin-bottom: 22px;
+        }
+        .hero-quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--text-muted);
+            max-width: 480px;
+            margin-bottom: 44px;
+        }
+
         .hero-headline {
             font-size: clamp(2.5rem, 6vw, 4.5rem);
             margin-bottom: 40px;
@@ -232,6 +260,21 @@
 
     <section>
         <div class="container">
+            <div class="hero-sigil-row">
+                <svg class="hero-sigil sigil-loptr-lab" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loptr Lab sigil">
+                    <circle class="ring" cx="50" cy="50" r="46"/>
+                    <path class="frame" d="M 50,22 L 74.25,64 L 25.75,64 Z"/>
+                    <line class="spoke" x1="50" y1="50" x2="50" y2="22"/>
+                    <line class="spoke" x1="50" y1="50" x2="74.25" y2="64"/>
+                    <line class="spoke" x1="50" y1="50" x2="25.75" y2="64"/>
+                    <polygon class="node" points="50,14 58,22 50,30 42,22"/>
+                    <polygon class="node" points="74.25,56 82.25,64 74.25,72 66.25,64"/>
+                    <polygon class="node" points="25.75,56 33.75,64 25.75,72 17.75,64"/>
+                    <polygon class="core" points="50,44 56,50 50,56 44,50"/>
+                </svg>
+            </div>
+            <span class="hero-eyebrow">the keeper</span>
+            <p class="hero-quote">An archive of games, stories, and the people carrying them — built in the open, one world at a time.</p>
             <h1 class="hero-headline">
                 Every game teaches you to become more powerful.<br>
                 <span class="glow-text">What if the lesson was the opposite?</span>
