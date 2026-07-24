@@ -203,31 +203,6 @@
             flex-wrap: wrap;
         }
 
-        /* Breathing technique — same fixed-rhythm pulse used on the Duet
-           Obsidian Realm splash. See DESIGN_BIBLE.md. */
-        .hero-wrap {
-            position: relative;
-            overflow: hidden;
-        }
-        .hero-accent {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(180deg, var(--the-light), var(--text-muted) 55%, var(--the-light));
-            animation: breathe-pulse 7s ease-in-out infinite;
-        }
-        @keyframes breathe-pulse {
-            0%, 100% { opacity: 0.45; }
-            50% { opacity: 1; }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .hero-accent { animation: none; opacity: 0.8; }
-        }
-
-        /* Property sigils — see DESIGN_BIBLE.md. Same nested-line grammar
-           and breathing rhythm as the Obsidian Realm sigil on Duet. */
         .section-mark-row {
             display: flex;
             align-items: center;
@@ -309,8 +284,7 @@
 </head>
 <body>
 
-    <section class="hero-wrap">
-        <span class="hero-accent" aria-hidden="true"></span>
+    <section>
         <div class="container">
             <h1 class="hero-headline">
                 Every account has a name.<br>
@@ -564,6 +538,28 @@
                 <em>Cosmic Motors</em>, <em>Tron: Legacy</em>, and <em>Oblivion</em>. His approach
                 to designing machines that feel like they could actually exist, in pasts and
                 futures alike, shaped how this world's tech was imagined from the start.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <span class="section-title">On Time, Loops, and Structure</span>
+            <p>
+                The recursive, nested-reality mechanics running through this world — stories
+                inside stories, a game played inside a film, names and archetypes that resurface
+                across separate worlds the way they do in life instead of being continuity errors
+                — owe a real debt to John August's <em>The Nines</em>: three interlocking
+                realities, and a creator hiding in plain sight inside the very story he made.
+                <a href="https://johnaugust.com/projects/the-movie">johnaugust.com/projects/the-movie</a>
+            </p>
+            <p style="margin-bottom: 0;">
+                For how this world is meant to be found and rolled out, the closer reference isn't
+                a branching-choice format like <em>Black Mirror: Bandersnatch</em> — it's
+                Netflix's <em>Kaleidoscope</em>. Eight modular episodes, watchable in almost any
+                order, each one built to work as a real entry point, all of them resolving into
+                the same true finale. Enter this world through the game, the film, the comic, or
+                the lore — it should still add up to the same story underneath.
             </p>
         </div>
     </section>
