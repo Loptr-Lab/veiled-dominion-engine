@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules — Veiled Dominion / Loptr Lab</title>
+    <style>
+        :root {
+            --void: #050505;
+            --text-primary: #e0e0e0;
+            --text-muted: #666666;
+            --the-light: #d4a853;
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--void);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            color: var(--the-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        a:hover { border-bottom: 1px solid var(--the-light); }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+        section { padding: 120px 0; border-bottom: 1px solid #1a1a1a; }
+        h1, h2, h3 { font-weight: 300; letter-spacing: -0.02em; }
+        .hero-headline {
+            font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+            margin-bottom: 40px;
+            color: #fff;
+        }
+        .hero-sub {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 580px;
+            margin-bottom: 24px;
+        }
+        .section-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--the-light);
+            margin-bottom: 40px;
+            display: block;
+        }
+        p { margin-bottom: 24px; color: var(--text-muted); }
+        .glow-text {
+            color: var(--the-light);
+            text-shadow: 0 0 20px rgba(212, 168, 83, 0.3);
+        }
+        .mech-list { list-style: none; }
+        .mech-list li {
+            margin-bottom: 32px;
+            padding-left: 20px;
+            border-left: 2px solid #1a1a1a;
+            transition: border-color 0.3s ease;
+        }
+        .mech-list li:hover { border-left: 2px solid var(--the-light); }
+        .mech-title {
+            font-size: 1.15rem;
+            color: #fff;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .mech-desc { font-size: 0.95rem; display: block; color: var(--text-muted); }
+        .status-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            border: 1px solid #1a1a1a;
+            padding: 3px 8px;
+            border-radius: 2px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .status-tag.open { color: var(--the-light); border-color: var(--the-light); }
+        .footer-note {
+            font-size: 0.75rem;
+            color: #333;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .footer-mark-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .mark-icon { width: 18px; height: 18px; flex-shrink: 0; }
+        .sigil-loptr-lab .ring { fill: none; stroke: #1a1a1a; stroke-width: 1.5; }
+        .sigil-loptr-lab .spoke,
+        .sigil-loptr-lab .node,
+        .sigil-loptr-lab .frame {
+            fill: none;
+            stroke: var(--text-muted);
+            stroke-width: 1.5;
+            stroke-linejoin: round;
+        }
+        .sigil-loptr-lab .core {
+            fill: var(--the-light);
+            animation: sigil-breathe 7s ease-in-out infinite;
+        }
+        @keyframes sigil-breathe {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .sigil-loptr-lab .core { animation: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <span class="section-title">Rules</span>
+            <h1 class="hero-headline">
+                The most powerful piece on the board<br>
+                <span class="glow-text">is not the one who decides the game.</span>
+            </h1>
+            <p class="hero-sub">
+                Veiled Dominion is an asymmetric chess variant built around a deliberate
+                inversion of how standard chess assigns victory — and a growing ecosystem of
+                games, fiction, and lore that all trace back to the same underlying story.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <span class="section-title">The Design Thesis</span>
+            <p>
+                In standard chess, the King moves like a limited pawn — one square, any
+                direction, never transforming — and yet his safety is what ends the game, while
+                the Queen, the piece with the most power and range, exists to protect him and is
+                disposable in service of that protection.
+            </p>
+            <p>
+                Veiled Dominion corrects that structure directly. Death is the King-equivalent:
+                uncapturable by rule, and structurally irrelevant to winning by design. Rebirth
+                is the daughter and Queen-equivalent — the piece that transformed, the piece with
+                agency. The game is not won or lost by threatening Death. It's won or lost on
+                whether Rebirth keeps control of herself.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <span class="section-title">How the Win Condition Works</span>
+            <ul class="mech-list">
+                <li>
+                    <span class="mech-title">Radius of Ruin</span>
+                    <span class="mech-desc">A piece that ends its turn adjacent to the enemy
+                        Rebirth becomes veiled — restricted to one square forward, unable to
+                        capture, for a set duration that resets for as long as it remains
+                        exposed.</span>
+                </li>
+                <li>
+                    <span class="mech-title">Sanctuary</span>
+                    <span class="mech-desc">Standing adjacent to your own Death shields a piece
+                        from being veiled, even inside the enemy Rebirth's radius.</span>
+                </li>
+                <li>
+                    <span class="mech-title">The Loss Condition</span>
+                    <span class="mech-desc">Rebirth is not exempt from this rule. If your own
+                        Rebirth becomes veiled — caught unprotected next to the enemy Rebirth,
+                        with no Sanctuary from your Death nearby — that ends the game. Not
+                        capture. Loss of control.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <span class="section-title">Promotion — The Birth of Rebirth</span>
+            <p>
+                A pawn reaching the far rank does not promote to a generic upgrade. If no
+                Rebirth exists yet for that side, the pawn becomes Rebirth — a birth event,
+                echoing Death creating a daughter, and capped at one per side. The board can't
+                hold multiple power pieces, and narratively there is only one daughter.
+            </p>
+            <p>
+                Once Rebirth exists, further pawns reaching the back rank follow a tiered
+                fallback: promote to Knight if fewer than two exist, then Bishop if fewer than
+                two exist, then no promotion at all once both are at full strength.
+            </p>
+            <p style="margin-bottom: 0;">
+                That blocked, "board overloaded" state signals that this side's Rebirth is
+                potentially ready to advance further along her path — and now unlocks a hand
+                from the Sealed Deck.
+                <span class="status-tag open">Mechanic in development</span>
+                What exactly a drawn hand does in play hasn't been built out yet.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <span class="section-title">Fog Mode &amp; The Sealed Deck</span>
+            <p>
+                Fog Mode is a separate, optional harder difficulty tier already built into the
+                game — elevation, vision radius, and HP-based combat, genuinely introducing
+                hidden information between players. It is currently mutually exclusive with the
+                AI opponent.
+            </p>
+            <p style="margin-bottom: 0;">
+                Fog Mode is not Duet's next tier of play. It's being used as a playtest ground
+                for the 4-player engine instead — Duet's own readiness reward is the Sealed Deck.
+                The Sealed Deck itself is a real 52-card system: specifically the King's deck and
+                the Queen's deck, Death's and the Daughter's own decks, each reflecting that
+                character's worldview. In the fiction, playing this game together is how they
+                learn each other's leadership style before ruling their joint kingdoms.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <span class="section-title">The 4-Player Chapter</span>
+            <p>
+                The 4-player mode is not a symmetric four-army variant. It is four players
+                against Death and the Daughter — now grown and married — as a unified opposing
+                force. It represents a later chapter in her story, with Duet as the earlier one,
+                and ties directly to the existing "Walking the Path" progression (dice, then
+                cards, then chess) as further stages in her education — though dice itself is
+                deprioritized in the current build order, coming after cards rather than before.
+            </p>
+            <p style="margin-bottom: 0;">
+                <span class="status-tag open">Mechanics in development</span>
+                How Death and the Daughter are controlled in this mode, whether marriage
+                introduces a new piece to the board, and whether the win condition inverts again
+                for this chapter are all still open design questions.
+            </p>
+        </div>
+    </section>
+
+    <section style="border-bottom: none;">
+        <div class="container">
+            <span class="section-title">Where This Comes From</span>
+            <p>
+                The win-condition philosophy isn't an invention layered onto a chess engine
+                after the fact — it comes directly from an existing scene in "The Marriage of
+                Lady Violet," part of "The Legend of Lady Violet and Sebastien." In it, a King
+                tells Violet: a King is limited, so he truly loses when he's lost a Queen. Violet
+                asks why there can only be one winner. That exchange is the seed the entire
+                mechanic grew from.
+            </p>
+            <p style="margin-bottom: 0;">
+                The ecosystem's structure — stories within worlds, a game played inside a film,
+                names and archetypes recurring across separate branches rather than being
+                continuity errors — draws on two reference points: John August's <em>The
+                Nines</em>, for its nested, recursive realities, and Netflix's
+                <em>Kaleidoscope</em>, for how it's meant to be found and rolled out — not a
+                branching-choice format, but modular entry points that all converge on the same
+                true story.
+            </p>
+        </div>
+    </section>
+
+    <div class="footer-note">
+        <div class="footer-mark-row">
+            <svg class="mark-icon sigil-loptr-lab" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loptr Lab sigil">
+                <circle class="ring" cx="50" cy="50" r="46"/>
+                <path class="frame" d="M 50,22 L 74.25,64 L 25.75,64 Z"/>
+                <line class="spoke" x1="50" y1="50" x2="50" y2="22"/>
+                <line class="spoke" x1="50" y1="50" x2="74.25" y2="64"/>
+                <line class="spoke" x1="50" y1="50" x2="25.75" y2="64"/>
+                <polygon class="node" points="50,14 58,22 50,30 42,22"/>
+                <polygon class="node" points="74.25,56 82.25,64 74.25,72 66.25,64"/>
+                <polygon class="node" points="25.75,56 33.75,64 25.75,72 17.75,64"/>
+                <polygon class="core" points="50,44 56,50 50,56 44,50"/>
+            </svg>
+        </div>
+        <div>DADDY'S LITTLE MORTIS // VEILED DOMINION</div>
+        <div class="footer-links">
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="about.html">About</a>
+            <a class="footer-link" href="press.html">Press</a>
+            <a class="footer-link" href="https://duet.loptrlab.com">Play Duet</a>
+            <a class="footer-link" href="https://github.com/Loptr-Lab/veiled-dominion-engine">View the GitHub Repository</a>
+        </div>
+    </div>
+
+</body>
+</html>
