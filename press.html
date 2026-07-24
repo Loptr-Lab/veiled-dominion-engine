@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press — Veiled Dominion / Loptr Lab</title>
+    <style>
+        :root {
+            --void: #050505;
+            --text-primary: #e0e0e0;
+            --text-muted: #666666;
+            --the-light: #d4a853;
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--void);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            color: var(--the-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        a:hover { border-bottom: 1px solid var(--the-light); }
+        .container { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+        section { padding: 100px 0; border-bottom: 1px solid #1a1a1a; }
+        h1, h2, h3 { font-weight: 300; letter-spacing: -0.02em; }
+        .section-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--the-light);
+            margin-bottom: 32px;
+            display: block;
+        }
+        .article-headline {
+            font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+            color: #fff;
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+        .article-byline {
+            font-size: 0.85rem;
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 48px;
+            display: block;
+        }
+        .scene-note {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            display: block;
+        }
+        .intro-block p {
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+        .q { margin-bottom: 28px; }
+        .q .speaker {
+            font-weight: 700;
+            color: var(--the-light);
+            letter-spacing: 0.02em;
+        }
+        .q .line { color: var(--text-primary); }
+        .a { margin-bottom: 40px; }
+        .a .speaker {
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.02em;
+        }
+        .a .line { color: var(--text-primary); }
+        .stage-direction {
+            font-style: italic;
+            color: var(--text-muted);
+        }
+        .divider {
+            border: none;
+            border-top: 1px solid #1a1a1a;
+            margin: 48px 0;
+        }
+        .disclaimer {
+            font-size: 0.82rem;
+            font-style: italic;
+            color: var(--text-muted);
+            margin-top: 48px;
+        }
+        .footer-note {
+            font-size: 0.75rem;
+            color: #333;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .footer-mark-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .mark-icon { width: 18px; height: 18px; flex-shrink: 0; }
+        .sigil-loptr-lab .ring { fill: none; stroke: #1a1a1a; stroke-width: 1.5; }
+        .sigil-loptr-lab .spoke,
+        .sigil-loptr-lab .node,
+        .sigil-loptr-lab .frame {
+            fill: none;
+            stroke: var(--text-muted);
+            stroke-width: 1.5;
+            stroke-linejoin: round;
+        }
+        .sigil-loptr-lab .core {
+            fill: var(--the-light);
+            animation: sigil-breathe 7s ease-in-out infinite;
+        }
+        @keyframes sigil-breathe {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .sigil-loptr-lab .core { animation: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <span class="section-title">Press</span>
+            <h1 class="article-headline">
+                EXCLUSIVE: We Got "The Guy From Maximum Effort" To Talk About A Chess Game
+                And He Would Not Stop
+            </h1>
+            <span class="article-byline">A Totally Real Interview That Definitely Happened, Conducted By No One In Particular</span>
+
+            <div class="intro-block">
+                <span class="scene-note">INT. A SOUNDSTAGE THAT IS SUSPICIOUSLY WELL-LIT FOR A "CASUAL CHAT"</span>
+                <p>
+                    We were told we'd be sitting down with a "major Hollywood producer" to discuss
+                    an indie chess variant called <em>Veiled Dominion</em>. The man who arrived
+                    would not confirm his name, wore sunglasses indoors, and introduced himself
+                    only as "a guy who owns a gin company and, coincidentally, also owns several
+                    other things."
+                </p>
+                <p style="margin-bottom: 0;">
+                    We will refer to him as <strong style="color:#fff;">The Producer</strong>,
+                    per his lawyer's request.
+                </p>
+            </div>
+
+            <hr class="divider">
+
+            <div class="q">
+                <span class="speaker">TUDUM WEEKLY:</span>
+                <span class="line">Thanks for sitting down with us. So — Netflix. Big streaming pitch. Tell us about <em>Veiled Dominion</em>.</span>
+            </div>
+            <div class="a">
+                <span class="speaker">THE PRODUCER:</span>
+                <span class="line">Picture chess. Now picture chess, but the King is useless — moves like a sad little pawn, contributes nothing, everyone still protects him anyway. Sound familiar? It's basically every group chat I'm in.</span>
+            </div>
+
+            <div class="q">
+                <span class="speaker">TUDUM WEEKLY:</span>
+                <span class="line">And the twist is—</span>
+            </div>
+            <div class="a">
+                <span class="speaker">THE PRODUCER:</span>
+                <span class="line">The Queen loses the game. Not the King. The <em>Queen</em>. She's out here doing all the work, she's got the moves, she's got the range, and the game still ends because <em>she</em> got cornered. I read that mechanic and I said "this is just marriage," and everyone in the room got very quiet and asked me to leave.</span>
+            </div>
+
+            <div class="q">
+                <span class="speaker">TUDUM WEEKLY:</span>
+                <span class="line">There's also a Fog Mode. Hidden information, HP combat—</span>
+            </div>
+            <div class="a">
+                <span class="speaker">THE PRODUCER:</span>
+                <span class="line">Right, so you can't see the board anymore, which — again — marriage. But now there's a card system to help you cope with not knowing anything, which honestly should just be handed out at courthouses.</span>
+            </div>
+
+            <div class="q">
+                <span class="speaker">TUDUM WEEKLY:</span>
+                <span class="line">You mentioned wanting to pitch this to Netflix in a specific way. Not a Bandersnatch thing.</span>
+            </div>
+            <div class="a">
+                <span class="speaker">THE PRODUCER:</span>
+                <span class="line">God, no. Bandersnatch is "make a choice, get a different sad ending." We're doing <em>Kaleidoscope</em>. You can start anywhere — the game, the movie, some guy's Wattpad account from 2019 — and it all folds into the same story. It's less "choose your own adventure" and more "your adventure was always the same, you just walked in through a different door, like a Cheesecake Factory."</span>
+            </div>
+
+            <div class="q">
+                <span class="speaker">TUDUM WEEKLY:</span>
+                <span class="line">Any comparable's? For the deck?</span>
+            </div>
+            <div class="a">
+                <span class="speaker">THE PRODUCER:</span>
+                <span class="line"><em>The Nines.</em> Great movie. Criminally under-watched, much like my early filmography, and I say that with the confidence of a man who has seen his own Rotten Tomatoes page and made peace with several entries on it.</span>
+            </div>
+
+            <div class="q">
+                <span class="speaker">TUDUM WEEKLY:</span>
+                <span class="line">Last question. Why does the King get to just... exist, contributing nothing, and everyone still fights to protect him?</span>
+            </div>
+            <div class="a">
+                <span class="speaker">THE PRODUCER:</span>
+                <span class="line"><span class="stage-direction">(long pause, stares directly into camera)</span> ...I'm going to go ahead and end the interview here.</span>
+            </div>
+
+            <hr class="divider">
+
+            <p class="disclaimer">
+                Veiled Dominion is not affiliated with, endorsed by, or aware of the existence of
+                Maximum Effort, Aviation Gin, Mint Mobile, or any producer who may or may not have
+                wandered in off the street for this piece. Duet is live now. The Producer's lawyer
+                has asked us to clarify he was never here.
+            </p>
+        </div>
+    </section>
+
+    <div class="footer-note">
+        <div class="footer-mark-row">
+            <svg class="mark-icon sigil-loptr-lab" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loptr Lab sigil">
+                <circle class="ring" cx="50" cy="50" r="46"/>
+                <path class="frame" d="M 50,22 L 74.25,64 L 25.75,64 Z"/>
+                <line class="spoke" x1="50" y1="50" x2="50" y2="22"/>
+                <line class="spoke" x1="50" y1="50" x2="74.25" y2="64"/>
+                <line class="spoke" x1="50" y1="50" x2="25.75" y2="64"/>
+                <polygon class="node" points="50,14 58,22 50,30 42,22"/>
+                <polygon class="node" points="74.25,56 82.25,64 74.25,72 66.25,64"/>
+                <polygon class="node" points="25.75,56 33.75,64 25.75,72 17.75,64"/>
+                <polygon class="core" points="50,44 56,50 50,56 44,50"/>
+            </svg>
+        </div>
+        <div>DADDY'S LITTLE MORTIS // VEILED DOMINION</div>
+        <div class="footer-links">
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="about.html">About</a>
+            <a class="footer-link" href="https://duet.loptrlab.com">Play Duet</a>
+            <a class="footer-link" href="https://github.com/Loptr-Lab/veiled-dominion-engine">View the GitHub Repository</a>
+        </div>
+    </div>
+
+</body>
+</html>
