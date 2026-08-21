@@ -297,7 +297,7 @@ Once your sandbox is initialized:
 
 1. **Read** [`CONTRIBUTING.md`](../CONTRIBUTING.md) for contribution guidelines and mechanical design principles
 2. **Review** [`README.md`](../README.md) for the official Playtest Rulebook
-3. **Start with Phase 1** tasks in [`CONTRIBUTING.md`](../CONTRIBUTING.md#-technical-implementation-phases):
+3. **Start with Phase 1** tasks in [`CONTRIBUTING.md`](../CONTRIBUTING.md#%EF%B8%8F-3-core-architectural-principles):
    - Implement the 14×14 cross-shaped grid coordinate system
    - Build base piece movement classes
 

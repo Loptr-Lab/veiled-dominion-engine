@@ -1,12 +1,3 @@
-Here is the cleaned-up, public-facing version of the Pennywise variant, formatted specifically for your GitHub repository. 
-
-I’ve stripped out the "Internal Only" warnings and reframed it to appeal directly to the engineers and designers reading the repo by highlighting *why* this variant is a critical stress-test for the C# engine.
-
-Save this as `docs/variants/BACK_IN_DERRY_VARIANT.md` in your repo.
-
-***
-
-```markdown
 # Variant: Back in Derry (Horror-Core Edition)
 
 ## 1.0 Concept Overview
@@ -44,6 +35,4 @@ If this variant moves to the Unity prototype phase, the visual language shifts d
 
 ## 4.0 Engineering Takeaway
 Do not build the Red Balloon mechanic until the core `VeiledStateManager` is 100% stable. Once stable, the Red Balloon is the perfect module to test expanding the `ApplyStateModifiers()` step in `BasePiece.cs` to accept external board vectors, proving the engine is truly modular.
-```
 
-***
