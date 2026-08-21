@@ -44,13 +44,13 @@ When contributing code comments, thematic variables, or rulesets derived from hi
 
 ### Quick Start (Recommended)
 
-We've automated the entire development environment using **Dev Containers** and **GitHub Codespaces**. No local installation required.
+Use either local Node.js or a Dev Container/Codespace. The current contributor workflow for this repository is TypeScript + Jest.
 
 #### Option A: GitHub Codespaces (Cloud-Based, Zero Setup)
 1. Click the green **Code** button on the repository page.
 2. Select the **Codespaces** tab.
 3. Click **Create codespace on main**.
-4. The environment boots automatically with .NET 8, Node.js, and all extensions pre-installed.
+4. The environment boots automatically with Node.js 20 and VS Code extensions pre-installed.
 
 #### Option B: Local Dev Container (VS Code)
 1. Clone the repository: `git clone https://github.com/Loptr-Lab/veiled-dominion-engine.git`
@@ -61,10 +61,11 @@ We've automated the entire development environment using **Dev Containers** and 
 #### Environment Verification
 Once your sandbox is ready, run:
 ```bash
-dotnet --version    # Should output 8.0.x
-node --version      # Should output 20.x
-dotnet restore
-dotnet test
+node --version      # Should output 20.x or newer
+npm --version
+npm ci
+npm run typecheck
+npm test
 ```
 
 For detailed environment documentation, see [`docs/DEVELOPMENT_ENVIRONMENT.md`](./docs/DEVELOPMENT_ENVIRONMENT.md).
@@ -178,9 +179,9 @@ Before opening a pull request, ensure every item is satisfied:
   - Bugfixes: `bugfix/issue-number-short-name`
   - Hotfixes: `hotfix/critical-issue`
   
-- [ ] **Code Compiles:** `dotnet build` returns zero errors inside the devcontainer
+- [ ] **Code Compiles:** `npm run typecheck` returns zero TypeScript errors
 
-- [ ] **Tests Pass:** `dotnet test` returns 100% pass rate
+- [ ] **Tests Pass:** `npm test` returns 100% pass rate
   - New piece mechanics require corresponding unit test blocks
   - Edge cases (e.g., Veil stacking, Dash interactions) must be explicitly tested
 

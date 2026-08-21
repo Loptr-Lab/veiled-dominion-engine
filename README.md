@@ -6,6 +6,35 @@ Veiled Dominion is a 4-player chess variant that reimagines the board not as a b
 
 ---
 
+## Local Development Quick Start
+
+This repository currently ships a TypeScript/Jest engine exercise harness (not a runnable Unity/.NET game client).
+
+### Prerequisites
+- Node.js 20+
+- npm 10+
+
+### Bootstrap
+```bash
+npm ci
+```
+
+### Verify locally
+```bash
+npm run typecheck
+npm test
+```
+
+### Optional devcontainer workflow
+1. Open the repo in VS Code.
+2. Reopen in Dev Container.
+3. The container runs `npm ci` automatically.
+
+### Environment variables
+No environment variables are required for local test runs right now. If needed later, copy `.env.example` to `.env`.
+
+---
+
 ## This Is the Game Repo
 
 This repository is the actual **Veiled Dominion game engine** (C#/.NET, Unity) — game design, rules, and architecture.
