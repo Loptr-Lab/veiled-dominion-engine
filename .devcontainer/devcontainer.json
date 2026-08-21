@@ -1,13 +1,8 @@
 {
   "name": "Veiled Dominion Dev Sandbox",
-  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
-  "features": {
-    "ghcr.io/devcontainers/features/node-javascript:1": {
-      "nodeVersion": "20"
-    }
-  },
-  "postCreateCommand": "dotnet restore && npm install --prefix ./src/network/atproto-layer",
-  "waitFor": "onCreateCommand",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+  "postCreateCommand": "npm ci",
+  "waitFor": "postCreateCommand",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -26,7 +21,7 @@
       }
     }
   },
-  "forwardPorts": [5000, 5001],
+  "forwardPorts": [],
   "remoteUser": "vscode",
   "mounts": []
 }
