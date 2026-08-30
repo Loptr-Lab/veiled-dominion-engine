@@ -101,6 +101,10 @@ Loptr Lab is an independent creative studio. If you'd like to support this proje
 
 See [`LICENSE.md`](./LICENSE.md).
 
-## Contact
+## 📬 Contact
 
-**Loptr Lab** — questions@loptrlab.com
+Direct pull requests, design manifestos, or structural inquiries to:
+
+**<questions@loptrlab.com>** *(Include links to your portfolio or repository footprints. We respect the craft.)*
+
+**Audio:** [Returning to the Void (Paragon Homage)](https://audius.co/baphometrix/returning-to-the-void-paragon-homage-15668) — the original 2019 teaser built from Epic's audio assets.
