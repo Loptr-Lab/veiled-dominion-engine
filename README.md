@@ -91,6 +91,11 @@ Interested in contributing but new to the codebase? The [training curriculum](ht
 
 ---
 
+### New to open source?
+Start with the [Loptr-Lab/training](https://github.com/Loptr-Lab/training) repo — a self-contained TypeScript exercise built as a proxy for real engine work. Complete it before opening a PR here.
+
+---
+
 ## Support
 
 Loptr Lab is an independent creative studio. If you'd like to support this project's development: see [`SPONSORS.md`](./SPONSORS.md) and [`SPONSORSHIP_STRATEGY.md`](./SPONSORSHIP_STRATEGY.md), or [become a sponsor](https://github.com/sponsors/Loptr-Lab).
