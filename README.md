@@ -102,9 +102,11 @@ Loptr Lab is an independent creative studio. If you'd like to support this proje
 
 ---
 
-## License
+## License and fan forks
 
-See [`LICENSE.md`](./LICENSE.md).
+Software is MIT-licensed; original rules, narrative, documentation, and original art are
+CC BY-NC-SA 4.0. Loptr Lab names and marks are reserved. See [LICENSE.md](./LICENSE.md) and
+[FAN_FORK_GUIDE.md](./FAN_FORK_GUIDE.md) before redistributing or publishing a fork.
 
 ## 📬 Contact
 
