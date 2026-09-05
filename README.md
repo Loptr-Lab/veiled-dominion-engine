@@ -4,6 +4,11 @@ Veiled Dominion is a 4-player chess variant that reimagines the board not as a b
 
 **Status:** Early open prototype (v0.1). Core rules and architecture are documented; engine implementation is in progress. See [`ARCHITECTURE_OVERVIEW.md`](./ARCHITECTURE_OVERVIEW.md) for what's built.
 
+**Creative lineage:** Veiled Dominion is original IP with a documented development
+history. [`docs/CREATIVE_LINEAGE.md`](./docs/CREATIVE_LINEAGE.md) explains how
+earlier narrative experiments contributed transferable design questions without
+transferring third-party expression or overriding this repository's canon.
+
 ---
 
 ## Local Development Quick Start
@@ -64,6 +69,7 @@ Full rules: [`RULEBOOK_v0.1`](./docs/RULEBOOK_v0.1). Full design doc: [`docs/des
 | [`ARCHITECTURE_OVERVIEW.md`](./ARCHITECTURE_OVERVIEW.md) | Engine architecture, turn lifecycle, snapshot contract |
 | [`docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md) | What you need to know before contributing engine code |
 | [`docs/variants/`](./docs/variants/) | Thematic variant proofs-of-concept |
+| [`docs/CREATIVE_LINEAGE.md`](./docs/CREATIVE_LINEAGE.md) | Earlier archives, transfer boundaries, and ecosystem role |
 
 ---
 
@@ -88,6 +94,10 @@ This project follows a [Code of Conduct](./CODE_OF_CONDUCT.md). See [`SECURITY.m
 See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for engine contribution guidelines and [`docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md) for the skills and arc you'll need.
 
 Interested in contributing but new to the codebase? The [training curriculum](https://github.com/Loptr-Lab/training) is a structured on-ramp, including a hands-on graded exercise that mirrors this engine's architecture.
+
+For narrative, archival, research, accessibility, production, and rights work
+across the wider practice, see the
+[Loptr Lab ecosystem collaboration pathways](https://ibloud.github.io/collaborate/).
 
 ---
 
