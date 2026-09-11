@@ -124,3 +124,15 @@ Any cross-repository mechanics change must state whether it is:
 - Historical/archive
 - Unresolved design decision
 
+
+
+## Variant authority
+
+docs/variants contains models, incubation work, and case studies. None sets canonical rules unless an explicit maintainer decision updates the authoritative GDD and rulebook.
+
+- Dread Pressure is an original documentation model.
+- Corrupted ROM is an original incubation experiment with mandatory Safe Mode.
+- Back in Derry/Pennywise material is a permission-dependent historical reference.
+- Discord exhibitions, supporter rewards, and store mockups do not create canon or commercial permission.
+
+See docs/variants/VARIANT_REGISTRY.yml.

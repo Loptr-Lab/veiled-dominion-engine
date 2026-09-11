@@ -89,7 +89,9 @@ Include:
 When contributing a new variant, include or update the appropriate documentation.
 
 Recommended structure:
-- `docs/variants/<VARIANT_NAME>.md` for the variant design document
+- `docs/variants/examples/<VARIANT_NAME>.md` for a legally clear reusable model
+- `docs/variants/incubation/<VARIANT_NAME>.md` for original experiments under review
+- `docs/variants/case-studies/<VARIANT_NAME>.md` for historical or rights-pending research
 - related updates to `README.md` or rules docs if baseline understanding changes
 - linked issue or proposal using the appropriate GitHub template
 
@@ -193,3 +195,10 @@ Before submitting:
 The engine welcomes ambitious variants, but maintainability comes first.
 
 A smaller, clearly documented variant is more valuable than a larger, ambiguous one.
+
+
+## Lifecycle and authority
+
+Every submission must use the metadata block from docs/variants/VARIANT_TEMPLATE.md and be registered in docs/variants/VARIANT_REGISTRY.yml. Presence in the repository does not grant canon, implementation, commercial permission, or endorsement.
+
+Use docs/VARIANT_CREATION_WORKFLOW.md for the complete intake, Discord playtest, and promotion process. Third-party-reference work belongs in case-studies and may not be merchandised or promoted as an authorized adaptation without review and any necessary permission.

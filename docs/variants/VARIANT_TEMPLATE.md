@@ -1,3 +1,17 @@
+---
+variant_name: Replace me
+status: model | incubating | permission-dependent | retired
+rules_authority: false
+source_type: original | public-domain | third-party-reference
+implementation: documentation-only | prototype | implemented
+commercial_use: allowed | prohibited | pending-review
+accessibility_review: pending | passed | restricted
+rights_review: pending | passed | permission-required
+canonical_version:
+related_issue:
+related_playtests:
+---
+
 # Variant Template
 
 ## Summary
@@ -123,3 +137,11 @@ Before submitting or implementing a variant, review:
 - `docs/VARIANT_SUBMISSION_GUIDE.md`
 - `docs/PUBLIC_DOMAIN_PROVENANCE.md`
 - `CONTRIBUTING.md`
+
+
+## Discord and commerce boundaries
+- Discord thread or session:
+- GitHub issue:
+- Store/reward use proposed: yes/no
+- If yes, commerce-rights gate status:
+- Participant-consent and evidence notes:

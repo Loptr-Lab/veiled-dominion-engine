@@ -63,7 +63,10 @@ Full rules: [`RULEBOOK_v0.1`](./docs/RULEBOOK_v0.1). Full design doc: [`docs/des
 | [`docs/design/GDD.md`](./docs/design/GDD.md) | Master design document |
 | [`ARCHITECTURE_OVERVIEW.md`](./ARCHITECTURE_OVERVIEW.md) | Engine architecture, turn lifecycle, snapshot contract |
 | [`docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md) | What you need to know before contributing engine code |
-| [`docs/variants/`](./docs/variants/) | Thematic variant proofs-of-concept |
+| [`docs/VARIANT_CREATION_WORKFLOW.md`](./docs/VARIANT_CREATION_WORKFLOW.md) | Start-to-finish variant creation and review |
+| [`docs/variants/`](./docs/variants/) | Registry of examples, incubation work, and case studies |
+| [`docs/DISCORD_COMMUNITY_ACCESS.md`](./docs/DISCORD_COMMUNITY_ACCESS.md) | Discord onboarding, supporter, and earned playtester access |
+| [`docs/COMMERCE_AND_RIGHTS_GATES.md`](./docs/COMMERCE_AND_RIGHTS_GATES.md) | Store, merchandise, and rights approval gates |
 
 ---
 

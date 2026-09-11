@@ -53,12 +53,25 @@ jobs:
           test -f .github/ISSUE_TEMPLATE/variant_proposal.yml
           test -f docs/VARIANT_SUBMISSION_GUIDE.md
           test -f docs/PUBLIC_DOMAIN_PROVENANCE.md
-          test -f docs/variants/BACK_IN_DERRY.md
+          test -f docs/VARIANT_CREATION_WORKFLOW.md
+          test -f docs/variants/README.md
           test -f docs/variants/VARIANT_TEMPLATE.md
+          test -f docs/variants/VARIANT_REGISTRY.yml
+          test -f docs/variants/examples/DREAD_PRESSURE.md
+          test -f docs/variants/incubation/CORRUPTED_ROM.md
+          test -f docs/variants/case-studies/BACK_IN_DERRY_REFERENCE.md
+          test -f docs/variants/case-studies/VIOLET_COLLABORATOR_SAFETY.md
+          test -f docs/DISCORD_COMMUNITY_ACCESS.md
+          test -f docs/SUPPORTER_BENEFITS_AND_FULFILLMENT.md
+          test -f docs/COMMERCE_AND_RIGHTS_GATES.md
 
       - name: Validate markdown file presence for core docs
         run: |
           ls README.md CONTRIBUTING.md docs/*.md docs/variants/*.md > /dev/null
+          grep -q "rules_authority: false" docs/variants/VARIANT_REGISTRY.yml
+          grep -q "commercial_use:" docs/variants/VARIANT_REGISTRY.yml
+          grep -q "accessibility_review:" docs/variants/VARIANT_REGISTRY.yml
+          grep -q "rights_review:" docs/variants/VARIANT_REGISTRY.yml
 
       - name: Check for accidental untiy3d topic typo reference in docs
         run: |

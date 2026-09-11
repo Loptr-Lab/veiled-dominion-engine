@@ -1,0 +1,50 @@
+schema_version: 1
+rules_authority:
+  - docs/design/GDD.md
+  - docs/RULEBOOK_v0.1
+variants:
+  - id: dread-pressure
+    document: docs/variants/examples/DREAD_PRESSURE.md
+    status: model
+    source_type: original
+    implementation: documentation-only
+    commercial_use: allowed-under-project-license
+    accessibility_review: pending
+    rights_review: passed-original
+    rules_authority: false
+  - id: corrupted-rom
+    document: docs/variants/incubation/CORRUPTED_ROM.md
+    status: incubating
+    source_type: original
+    implementation: documentation-only
+    commercial_use: pending-review
+    accessibility_review: restricted
+    rights_review: passed-original
+    rules_authority: false
+  - id: back-in-derry-reference
+    document: docs/variants/case-studies/BACK_IN_DERRY_REFERENCE.md
+    status: permission-dependent
+    source_type: third-party-reference
+    implementation: historical-session
+    commercial_use: prohibited-without-clearance
+    accessibility_review: pending
+    rights_review: permission-required
+    rules_authority: false
+  - id: discord-exhibition-findings
+    document: docs/variants/case-studies/DISCORD_EXHIBITION_FINDINGS.md
+    status: historical
+    source_type: mixed-reference
+    implementation: session-record
+    commercial_use: prohibited-without-clearance
+    accessibility_review: pending
+    rights_review: permission-required
+    rules_authority: false
+  - id: violet-collaborator-safety
+    document: docs/variants/case-studies/VIOLET_COLLABORATOR_SAFETY.md
+    status: historical
+    source_type: mixed-reference
+    implementation: documentation-only
+    commercial_use: educational-framework-only
+    accessibility_review: pending
+    rights_review: identifiable-publication-review-required
+    rules_authority: false

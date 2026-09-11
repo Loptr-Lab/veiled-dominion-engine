@@ -54,3 +54,12 @@ For public funding platforms, keep tier promises simple:
 - no hard SLA or guaranteed consulting language on public casual-support pages
 
 Use direct contact for larger sponsorship, procurement, or invoicing requests.
+
+
+## Platform and Discord access model
+
+Patreon is the technical door: engineering, documentation, maintenance, and accessibility updates. Buy Me a Coffee / Urban Alien Adventures is the narrative door: lore, prototype teasers, and worldbuilding. Discord is shared community infrastructure. The Phase 1 game remains the earned Playtester path; payment alone does not grant that role.
+
+Every tier that advertises Discord must name the role, channels, access duration, renewal/lapse behavior, and troubleshooting path. Public rules, open-source contribution, and ordinary bug reporting remain available without payment.
+
+Before promising calls, producer credit, creative influence, or physical artifacts, apply docs/SUPPORTER_BENEFITS_AND_FULFILLMENT.md and docs/COMMERCE_AND_RIGHTS_GATES.md.
