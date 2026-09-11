@@ -39,3 +39,12 @@ variants:
     accessibility_review: pending
     rights_review: permission-required
     rules_authority: false
+  - id: violet-collaborator-safety
+    document: docs/variants/case-studies/VIOLET_COLLABORATOR_SAFETY.md
+    status: historical
+    source_type: mixed-reference
+    implementation: documentation-only
+    commercial_use: educational-framework-only
+    accessibility_review: pending
+    rights_review: identifiable-publication-review-required
+    rules_authority: false

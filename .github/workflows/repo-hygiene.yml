@@ -60,6 +60,7 @@ jobs:
           test -f docs/variants/examples/DREAD_PRESSURE.md
           test -f docs/variants/incubation/CORRUPTED_ROM.md
           test -f docs/variants/case-studies/BACK_IN_DERRY_REFERENCE.md
+          test -f docs/variants/case-studies/VIOLET_COLLABORATOR_SAFETY.md
           test -f docs/DISCORD_COMMUNITY_ACCESS.md
           test -f docs/SUPPORTER_BENEFITS_AND_FULFILLMENT.md
           test -f docs/COMMERCE_AND_RIGHTS_GATES.md
