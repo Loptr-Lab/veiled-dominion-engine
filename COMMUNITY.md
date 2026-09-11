@@ -33,3 +33,12 @@ Ready to build?
 Read the Main README to understand the engine.
 Join the Loptr Lab Discord and introduce yourself in the #the-void channel.
 Tell us which role you are claiming.
+
+
+## Discord access and durable records
+
+The community server is open for orientation and public discussion. Patreon and Buy Me a Coffee are distinct supporter doors; payment does not automatically grant Playtester. The Playtester path is documented separately and must remain opt-in.
+
+Discord supports conversation, scheduling, and live sessions. GitHub remains the durable record for rules, bugs, variant decisions, and reproducible findings. Never post payment records, addresses, credentials, private legal communications, or unconsented recordings.
+
+See [docs/DISCORD_COMMUNITY_ACCESS.md](./docs/DISCORD_COMMUNITY_ACCESS.md).

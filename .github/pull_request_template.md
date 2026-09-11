@@ -67,6 +67,10 @@ Docs touched:
 ## ✅ Compliance Checklist
 - [ ] Code compiles without errors
 - [ ] All tests pass
-- [ ] No commercial IP included
+- [ ] No unapproved commercial IP included
+- [ ] Variant status and rules-authority fields are explicit
+- [ ] Accessibility/Safe Mode impact reviewed
+- [ ] Discord evidence is consent-safe
+- [ ] Store or supporter promises pass the commerce and fulfillment gates
 - [ ] Public domain provenance documented
 - [ ] CC BY-NC-SA 4.0 compliance confirmed

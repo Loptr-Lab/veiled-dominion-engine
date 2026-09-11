@@ -14,7 +14,7 @@ body:
     attributes:
       label: Variant name
       description: What is the proposed name of the variant?
-      placeholder: Back in Derry
+      placeholder: Dread Pressure
     validations:
       required: true
 
@@ -81,6 +81,7 @@ body:
         - Fully original
         - Inspired by abstract historical/mythic material
         - Based on public-domain source material
+        - Contains a third-party reference (case-study only)
     validations:
       required: true
 
@@ -117,3 +118,28 @@ body:
     attributes:
       label: Related references
       description: Link related docs, issues, PRs, rules sections, or prototype files.
+
+  - type: dropdown
+    id: commercial_use
+    attributes:
+      label: Proposed commercial use
+      options:
+        - None / documentation only
+        - Possible future use; rights review required
+        - Approved original or cleared use
+    validations:
+      required: true
+
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility and safety
+      description: Explain equivalent state communication, reduced-motion or Safe Mode behavior, and relevant warnings.
+    validations:
+      required: true
+
+  - type: textarea
+    id: discord_evidence
+    attributes:
+      label: Discord or playtest evidence
+      description: Link a consent-safe session record. Do not post private participant, payment, credential, or legal records.
