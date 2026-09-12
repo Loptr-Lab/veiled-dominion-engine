@@ -2,6 +2,12 @@
 
 This directory defines cross-layer contracts between backend/engine and frontend/client.
 
+## Published contracts
+
+- [`anonymous-playtest-telemetry.v1.schema.json`](anonymous-playtest-telemetry.v1.schema.json) — normative anonymous completed-game and optional feedback records.
+- [`anonymous-playtest-telemetry.md`](anonymous-playtest-telemetry.md) — privacy boundary and producer requirements.
+- [`versioning.md`](versioning.md) — compatibility and change policy.
+
 ## What belongs here
 
 - Request/response DTO specs.

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://loptrlab.com/contracts/anonymous-playtest-telemetry.v1.schema.json",
+  "title": "Veiled Dominion anonymous playtest telemetry v1",
+  "oneOf": [
+    { "$ref": "#/$defs/completedGame" },
+    { "$ref": "#/$defs/postGameFeedback" }
+  ],
+  "$defs": {
+    "completedGame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "anonymousMatchId", "completedAt", "durationMs", "moveCount", "fogMode", "winner", "winCondition", "veilEvents", "promotionEvents", "rebirthAdvances"],
+      "properties": {
+        "schemaVersion": { "const": "anonymous-playtest.v1" },
+        "anonymousMatchId": { "type": "string", "format": "uuid" },
+        "completedAt": { "type": "integer", "minimum": 0 },
+        "durationMs": { "type": "integer", "minimum": 0 },
+        "moveCount": { "type": "integer", "minimum": 0 },
+        "fogMode": { "type": "boolean" },
+        "winner": { "enum": ["w", "b", "draw"] },
+        "winCondition": { "enum": ["rebirth-control-lost", "resignation", "timeout", "draw", "unknown"] },
+        "veilEvents": { "type": "integer", "minimum": 0 },
+        "promotionEvents": { "type": "integer", "minimum": 0 },
+        "rebirthAdvances": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "postGameFeedback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "anonymousMatchId", "submittedAt", "rating", "questionId", "answer", "kind", "comment"],
+      "properties": {
+        "schemaVersion": { "const": "anonymous-feedback.v1" },
+        "anonymousMatchId": { "type": "string", "format": "uuid" },
+        "submittedAt": { "type": "integer", "minimum": 0 },
+        "rating": { "type": ["integer", "null"], "minimum": 1, "maximum": 5 },
+        "questionId": { "enum": ["veil-predictable", "pace-comfortable", "ending-clear"] },
+        "answer": { "enum": ["yes", "mostly", "no", "not-sure", "skipped"] },
+        "kind": { "enum": ["note", "bug", "none"] },
+        "comment": { "type": "string", "maxLength": 600 }
+      }
+    }
+  }
+}
