@@ -4,6 +4,8 @@ Veiled Dominion is a 4-player chess variant that reimagines the board not as a b
 
 **Status:** Early open prototype (v0.1). Core rules and architecture are documented; engine implementation is in progress. See [`DEVELOPER_STATUS.md`](./DEVELOPER_STATUS.md) for implementation truth and the contributor starting point.
 
+Follow [`THE PATH`](./docs/THE_PATH.md) for the implementation path from canonical rules to a testable vertical slice.
+
 ---
 
 ## PIXIE
