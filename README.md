@@ -2,7 +2,7 @@
 
 Veiled Dominion is a 4-player chess variant that reimagines the board not as a battlefield of conquest, but as a classroom for restraint. One player controls **Rebirth**, a piece dangerously overpowered by standard rules. The other three must cooperate—without a formal alliance—to suppress her by mastering restraint.
 
-**Status:** Early open prototype (v0.1). Core rules and architecture are documented; engine implementation is in progress. See [`ARCHITECTURE_OVERVIEW.md`](./ARCHITECTURE_OVERVIEW.md) for what's built.
+**Status:** Early open prototype (v0.1). Core rules and architecture are documented; engine implementation is in progress. See [`DEVELOPER_STATUS.md`](./DEVELOPER_STATUS.md) for implementation truth and the contributor starting point.
 
 ---
 
@@ -55,11 +55,15 @@ No environment variables are required for local test runs right now. If needed l
 
 ---
 
-## This Is the Game Repo
+## Repository Scope
 
-This repository is the actual **Veiled Dominion game engine** (C#/.NET, Unity) — game design, rules, and architecture.
+This is the **Veiled Dominion game repository and design/architecture authority surface**. The canonical four-player engine is still being implemented.
 
-If you're looking for the **candidate coding exercise** (TypeScript, used for hiring and VRS-supported training), that's a separate, self-contained repo: **[github.com/Loptr-Lab/training](https://github.com/Loptr-Lab/training)**.
+The production direction is C#/.NET with Unity, but that runtime is **specified/planned rather than currently runnable here**. See [`DEVELOPER_STATUS.md`](./DEVELOPER_STATUS.md) before assuming any C#/Unity component is implemented.
+
+The TypeScript package in this repository is a separate candidate coding exercise harness. It is intentionally self-contained and does not constitute the canonical four-player engine.
+
+The separate training repo is **[github.com/Loptr-Lab/training](https://github.com/Loptr-Lab/training)**.
 
 ---
 
