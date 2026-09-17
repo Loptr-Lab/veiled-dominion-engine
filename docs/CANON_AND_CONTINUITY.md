@@ -124,15 +124,18 @@ Any cross-repository mechanics change must state whether it is:
 - Historical/archive
 - Unresolved design decision
 
-
-
 ## Variant authority
 
-docs/variants contains models, incubation work, and case studies. None sets canonical rules unless an explicit maintainer decision updates the authoritative GDD and rulebook.
+`docs/variants/VARIANT_REGISTRY.yml` is the canonical classification index for variant status, provenance, implementation state, rights/accessibility review, and rules authority. It does not itself grant canonical rules authority; the authoritative GDD and rulebook remain the promotion mechanism.
+
+`docs/variants` contains models, incubation work, and case studies. None sets canonical rules unless an explicit maintainer decision updates the authoritative GDD and rulebook.
 
 - Dread Pressure is an original documentation model.
 - Corrupted ROM is an original incubation experiment with mandatory Safe Mode.
 - Back in Derry/Pennywise material is a permission-dependent historical reference.
 - Discord exhibitions, supporter rewards, and store mockups do not create canon or commercial permission.
+- Systems Quartet is historical provenance and a non-canonical prototype.
+- Dark Bauhaus is a historical presentation experiment and non-canonical.
+- Paracausal Edition is a deferred third-party reference concept and is not cleared for commercial or canonical use.
 
-See docs/variants/VARIANT_REGISTRY.yml.
+See `docs/variants/VARIANT_REGISTRY.yml`.
