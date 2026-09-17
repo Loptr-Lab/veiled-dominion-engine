@@ -6,6 +6,26 @@ Veiled Dominion is a 4-player chess variant that reimagines the board not as a b
 
 ---
 
+## PIXIE
+
+**P.I.X.I.E. — Paraconsistent Inclusive Xenodochial Intuitive Ecstatic** is part of the Veiled Dominion/Loptr Lab IP and experience layer. PIXIE is an ethical, accessibility-oriented presentation and mediation presence: she can help a person encounter, navigate, hear, and engage with the work without deciding what the work means or making choices on the player's behalf.
+
+PIXIE is **not Rebirth**, and PIXIE is not the Keeper. The Keeper/archive and PIXIE/interface have distinct functions. Individual prototypes may expose PIXIE capabilities differently; those implementation choices do not create a new character identity or rewrite narrative canon.
+
+Current review surface: [`50 Ways to Leave Another`](./50-ways.html). Its browser prototype includes an opt-in PIXIE reader using the browser's available speech synthesis. This is a review implementation, not a claim that the full PIXIE runtime is complete.
+
+See [`docs/interactive/PIXIE_50_WAYS_INTEGRATION.md`](./docs/interactive/PIXIE_50_WAYS_INTEGRATION.md) and [`docs/CANON_AND_CONTINUITY.md`](./docs/CANON_AND_CONTINUITY.md) for the current boundary and continuity rules.
+
+---
+
+## Documentation
+
+See [`docs/CANON_AND_CONTINUITY.md`](./docs/CANON_AND_CONTINUITY.md) for canon, continuity, reinterpretation, and IP boundaries.
+
+See [`docs/interactive/PIXIE_50_WAYS_INTEGRATION.md`](./docs/interactive/PIXIE_50_WAYS_INTEGRATION.md) for the current PIXIE review integration and accessibility boundary.
+
+---
+
 ## Local Development Quick Start
 
 This repository currently ships a TypeScript/Jest engine exercise harness (not a runnable Unity/.NET game client).
@@ -55,21 +75,6 @@ Full rules: [`RULEBOOK_v0.1`](./docs/RULEBOOK_v0.1). Full design doc: [`docs/des
 
 ---
 
-## Documentation
-
-| Doc | Covers |
-|---|---|
-| [`RULEBOOK_v0.1`](./docs/RULEBOOK_v0.1) | Complete playable rules |
-| [`docs/design/GDD.md`](./docs/design/GDD.md) | Master design document |
-| [`ARCHITECTURE_OVERVIEW.md`](./ARCHITECTURE_OVERVIEW.md) | Engine architecture, turn lifecycle, snapshot contract |
-| [`docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md`](./docs/CONTRIBUTOR_SKILLSET_AND_RESOURCES.md) | What you need to know before contributing engine code |
-| [`docs/VARIANT_CREATION_WORKFLOW.md`](./docs/VARIANT_CREATION_WORKFLOW.md) | Start-to-finish variant creation and review |
-| [`docs/variants/`](./docs/variants/) | Registry of examples, incubation work, and case studies |
-| [`docs/DISCORD_COMMUNITY_ACCESS.md`](./docs/DISCORD_COMMUNITY_ACCESS.md) | Discord onboarding, supporter, and earned playtester access |
-| [`docs/COMMERCE_AND_RIGHTS_GATES.md`](./docs/COMMERCE_AND_RIGHTS_GATES.md) | Store, merchandise, and rights approval gates |
-
----
-
 ## Accessibility
 
 Veiled Dominion's visual identity relies on extreme contrast (void-black vs. amber glow), which creates real risk for photosensitive and vestibular-sensitive players if not engineered carefully. We're building accessibility-first:
@@ -77,6 +82,7 @@ Veiled Dominion's visual identity relies on extreme contrast (void-black vs. amb
 - [`docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md`](./docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md) — rendering/temporal-safety rules
 - [`docs/ENGINE_ACCESSIBILITY_AUDIO_AURA.md`](./docs/ENGINE_ACCESSIBILITY_AUDIO_AURA.md) — non-visual play design for blind/low-vision players
 - [`docs/ACCESSIBILITY_GRANT_POSITIONING.md`](./docs/ACCESSIBILITY_GRANT_POSITIONING.md) — current build status against these specs
+- [`docs/interactive/PIXIE_50_WAYS_INTEGRATION.md`](./docs/interactive/PIXIE_50_WAYS_INTEGRATION.md) — current PIXIE reader/accessibility review surface
 
 These docs track implementation status honestly (planned vs. built) — check there before assuming any given accessibility feature is live.
 
@@ -107,9 +113,7 @@ Loptr Lab is an independent creative studio. If you'd like to support this proje
 
 ## License and fan forks
 
-Software is MIT-licensed; original rules, narrative, documentation, and original art are
-CC BY-NC-SA 4.0. Loptr Lab names and marks are reserved. See [LICENSE.md](./LICENSE.md) and
-[FAN_FORK_GUIDE.md](./FAN_FORK_GUIDE.md) before redistributing or publishing a fork.
+Software is MIT-licensed; original rules, narrative, documentation, and original art are CC BY-NC-SA 4.0. Loptr Lab names and marks are reserved. See [LICENSE.md](./LICENSE.md) and [FAN_FORK_GUIDE.md](./FAN_FORK_GUIDE.md) before redistributing or publishing a fork.
 
 ## 📬 Contact
 
