@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="50 Ways to Leave Another — an interactive narrative prototype for Veiled Dominion.">
+<title>50 Ways to Leave Another — Prototype</title>
+<style>
+:root{--bg:#050505;--panel:#0d0d0d;--text:#eee;--muted:#999;--accent:#d4a853;--line:#262626}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,serif}main{max-width:820px;margin:auto;padding:48px 24px 80px}h1,h2{font-family:Helvetica,Arial,sans-serif;font-weight:400}h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.05;margin:.3em 0 .5em}.eyebrow{font:700 .75rem/1.2 Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}.notice{border:1px solid #5b4825;background:#11100c;padding:18px 20px;margin:28px 0}.notice strong{color:var(--accent)}#story{border-top:1px solid var(--line);margin-top:32px;padding-top:36px}.scene{max-width:680px;margin:auto}.text{font-size:1.2rem;white-space:pre-line;margin-bottom:28px}.choices{display:grid;gap:12px}.choice{display:block;width:100%;text-align:left;background:var(--panel);color:var(--text);border:1px solid var(--line);padding:16px 18px;font:inherit;cursor:pointer}.choice:hover,.choice:focus{border-color:var(--accent);outline:none}.choice small{display:block;color:var(--muted);margin-top:4px;font:12px Helvetica,Arial,sans-serif}.state{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0;color:var(--muted);font:12px Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}.state span{border:1px solid var(--line);padding:6px 9px}.controls{display:flex;gap:10px;margin-top:28px}.controls button{background:none;border:1px solid var(--line);color:var(--muted);padding:8px 12px;cursor:pointer}.footer{border-top:1px solid var(--line);margin-top:60px;padding-top:24px;color:var(--muted);font:13px/1.6 Helvetica,Arial,sans-serif}.footer a{color:var(--accent)}.hidden{display:none}.ending{font-size:1.25rem}.credit{margin-top:20px;color:#777;font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">Veiled Dominion · Masterclass Prototype</div>
+<h1>50 Ways to Leave Another</h1>
+<p>An interactive narrative experiment about agency, persistent choice, and what happens when people decide they do not have to stay.</p>
+<div class="notice"><strong>Review prototype — not a finished game.</strong><br>This browser version is an educational/creative prototype for classroom discussion. It is not a commercial release, legal opinion, production commitment, or representation that all future adaptation, performer, music, interactive, or AI/digital-replica rights have been cleared. Story and implementation may change after review. See the project documentation and AI-use disclosure for additional context.</div>
+<section id="story" aria-live="polite"><div class="scene"><div id="text" class="text"></div><div id="choices" class="choices"></div><div id="state" class="state" aria-label="Narrative state"></div><div class="controls"><button id="restart" type="button">Restart</button></div></div></section>
+<div class="footer">
+<p><strong>For the class:</strong> The important design question is not “Which ending did you get?” It is “How did your choices change the meaning of what happened next?”</p>
+<p>Underlying Ink source: <a href="stories/50-ways-to-leave-another/prototype.ink">prototype.ink</a> · Narrative blueprint: <a href="docs/interactive/50_WAYS_TO_LEAVE_ANOTHER.md">50_WAYS_TO_LEAVE_ANOTHER.md</a> · AI-use disclosure: <a href="AI_USAGE.md">AI_USAGE.md</a></p>
+<p class="credit">This browser wrapper is a review surface for the current prototype. It does not claim production-ready Ink integration.</p>
+</div>
+</main>
+<script>
+const initial={trust:0,freedom:0,control:0};let s={...initial};
+const $=id=>document.getElementById(id);function state(){return `<span>Trust ${s.trust}</span><span>Freedom ${s.freedom}</span><span>Control ${s.control}</span>`}
+function render(text,choices){$('text').textContent=text;$('choices').innerHTML='';choices.forEach(c=>{const b=document.createElement('button');b.className='choice';b.type='button';b.innerHTML=c.label+(c.note?`<small>${c.note}</small>`:'');b.onclick=c.go;$('choices').appendChild(b)});$('state').innerHTML=state()}
+function start(){s={...initial};render(`The sky castle is burning.\n\nViolet stands at the controls of The Nebuchadnezzar. Sebastien enters the bridge expecting a princess. Instead, he finds someone already trying to leave.\n\n“Do you know how to fly this thing?”`,[
+{label:'Tell him the truth.',go:truth},{label:'Tell him what he wants to hear.',go:performance},{label:'Ask him why he wants to fly it.',go:question}])}
+function truth(){s.trust++;s.freedom++;airship(`“I don’t know.”\n\nSebastien pauses.\n\n“You’re the princess.”\n\n“That doesn’t mean I know how to fly.”`)}
+function performance(){s.freedom++;s.control++;airship(`“Of course.”\n\nSebastien studies her face. He does not believe her.`)}
+function question(){s.trust+=2;s.control--;airship(`“Why do you want to fly this?”\n\nFor once, Sebastien is the one being asked to explain himself.`)}
+function airship(intro){let t=`${intro}\n\nThe ship rises.\n\nThe immediate choice is over. The choice has not disappeared.`;if(s.trust>=2)t+=`\n\nSebastien lowers his weapon. He is listening now.`;else t+=`\n\nSebastien keeps one hand near his weapon.`;if(s.control>=1)t+=`\n\nViolet notices that he answered her question by watching her instead.`;else t+=`\n\nViolet takes the controls without asking permission.`;if(s.freedom>=1)t+=`\n\nThe castle falls away beneath them. For one breath, nobody owns the direction of the ship.`;render(t,[{label:'Leave the person who expects me to stay.',go:leavePerson},{label:'Leave the role they assigned me.',go:leaveRole},{label:'Leave the story they wrote for me.',go:leaveStory}])}
+function leavePerson(){s.freedom++;render(`Violet looks at Sebastien.\n\n“You wanted the ship.”\n\n“And you?”\n\n“I wanted to know whether I could leave without becoming someone else’s prisoner.”`,[{label:'Continue.',go:converge}])}
+function leaveRole(){s.freedom+=2;s.control--;render(`Violet removes the royal insignia from her coat.\n\nIt is a small gesture. It feels larger than the castle behind them.`,[{label:'Continue.',go:converge}])}
+function leaveStory(){s.freedom+=2;s.trust++;render(`Violet looks at the cards, contracts, prophecies, and plans that were prepared for her.\n\n“I am not the ending you were waiting for.”\n\nShe lets the papers go.`,[{label:'Continue.',go:converge}])}
+function converge(){let t;if(s.freedom>=3&&s.control<=0)t=`Sebastien: “So what happens now?”\n\nViolet: “We find out what we choose when nobody has chosen it for us.”`;else if(s.trust>=2)t=`Sebastien: “I still don’t understand you.”\n\nViolet: “Good. Keep asking.”`;else t=`Sebastien: “You really think you can change this?”\n\nViolet: “I think I can stop pretending it cannot be changed.”`;render(t+`\n\nThe ship disappears into the storm.`,[{label:'Restart the prototype.',go:start}]);$('text').classList.add('ending')}
+$('restart').onclick=start;start();
+</script>
+</body>
+</html>
