@@ -1,5 +1,13 @@
 # 50 Ways to Leave Another — Interactive Narrative Blueprint
 
+> **MASTERCLASS REVIEW NOTICE**
+>
+> This is a creative/educational prototype prepared for discussion and critique. It is **not a finished game, commercial release, legal opinion, or production commitment**. The interactive structure, story relationship, terminology, and implementation choices are intentionally subject to review and revision.
+>
+> **Rights note:** References to characters, stories, music, performers, third-party materials, or interactive/AI uses should not be read as a representation that all production rights have been cleared. Rights clearance and chain-of-title review are production gates. This document is not legal advice.
+>
+> **AI-use note:** AI tools assisted with organization, implementation, and documentation. The repository's [`AI_USAGE.md`](../../AI_USAGE.md) describes that use. The underlying characters, story, philosophy, and worldbuilding are identified there as pre-existing creative work.
+
 ## Purpose
 
 This document establishes the first implementation layer for **50 Ways to Leave Another** as a successor/expansion narrative inside the Veiled Dominion ecosystem.
@@ -42,6 +50,26 @@ The player tracks:
 
 The important design move is that **control is not simply a bad-ending meter**. It is a narrative condition that changes later interpretation.
 
+## Review scope
+
+For the masterclass, the useful questions are architectural rather than technical:
+
+- Does persistent state make choices meaningfully different after branches reconverge?
+- Does the design communicate agency without pretending every choice produces a separate story?
+- Is leaving a **person**, a **role**, and a **story** sufficiently distinct as narrative mechanics?
+- Where should the boundary sit between authored canon and player-created interpretation?
+- What additional state would deepen the experience without turning it into a branch-count exercise?
+
+## Current implementation status
+
+- **Implemented:** first Ink narrative slice and its design blueprint.
+- **Implemented:** persistent `trust`, `freedom`, and `control` state in the prototype.
+- **Implemented:** convergent branching and three forms of leaving.
+- **Not yet implemented:** a production graphical client, complete Ink test harness, final art/audio, performer integration, or commercial release pipeline.
+- **Not yet cleared:** production rights for every possible future adaptation or interactive use.
+
+The prototype should therefore be reviewed as a **working narrative experiment**, not represented as a finished or production-validated game.
+
 ## Next implementation pass
 
 - Add a second decision after the airship rises.
@@ -52,6 +80,6 @@ The important design move is that **control is not simply a bad-ending meter**. 
 
 ## Rights/production gate
 
-This prototype is an internal narrative implementation artifact. Before commercial publication, the project should have documented chain of title for the underlying story/IP and written agreements covering contributors, commissioned work, music, performer rights, and any interactive/AI/digital-replica uses that apply to the production.
+Before commercial publication, the project should have documented chain of title for the underlying story/IP and written agreements covering contributors, commissioned work, music, performer rights, and any interactive/AI/digital-replica uses that apply to the production.
 
 The repository currently distinguishes software licensing from original narrative/documentation/art licensing. This prototype should remain in the appropriate rights-controlled project area rather than being treated as generic engine code.
