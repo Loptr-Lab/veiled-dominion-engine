@@ -1,5 +1,7 @@
 # Veiled Dominion — Developer Status
 
+Implementation path: [`docs/THE_PATH.md`](./docs/THE_PATH.md)
+
 Status: PROTOTYPE
 Canonical rules target: 4-player, 14×14 cross-board
 Current executable surface: TypeScript/Jest exercise harness only
