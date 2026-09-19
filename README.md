@@ -8,7 +8,7 @@ Veiled Dominion is a 4-player chess variant that reimagines the board not as a b
 
 ## PIXIE
 
-**P.I.X.I.E. — Paraconsistent Inclusive Xenodochial Intuitive Ecstatic** is part of the Veiled Dominion/Loptr Lab IP and experience layer. PIXIE is an ethical, accessibility-oriented presentation and mediation presence: she can help a person encounter, navigate, hear, and engage with the work without deciding what the work means or making choices on the player's behalf.
+**P.I.X.I.E. — Paraconsistent Inclusive Xenodochial Intuitive Ecstatic** is a cross-project Loptr Lab interface and stewardship layer. Veiled Dominion is one receiving production context in which PIXIE may be presented; this repository does not make the game engine the sole canonical home or owner of PIXIE. PIXIE is an ethical, accessibility-oriented presentation and mediation presence: she can help a person encounter, navigate, hear, and engage with the work without deciding what the work means or making choices on the player's behalf.
 
 PIXIE is **not Rebirth**, and PIXIE is not the Keeper. The Keeper/archive and PIXIE/interface have distinct functions. Individual prototypes may expose PIXIE capabilities differently; those implementation choices do not create a new character identity or rewrite narrative canon.
 
