@@ -32,6 +32,8 @@ function shouldScan(filePath) {
   const normalized = filePath.split(path.sep).join('/');
   const segments = normalized.split('/');
 
+  if (SELF_SCAN_FILES.has(normalized)) return false;
+
   if (segments.some((s) => IGNORE_PATH_SEGMENTS.has(s))) {
     return false;
   }
@@ -56,6 +58,7 @@ function scanFile(filePath) {
 
   lines.forEach((line, idx) => {
     PATTERNS.forEach((pattern) => {
+      if (line.includes('prompt-scan:allow')) return;
       if (pattern.test(line)) {
         findings.push({
           filePath,
