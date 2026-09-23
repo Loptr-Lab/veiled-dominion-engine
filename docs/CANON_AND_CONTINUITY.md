@@ -34,6 +34,7 @@ When sources conflict, use the following order and preserve the lower-ranked sou
 6. **Historical/archive**
    - *Daddy's Little Mortis — Game Blueprint*
    - Old Dice/Card/Chess Veiled Dominion rulebook
+   - [Battle the Beast](https://github.com/ibloud/battle-the-beast) — an early transformative-fiction narrative laboratory whose reusable design lineage is documented separately; it has no rules authority
 
 Historical sources record design provenance. They do not become current rules unless an explicit decision promotes them.
 
@@ -63,7 +64,7 @@ Resonance describes psychic intrusion, psychic defense, mastery/restraint, and c
 
 ### Historical/archive work
 
-Archived designs remain available as provenance. Do not normalize their terminology or mechanics into current canon merely to make documents appear consistent.
+Archived designs remain available as provenance. Do not normalize their terminology or mechanics into current canon merely to make documents appear consistent.\n\n*Battle the Beast* predates the current game and explores distributed power, restraint, persistent consequence, and repair through transformative fiction. Its [lineage crosswalk](https://github.com/ibloud/battle-the-beast/blob/main/docs/VEILED_DOMINION_LINEAGE.md) may supply design questions and playtest lenses, but franchise characters and story elements must not transfer into Veiled Dominion.
 
 ## The five-lesson continuity spine
 
