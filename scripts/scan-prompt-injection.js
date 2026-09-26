@@ -24,6 +24,8 @@ const ALLOWED_EXTENSIONS = new Set([
   '.py', '.sh', '.cs', '.html', '.css'
 ]);
 
+const SELF_SCAN_FILES = new Set(['scripts/scan-prompt-injection.js']);
+
 const IGNORE_PATH_SEGMENTS = new Set([
   '.git', 'node_modules', 'dist', 'build', 'coverage', 'assets'
 ]);
