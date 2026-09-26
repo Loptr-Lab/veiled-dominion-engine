@@ -37,6 +37,8 @@ When sources conflict, use the following order and preserve the lower-ranked sou
 
 Historical sources record design provenance. They do not become current rules unless an explicit decision promotes them.
 
+For the cross-project placement of the Weaver, PIXIE, Duet, and 52 Cards of War, see the [Duet project bible](https://github.com/Loptr-Lab/duet-solo-hackathon/blob/main/docs/PROJECT_BIBLE.md). Its external [52 Aces reading-list reference](https://52aces.com/reading-list/) is research context only. Neither the Weaver's proposed collaboration nor an outside reading list changes this source hierarchy, grants contributor rights, or promotes experimental cards or mechanics into the four-player game.
+
 ## Continuity boundaries
 
 ### Narrative canon
