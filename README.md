@@ -107,7 +107,7 @@ Start with the [Loptr-Lab/training](https://github.com/Loptr-Lab/training) repo 
 
 ## Support
 
-Loptr Lab is an independent creative studio. If you'd like to support this project's development: see [`SPONSORS.md`](./SPONSORS.md) and [`SPONSORSHIP_STRATEGY.md`](./SPONSORSHIP_STRATEGY.md), or [become a sponsor](https://github.com/sponsors/Loptr-Lab).
+Loptr Lab is an independent creative studio. If you'd like to support this project's development: see [`SPONSORS.md`](./docs/SPONSORS.md) and [`SPONSORSHIP_STRATEGY.md`](./docs/SPONSORSHIP_STRATEGY.md), or [become a sponsor](https://github.com/sponsors/Loptr-Lab).
 
 ---
 
