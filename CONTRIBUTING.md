@@ -1,5 +1,11 @@
 # Contributing to Veiled Dominion Engine
 
+## Mission and participation terms
+
+Current open review and contribution opportunities are voluntary and unpaid. Before work begins, agree in writing on scope, time, what will be public, credit preferences, and an exit path. You can stop at any point. Participation does not promise employment, ownership, revenue share, academic credit, or future pay. Any paid commission or other formal arrangement requires a separate signed agreement before work begins. External assistance or benefits belong to the participant and are not compensation from Loptr Lab.
+
+[People over profit, accessibility first, and our funding boundary](https://github.com/ibloud/ibloud.github.io/blob/main/MISSION.md).
+
 Thank you for helping us build **Veiled Dominion**, the asymmetrical 4-player tactical chess-variant engine. This repository houses the core state machine, spatial mechanics pipelines, and network synchronization systems powering the broader **Daddy's Little Mortis** ecosystem.
 
 By contributing to this project, you help scale an extensible, decentralized framework for alternative strategy games. Please review this document completely before opening an issue or a pull request.

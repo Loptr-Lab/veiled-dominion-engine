@@ -3,6 +3,11 @@
 
 ---
 
+Loptr Lab is a pre-seed, people-over-profit, accessibility-first venture working toward a self-sustaining model within a capitalist economy. Money sustains the work; meaningful change for people is its purpose. We accept funding only on terms that keep people and accessibility first. Our long-term vision includes universal basic income. We aim to bring change to life and leave a transparent record of what we tried, what worked, and what failed so others can carry it forward. This mission governs our projects, funding decisions, and partnerships; it is not a temporary marketing position.
+
+Financial support is optional and sustains infrastructure, maintenance, accessibility work, and documented development. Paying does not buy contributor status, canon authority, approvals, ownership, or employment. Participation and accessibility are not sponsorship rewards. Project-specific licenses and existing signed agreements continue to apply.
+
+
 ## Profile Summary
 
 Loptr Lab is building open prototype systems, contributor-ready documentation,
@@ -50,7 +55,7 @@ to contributors, reviewers, and future collaborators.
 
 Includes optional public recognition as a sponsor.
 
-### $25 / month — Working Contributor
+### $25 / month — Practitioner Supporter
 
 For freelancers, indie developers, and technical practitioners who want to help
 keep Loptr Lab’s open work stable, documented, and moving.
