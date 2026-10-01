@@ -80,7 +80,7 @@ Do not write code until you have read the following files in the `src/` director
 
 ### The Problem
 
-Veiled Dominion relies on extreme luminance contrast (Musou Black vs. Amber Emission). While this passes static colorblind contrast checks (WCAG AAA), it creates a severe risk of Photosensitive Epilepsy (PSE) if the rendering pipeline introduces temporal artifacts (frame drops, screen tearing, Z-fighting, or rapid opacity flickers).
+Veiled Dominion relies on extreme luminance contrast (Musou Black vs. Amber Emission). The palette is intended to provide high luminance contrast; WCAG contrast has not yet been measured and is tracked as Planned in `ACCESSIBILITY_GRANT_POSITIONING.md`. High static contrast alone does not establish temporal rendering safety. Frame pacing, flicker, and transition behavior require separate verification against the documented accessibility constraints.
 
 ### Strict Engineering Rules for VD
 
@@ -103,10 +103,8 @@ This creates a fascinating design constraint: The main game must be medically sa
 
 See `docs/variants/SICKBOI_EXE.md` for the internal concept framing of this variant.
 
-### 4. The Funding Angle (The Masterstroke)
+### 4. Funding the Accessibility Research
 
-This is how you turn the paradox into money. Organizations like AbleGamers Charity and Epic MegaGrants actively look for projects doing R&D in accessible gaming.
-
-If you write a grant proposal titled: **"Solving the #A11y Paradox: Building a High-Contrast Rendering Pipeline that Prevents Photosensitive Epilepsy in Dark-Mode Games,"** you are no longer pitching "a cool chess game." You are pitching a proprietary engine solution that solves a known industry problem.
+Funding should sustain documented accessibility research and implementation. Describe the rendering problem, proposed constraints, current implementation status, and verification work honestly. Do not claim that an unverified pipeline prevents seizures or meets WCAG. Funding opportunities require their own current eligibility review; they do not establish an award or endorsement.
 
 **Action Item:** Treat `docs/ENGINE_ACCESSIBILITY_A11Y_PARADOX.md` as the source-of-truth reference when proposing rendering, shader, post-processing, or export pipeline changes.

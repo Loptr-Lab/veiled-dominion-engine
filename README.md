@@ -1,5 +1,16 @@
 # Veiled Dominion Engine
 
+## Loptr Lab mission and participation
+
+Loptr Lab is a pre-seed, people-over-profit, accessibility-first venture working toward a self-sustaining model within a capitalist economy. Money sustains the work; meaningful change for people is its purpose. We accept funding only on terms that keep people and accessibility first. Our long-term vision includes universal basic income. We aim to bring change to life and leave a transparent record of what we tried, what worked, and what failed so others can carry it forward. This mission governs our projects, funding decisions, and partnerships; it is not a temporary marketing position.
+
+Current open review and contribution opportunities are voluntary and unpaid. Before work begins, agree in writing on scope, time, what will be public, credit preferences, and an exit path. You can stop at any point. Participation does not promise employment, ownership, revenue share, academic credit, or future pay. Any paid commission or other formal arrangement requires a separate signed agreement before work begins. External assistance or benefits belong to the participant and are not compensation from Loptr Lab.
+
+Financial support is optional and sustains infrastructure, maintenance, accessibility work, and documented development. Paying does not buy contributor status, canon authority, approvals, ownership, or employment. Participation and accessibility are not sponsorship rewards. Project-specific licenses and existing signed agreements continue to apply.
+
+[Full mission and participation terms](https://github.com/ibloud/ibloud.github.io/blob/main/MISSION.md).
+
+
 Veiled Dominion is a 4-player chess variant that reimagines the board not as a battlefield of conquest, but as a classroom for restraint. One player controls **Rebirth**, a piece dangerously overpowered by standard rules. The other three must cooperate—without a formal alliance—to suppress her by mastering restraint.
 
 **Status:** Early open prototype (v0.1). Core rules and architecture are documented; engine implementation is in progress. See [`ARCHITECTURE_OVERVIEW.md`](./ARCHITECTURE_OVERVIEW.md) for what's built.

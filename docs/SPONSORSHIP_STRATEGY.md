@@ -3,6 +3,11 @@
 
 ---
 
+Loptr Lab is a pre-seed, people-over-profit, accessibility-first venture working toward a self-sustaining model within a capitalist economy. Money sustains the work; meaningful change for people is its purpose. We accept funding only on terms that keep people and accessibility first. Our long-term vision includes universal basic income. We aim to bring change to life and leave a transparent record of what we tried, what worked, and what failed so others can carry it forward. This mission governs our projects, funding decisions, and partnerships; it is not a temporary marketing position.
+
+Financial support is optional and sustains infrastructure, maintenance, accessibility work, and documented development. Paying does not buy contributor status, canon authority, approvals, ownership, or employment. Participation and accessibility are not sponsorship rewards. Project-specific licenses and existing signed agreements continue to apply.
+
+
 ## Purpose
 
 The long-term goal for Loptr Lab is to move from unpredictable one-time
@@ -71,7 +76,7 @@ Possible incentives:
 | Ashen Witness | $2 / month | Individual supporters | A simple way to help keep the work alive |
 | Veiled Supporter | $5 / month | Community supporters | Recurring support for maintenance, docs, and stability |
 | Circle of Restraint | $10 / month | Highly engaged individuals | Support for deeper architecture and accessibility work |
-| Working Contributor | $25 / month | Freelancers / indie contributors | Helps sustain maintenance and roadmap continuity |
+| Practitioner Supporter | $25 / month | Freelancers / indie contributors | Helps sustain maintenance and roadmap continuity |
 | Production Supporter | $50 / month | Professionals / small studios | Supports issue triage, documentation, and release-path stability |
 | Studio Ally | $100 / month | Small studios / consultants | Helps fund recurring engineering time and sustainability planning |
 | Infrastructure Patron | $250 / month | Organizations | Supports durable infrastructure and long-horizon maintenance |
