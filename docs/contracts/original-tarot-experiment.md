@@ -11,7 +11,7 @@ Tracking: [#52](https://github.com/Loptr-Lab/veiled-dominion-engine/issues/52).
 
 ## Source and ownership
 
-The source proposal is [Original hero cards and consequential stories](https://github.com/ibloud/Paragon-Reborn/blob/feature/original-tarot-direction/docs/ORIGINAL_HERO_CARD_DIRECTION.md), with its [rights boundary](https://github.com/ibloud/Paragon-Reborn/blob/feature/original-tarot-direction/docs/ORIGINAL_CONTENT_RIGHTS.md) and [source issue](https://github.com/ibloud/Paragon-Reborn/issues/16). Links identify the companion review branch until merged; pin an approved revision when implementing.
+The source proposal is [Original hero cards and consequential stories](https://github.com/ibloud/Paragon-Reborn/blob/3ddb52994be4450c11c54ec07d2288372587a375/docs/ORIGINAL_HERO_CARD_DIRECTION.md), with its [rights boundary](https://github.com/ibloud/Paragon-Reborn/blob/3ddb52994be4450c11c54ec07d2288372587a375/docs/ORIGINAL_CONTENT_RIGHTS.md) and [source issue](https://github.com/ibloud/Paragon-Reborn/issues/16). Links pin the source design merged through [PR #17](https://github.com/ibloud/Paragon-Reborn/pull/17). This receiving contract remains a draft proposal under PR #53; the source merge does not merge or implement it.
 
 This repository receives a future isolated browser/headless experiment. It does not replace its canonical four-player game, rename Rebirth, alter PIXIE, or turn the six-position TypeScript exercise into a production hero engine. Keep code in a distinct module when implementation is authorized and specified. No new source-code runtime is included here.
 
