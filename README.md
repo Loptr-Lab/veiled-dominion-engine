@@ -31,6 +31,8 @@ See [`docs/interactive/PIXIE_50_WAYS_INTEGRATION.md`](./docs/interactive/PIXIE_5
 
 ## Documentation
 
+The [original tarot hero experiment](./docs/contracts/original-tarot-experiment.md) is a separate, documentation-only design track for original characters, build choices and consequential stories. It does not change the four-player rules or claim a playable hero-card runtime.
+
 See [`docs/CANON_AND_CONTINUITY.md`](./docs/CANON_AND_CONTINUITY.md) for canon, continuity, reinterpretation, and IP boundaries.
 
 See [`docs/interactive/PIXIE_50_WAYS_INTEGRATION.md`](./docs/interactive/PIXIE_50_WAYS_INTEGRATION.md) for the current PIXIE review integration and accessibility boundary.
