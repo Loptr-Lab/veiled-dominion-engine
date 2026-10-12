@@ -143,8 +143,6 @@ Participants with specific accommodation needs are encouraged to contact Loptr L
 ---
 
 ## Contact
-
-## Contact
 **Program sponsor:** Loptr Lab
 **Engine project:** [github.com/Loptr-Lab/veiled-dominion-engine](https://github.com/Loptr-Lab/veiled-dominion-engine)
 **Candidate exercise repo:** [github.com/Loptr-Lab/training](https://github.com/Loptr-Lab/training)
