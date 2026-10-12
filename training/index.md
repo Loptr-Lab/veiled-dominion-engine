@@ -7,10 +7,11 @@ permalink: /training/
 # Veiled Dominion Engine: Game Development Training Curriculum 
 
 **Offered by:** Loptr Lab
-**Program type:** Applied technical training in game design, software engineering, and digital art
-**Format:** Self-paced, project-based, with milestone checkpoints
-**Sponsoring project:** [Veiled Dominion Engine](https://github.com/Loptr-Lab/veiled-dominion-engine) — an open-source 4-player asymmetric strategy game
-**Hands-on exercise:** [Veiled Dominion Training](https://github.com/Loptr-Lab/training) — the graded TypeScript coding exercise this curriculum's Track A milestones are based on
+Program type: Applied technical training in game design, software engineering, and digital art
+
+- **Format:** Self-paced, project-based, with milestone checkpoints
+- **Sponsoring project:** [Veiled Dominion Engine](https://github.com/Loptr-Lab/veiled-dominion-engine) — an open-source 4-player asymmetric strategy game
+
 ---
 
 ## Repository Distinction
