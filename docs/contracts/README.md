@@ -22,3 +22,7 @@ This directory defines cross-layer contracts between backend/engine and frontend
   - version bump strategy
   - migration notes
   - linked ADR (if architectural impact is non-trivial)
+
+## Experimental receiving contracts
+
+- [Original tarot hero experiment](original-tarot-experiment.md) — documentation-only receiving boundary; not a published runtime schema or four-player canon.

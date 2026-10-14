@@ -7,6 +7,7 @@
 | Duet | Extracted mechanics and accessibility sandbox | Experimental; does not set four-player rules |
 | Battle the Beast | Transformative fan-fiction prototype | Remains segregated in ibloud/battle-the-beast |
 | Violet's Revenge | Separate original game with identified third-party references | Remains in ibloud/violets-revenge |
+| Original tarot hero experiment | Original design incubation; documentation only | Source in ibloud/Paragon-Reborn; receiving boundary in [contract](../contracts/original-tarot-experiment.md); no four-player rules changes |
 | Urban Alien Adventures | Adaptation and delivery framework | Does not define Veiled Dominion rules |
 
 Shared themes, characters, audiences, or technology do not merge repository authority.

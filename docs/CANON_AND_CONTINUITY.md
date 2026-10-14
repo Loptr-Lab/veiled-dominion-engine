@@ -138,3 +138,7 @@ docs/variants contains models, incubation work, and case studies. None sets cano
 - Discord exhibitions, supporter rewards, and store mockups do not create canon or commercial permission.
 
 See docs/variants/VARIANT_REGISTRY.yml.
+
+## Original tarot hero experiment — 2026-10-08
+
+The [receiving contract](contracts/original-tarot-experiment.md) records a separate experimental hero/build/story design. Its Major Arcana archetypes and proposed story state do not become Veiled Dominion canon, reinterpret PIXIE/Rebirth, or modify the GDD/rulebook. Historical third-party character assignments remain external research and must not become production data by automatic ingestion. Promotion requires an explicit future design decision and evidence.
