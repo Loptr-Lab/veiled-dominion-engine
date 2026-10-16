@@ -11,7 +11,7 @@ It exists to help contributors understand:
 - how deterministic replay and snapshotting should work
 - how planned player identity, matchmaking, and ranked-play systems should preserve competitive integrity
 
-This file is intentionally implementation-facing. It complements the rulebook in `README.md` and the contribution standards in `CONTRIBUTING.md`.
+This file is intentionally implementation-facing. It complements the authoritative rulebook in `docs/RULEBOOK_v0.1` and the contribution standards in `CONTRIBUTING.md`.
 
 ---
 

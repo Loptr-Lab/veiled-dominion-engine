@@ -48,3 +48,48 @@ variants:
     accessibility_review: pending
     rights_review: identifiable-publication-review-required
     rules_authority: false
+  - id: systems-quartet
+    document: docs/variants/case-studies/SYSTEMS_QUARTET.md
+    status: historical
+    source_type: original
+    implementation: historical-prototype
+    commercial_use: project-internal
+    accessibility_review: pending
+    rights_review: passed-original
+    rules_authority: false
+    provenance:
+      source_document: THE OBSIDIAN BLUEPRINTS
+      classification: historical-variant
+    notes: >
+      Socio-economic chess variant preserved for provenance and modular
+      mechanics study; it does not modify the canonical four-player rules.
+  - id: dark-bauhaus
+    document: docs/variants/case-studies/DARK_BAUHAUS.md
+    status: historical
+    source_type: original
+    implementation: historical-prototype
+    commercial_use: project-internal
+    accessibility_review: pending
+    rights_review: passed-original
+    rules_authority: false
+    provenance:
+      source_document: FUTURE_VARIANTS_DARK_BAUHAUS_GALLERY_EDITION
+      classification: historical-variant
+    notes: >
+      Presentation and material experiment preserved for provenance; it does
+      not establish canonical rendering or gameplay requirements.
+  - id: paracausal-edition
+    document: docs/variants/case-studies/PARACAUSAL_EDITION.md
+    status: deferred
+    source_type: third-party-reference
+    implementation: concept
+    commercial_use: prohibited-without-clearance
+    accessibility_review: pending
+    rights_review: permission-required
+    rules_authority: false
+    provenance:
+      source_document: THE PARACAUSAL EDITION
+      classification: deferred-external-IP-concept
+    notes: >
+      Deferred third-party-IP reskin concept. No commercial or canonical use
+      is authorized without separate rights review and permission.
