@@ -30,3 +30,6 @@ refresh and JavaScript replacement. Its theme rendered before navigation, and
 Jekyll's own canonical conflicted with the canonical embedded in that body. This
 explains the reported flash and host change; no cache clearing should be required
 to fix the underlying source. CDN caches may briefly retain the previous page.
+
+Canonical metadata in the owning training repository was aligned in commit
+`1abf60c40bba568dd11809546f106c4656af1475`; visible curriculum content is unchanged.
