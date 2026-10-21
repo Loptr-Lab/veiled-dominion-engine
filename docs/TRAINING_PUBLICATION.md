@@ -33,3 +33,7 @@ to fix the underlying source. CDN caches may briefly retain the previous page.
 
 Canonical metadata in the owning training repository was aligned in commit
 `1abf60c40bba568dd11809546f106c4656af1475`; visible curriculum content is unchanged.
+
+
+Acceptance check: the public landing must return HTTP 200 at the branded URL,
+with one canonical tag, no client redirect, and working equipment/contributor links.
