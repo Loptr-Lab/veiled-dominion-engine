@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Veiled Dominion / Duet development provenance — Loptr Lab</title><link rel="stylesheet" href="../training.css"><link rel="canonical" href="https://loptrlab.com/training/tracks/duet-development-provenance.html">
+</head><body><a class="skip-link" href="#main">Skip to main content</a><header class="masthead"><div class="serial">LOPTR LAB / ACCESSIBLE TECHNOLOGY PLANNING</div><p><a class="button" href="../index.html">Guide home</a></p><h1>Veiled Dominion / Duet development provenance</h1></header><main id="main"><article class="brief guide"><h2>Veiled Dominion / Duet development provenance</h2>
+<p>This is the development-training reference for the current Duet architecture. It teaches the actual lineage from the original Pulsr work through the current production/playtest build, the architecture laboratory, and the permanent Loptr Lab engine.</p>
+<h2>The source-of-truth flow</h2>
+<p>```text</p>
+<p>ORIGINAL DUET</p>
+<p>Pulsr</p>
+<p>│</p>
+<p>▼</p>
+<p>MORTIS</p>
+<p>Pulsr</p>
+<p>│</p>
+<p>▼</p>
+<p>DUET HACKATHON</p>
+<p>CURRENT PRODUCTION / PLAYTEST BUILD</p>
+<p>│</p>
+<p>│ extract + validate architecture</p>
+<p>▼</p>
+<p>DUET ARCHITECTURE LAB</p>
+<p>ibloud/duet_engine_architecture</p>
+<p>│</p>
+<p>│ graduate reusable systems</p>
+<p>▼</p>
+<p>LOPTR LAB PERMANENT ENGINE</p>
+<p>Loptr-Lab/veiled-dominion-engine</p>
+<p>│</p>
+<p>▼</p>
+<p>FUTURE DUET / OTHER BUILDS</p>
+<p>```</p>
+<p>The important boundary is that <strong>Duet Hackathon is the current production/playtest build</strong>. It is not a separate historical layer beneath production.</p>
+<h2>Development rule</h2>
+<p><strong>Do not fork the current Duet Hackathon playtest directly into the permanent Loptr Lab engine.</strong></p>
+<p>The current Duet Hackathon remains the working production/playtest source. The architecture repository is the extraction and validation laboratory: mechanics, accessibility patterns, content contracts, tests, and build/distribution practices are isolated there so they can be proven independently. Only validated reusable systems graduate into the permanent engine.</p>
+<h2>Repository roles</h2>
+<p>| Layer | Repository / artifact | Development role |</p>
+<p>| --- | --- | --- |</p>
+<p>| Original Duet | Pulsr: `pulsr.social/ibloud` | Original Duet lineage/reference |</p>
+<p>| Mortis | Pulsr: `pulsr.social/mortis` | Related earlier Pulsr lineage/reference |</p>
+<p>| Duet Hackathon | Current production/playtest build | Working source for extraction and validation |</p>
+<p>| Architecture Lab | <a href="https://github.com/ibloud/duet_engine_architecture">ibloud/duet_engine_architecture</a> | Extract, isolate, test, document, and validate reusable architecture |</p>
+<p>| Permanent Engine | <a href="https://github.com/Loptr-Lab/veiled-dominion-engine">Loptr-Lab/veiled-dominion-engine</a> | Long-lived reusable engine; receive validated systems |</p>
+<p>| Playable distribution | <a href="https://ibloud.itch.io/veiled-dominion-duet">Veiled Dominion: Duet on itch.io</a> | A later playable distribution artifact, not the original Duet source |</p>
+<p>The Pulsr references above preserve provenance supplied for this project; they are not a claim that their current pages have been independently archived or verified here.</p>
+<h2>What belongs in the architecture lab</h2>
+<p>The lab may contain:</p>
+<p>• Rebirth / Death mechanics and extracted rule contracts</p>
+<p>• Radius of Ruin and Sanctuary state behavior</p>
+<p>• Veiled-state behavior</p>
+<p>• screen-reader-first command paths</p>
+<p>• keyboard and visual-board parity</p>
+<p>• audio cues</p>
+<p>• content and actor contracts</p>
+<p>• runtime smoke tests</p>
+<p>• reproducible browser and itch builds</p>
+<p>• GitHub Pages distribution</p>
+<p>• architecture notes explaining what was learned from the current playtest</p>
+<p>The lab should make the boundary visible: the production/playtest build proves the game experience; the lab proves which pieces can become reusable architecture.</p>
+<h2>What graduates to the permanent engine</h2>
+<p>A piece is ready to move toward the permanent engine when it has:</p>
+<p>1. a documented contract;</p>
+<p>2. tests that describe its behavior;</p>
+<p>3. an explicit accessibility requirement where applicable;</p>
+<p>4. clear ownership/provenance;</p>
+<p>5. no accidental dependency on the demo page, fixture, or presentation layer;</p>
+<p>6. a reason to be reusable beyond one Duet build.</p>
+<p>Graduation is therefore <strong>extraction and validation</strong>, not a blind fork.</p>
+<h2>Training exercise</h2>
+<p>When extending Duet, record each proposed change as one of:</p>
+<p>• <strong>reference</strong> — observed in the current production/playtest build or earlier documented lineage;</p>
+<p>• <strong>experiment</strong> — implemented in the architecture lab to test an idea;</p>
+<p>• <strong>validated</strong> — supported by tests and suitable for extraction;</p>
+<p>• <strong>engine</strong> — accepted into the permanent engine;</p>
+<p>• <strong>future build</strong> — consumes the permanent engine rather than recreating the prototype.</p>
+<p>This classification prevents the development history from collapsing into a false single code lineage.</p>
+<h2>Related source</h2>
+<p>• <a href="https://github.com/ibloud/duet_engine_architecture">Duet architecture lab</a></p>
+<p>• <a href="https://github.com/Loptr-Lab/veiled-dominion-engine">Permanent Veiled Dominion engine</a></p>
+<p>• <a href="https://ibloud.itch.io/veiled-dominion-duet">Veiled Dominion: Duet playable distribution</a></p></article><nav class="actions"><a class="button" href="index.html">Section overview</a><a class="button" href="https://github.com/Loptr-Lab/training/blob/main/docs/tracks/duet-development-provenance.md">Source Markdown</a></nav></main><footer>Verify current evidence and requirements. Protect private records.</footer></body></html>

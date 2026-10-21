@@ -1,0 +1,3 @@
+# Prompt: safe research practices
+
+> Help me research the following question without requesting or exposing private identifiers: **[question]**. Use current authoritative sources and link directly to each source. Record the date each source was checked. Separate confirmed facts, reasonable inferences, and unresolved questions. Mark anything not supported by a current authoritative source as **unverified**. Identify the human or agency that has authority to decide this question and give me questions to ask them. Do not claim that AI research establishes eligibility, approval, legal status, or funding.

@@ -1,0 +1,3 @@
+# Prompt: compare costs and alternatives
+
+> Compare current ways to meet these documented capabilities: **[capabilities]** in **[location/jurisdiction]**. Include purchase, refurbishment, borrowing, public or maker-space access, training-lab access, cloud or remote services, and phased acquisition where relevant. Use current source links and verification dates. Separate one-time and recurring costs, note prerequisites and accessibility tradeoffs, and mark missing or changing information **unverified**. Do not treat the cheapest option as equivalent unless it performs the required tasks accessibly.

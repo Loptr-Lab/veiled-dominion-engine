@@ -1,0 +1,7 @@
+{
+  "repository": "Loptr-Lab/training",
+  "commit": "b8b38a2915feffb090406c7b576e5def5233817f",
+  "source_directory": "docs",
+  "canonical_base": "https://loptrlab.com/training/",
+  "generated_by": "scripts/sync-training-site.py"
+}
