@@ -1,0 +1,21 @@
+name: Canonical C# engine review
+on:
+  pull_request:
+    paths:
+      - 'src/**/*.cs'
+      - 'src/VeiledDominion.Core.csproj'
+      - 'tests/canonical/**'
+      - '.github/workflows/canonical-engine.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  canonical-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet build src/VeiledDominion.Core.csproj --configuration Release
+      - run: dotnet run --project tests/canonical/VeiledDominion.Regression.csproj --configuration Release

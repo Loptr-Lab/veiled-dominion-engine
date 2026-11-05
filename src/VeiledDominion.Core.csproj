@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Board/*.cs" />
+    <Compile Include="Pieces/*.cs" />
+    <Compile Include="Systems/*.cs" />
+    <Compile Include="Match/*.cs" />
+  </ItemGroup>
+</Project>

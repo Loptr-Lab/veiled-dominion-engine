@@ -21,21 +21,30 @@ namespace VeiledDominion.Board
 
         public bool IsOccupied(BoardCoordinate coord) => _occupied.ContainsKey(coord);
 
-        public void PlacePiece(Piece piece)
+        internal void PlacePiece(Piece piece)
         {
-            _occupied[piece.Position] = piece;
+            if (!BoardGeometry.IsValidTile(piece.Position) || IsOccupied(piece.Position) || AllPieces.Any(p => p.Id == piece.Id))
+                throw new ArgumentException("Invalid placement or duplicate piece.");
+            _occupied.Add(piece.Position, piece);
         }
 
-        public void MovePiece(Piece piece, BoardCoordinate destination)
+        internal void MovePiece(Piece piece, BoardCoordinate destination)
         {
+            if (GetPieceAt(piece.Position) != piece || !BoardGeometry.IsValidTile(destination) || IsOccupied(destination))
+                throw new InvalidOperationException("Movement must be validated and capture resolved first.");
             _occupied.Remove(piece.Position);
             piece.Position = destination;
-            _occupied[destination] = piece;
+            piece.HasMoved = true;
+            _occupied.Add(destination, piece);
         }
 
-        public void RemovePiece(BoardCoordinate coord)
+        internal void RemovePiece(BoardCoordinate coord) => _occupied.Remove(coord);
+
+        internal BoardState Copy()
         {
-            _occupied.Remove(coord);
+            var copy = new BoardState();
+            foreach (var piece in AllPieces) copy.PlacePiece(piece.Copy());
+            return copy;
         }
     }
 }

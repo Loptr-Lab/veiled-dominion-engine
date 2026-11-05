@@ -30,14 +30,17 @@ namespace VeiledDominion.Pieces
     /// </summary>
     public abstract class Piece
     {
+        public string Id { get; }
+        public Seat Seat { get; }
+        public bool HasMoved { get; internal set; }
         public PieceType Type { get; }
         public Faction Owner { get; }
         public BoardCoordinate Position { get; internal set; }
 
         /// <summary>
         /// True if this piece has been dulled by Rebirth's RadiusOfRuin.
-        /// A Veiled piece is functionally reduced to Pawn-like movement
-        /// until it leaves the aura's radius. See RadiusOfRuinSystem.
+        /// Veiling persists until the start of the affected owner's next turn,
+        /// independently of proximity. It allows one forward step and no capture.
         /// </summary>
         public bool IsVeiled { get; internal set; }
 
@@ -47,19 +50,22 @@ namespace VeiledDominion.Pieces
         /// </summary>
         public virtual bool IsAuraImmune => Type == PieceType.Death || Type == PieceType.Rebirth;
 
-        protected Piece(PieceType type, Faction owner, BoardCoordinate startPosition)
+        protected Piece(string id, PieceType type, Faction owner, Seat seat, BoardCoordinate startPosition)
         {
+            if (string.IsNullOrWhiteSpace(id)) throw new ArgumentException("Piece identity is required.", nameof(id));
+            Id = id;
             Type = type;
             Owner = owner;
+            Seat = seat;
             Position = startPosition;
         }
 
+        internal abstract Piece Copy();
+
         /// <summary>
-        /// Returns the set of legal destination tiles for this piece given
-        /// the current board state. Implemented per piece type. When
-        /// IsVeiled is true, callers should apply the Veiled movement
-        /// restriction on top of whatever this returns (see design doc —
-        /// Veiled pieces move as Pawns regardless of their true type).
+        /// Returns movement-pipeline candidates, including Veiled restrictions.
+        /// Match validation additionally enforces turn ownership, Leader safety,
+        /// resources and review boundaries. Consumers must submit intents to the match.
         /// </summary>
         public abstract System.Collections.Generic.IEnumerable<BoardCoordinate> GetLegalMoves(BoardState board);
     }

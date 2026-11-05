@@ -49,16 +49,35 @@ namespace VeiledDominion.Board
     /// lookup, and the neutral center. Pure logic, no Unity/Unreal dependency
     /// so it can be unit tested headless before any rendering exists.
     ///
-    /// Layout (14x14 bounding square, 4-wide arms, 2x2-ish center — adjust
-    /// ARM_WIDTH / BOARD_SIZE below once the exact grid is finalized against
-    /// the design doc; this is a starting scaffold, not the locked geometry).
+    /// Standard four-player geometry removes four 3x3 corners (160 tiles).
+    /// The central 2x2 designation does not decide occupancy or traversal rules.
     /// </summary>
     public static class BoardGeometry
     {
         public const int BoardSize = 14;
-        public const int ArmWidth = 4;       // width of each of the 4 arms
-        public const int CenterStart = (BoardSize - ArmWidth) / 2; // 5
-        public const int CenterEnd = CenterStart + ArmWidth - 1;   // 8
+        public const int ArmWidth = 8;
+        public const int CenterStart = (BoardSize - ArmWidth) / 2;
+        public const int CenterEnd = CenterStart + ArmWidth - 1;
+
+        public static bool IsNeutralCenter(BoardCoordinate c)
+            => c.X >= 6 && c.X <= 7 && c.Y >= 6 && c.Y <= 7;
+
+        public static IReadOnlyList<BoardCoordinate> Line(BoardCoordinate from, BoardCoordinate to)
+        {
+            if (!IsValidTile(from) || !IsValidTile(to)) return Array.Empty<BoardCoordinate>();
+            int dx = to.X - from.X, dy = to.Y - from.Y;
+            if (dx != 0 && dy != 0 && Math.Abs(dx) != Math.Abs(dy))
+                return Array.Empty<BoardCoordinate>();
+            int steps = Math.Max(Math.Abs(dx), Math.Abs(dy));
+            var result = new List<BoardCoordinate>();
+            for (int i = 0; i <= steps; i++)
+            {
+                var c = new BoardCoordinate(from.X + i * Math.Sign(dx), from.Y + i * Math.Sign(dy));
+                if (!IsValidTile(c)) return Array.Empty<BoardCoordinate>();
+                result.Add(c);
+            }
+            return result;
+        }
 
         /// <summary>
         /// True if the coordinate is a valid, in-bounds tile on the cross
@@ -106,6 +125,7 @@ namespace VeiledDominion.Board
         /// </summary>
         public static System.Collections.Generic.IEnumerable<BoardCoordinate> GetAdjacent(BoardCoordinate c)
         {
+            if (!IsValidTile(c)) yield break;
             for (int dx = -1; dx <= 1; dx++)
             {
                 for (int dy = -1; dy <= 1; dy++)

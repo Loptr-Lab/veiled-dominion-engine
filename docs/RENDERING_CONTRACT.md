@@ -1,6 +1,8 @@
 # Veiled Dominion — Rendering Contract (Engine -> UI)
 
-Defines stable mapping from engine state to renderable UI state.
+**Scope: unrelated Ember/Tide/Root/Gale exercise.** The 6x6 inputs below do not define the canonical four-player C# engine's rendering adapter. Preserved as exercise provenance. See [CANONICAL_ENGINE_REVIEW.md](CANONICAL_ENGINE_REVIEW.md) for the headless snapshot boundary and the missing browser/Unity adapter.
+
+Defines stable mapping from exercise state to renderable UI state.
 
 ## Purpose
 Keep engine logic independent from frontend presentation while guaranteeing consistent, deterministic visuals.

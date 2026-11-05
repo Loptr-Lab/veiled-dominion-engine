@@ -39,7 +39,14 @@ See [`docs/interactive/PIXIE_50_WAYS_INTEGRATION.md`](./docs/interactive/PIXIE_5
 
 ## Local Development Quick Start
 
-This repository currently ships a TypeScript/Jest engine exercise harness (not a runnable Unity/.NET game client).
+The canonical C# review core now builds headlessly with .NET 8; it is a restricted engine review, **not yet a complete match client**. See [the implementation review](docs/CANONICAL_ENGINE_REVIEW.md) for source ownership, unresolved rules, reproducible scenarios, and limitations.
+
+```bash
+dotnet build src/VeiledDominion.Core.csproj
+dotnet run --project tests/canonical/VeiledDominion.Regression.csproj
+```
+
+The TypeScript/Jest exercise below remains unrelated to canonical gameplay. Its deliberately unfinished stubs are not C# engine verification.
 
 ### Prerequisites
 - Node.js 20+
