@@ -19,6 +19,7 @@ public sealed class ReviewMatch
     private readonly Faction[] order;
     private List<Piece> graveyard = new();
     private HashSet<string> friendlyVeiled = new(StringComparer.Ordinal);
+    private bool radiusSuppressed;
     private List<PlayerAction> actions = new();
     private List<string> events = new();
     private int activeIndex;
@@ -65,7 +66,7 @@ public sealed class ReviewMatch
         Graveyard = graveyard.Select(p => new { p.Id, p.Type, p.Owner, p.Seat }),
         FriendlyVeiledIds = friendlyVeiled.OrderBy(id => id, StringComparer.Ordinal),
         Actions = actions, Events = events,
-        Limitations = new[] { "Center rules", "Boon duration", "Repeat-friendly-Veil counting", "Promotion", "Death capture", "Simultaneous victory", "Checkmate/elimination", "Castling/en passant" }
+        Limitations = new[] { "Promotion", "Death capture", "Simultaneous victory", "Checkmate/elimination", "Castling/en passant" }
     });
 
     public IReadOnlyList<string> InspectAuraTargets() => RadiusOfRuinSystem.EligibleTargets(board);
@@ -89,7 +90,11 @@ public sealed class ReviewMatch
         {
             if (Phase != TurnPhase.Start || action.Player != Faction.Rebirth || Boons == 0)
                 return new(false, "Boon spend requires Rebirth's Start phase and a token.");
-            return new(false, "DecisionRequired: one player turn versus full clockwise cycle suppression.");
+            Boons--;
+            radiusSuppressed = true;
+            actions.Add(action);
+            events.Add($"{TurnNumber}: Rebirth spent a Boon; Radius of Ruin resumes at Rebirth's next Start");
+            return new(true, "Accepted");
         }
         if (action.Kind == ActionKind.BeginMovement)
         {
@@ -129,10 +134,8 @@ public sealed class ReviewMatch
         if (Movement.InCheck(candidate, ActivePlayer)) return new(false, "Move leaves the active Leader in check.");
         if (order.Where(owner => owner != ActivePlayer).Any(owner => Movement.InCheck(candidate, owner)))
             return new(false, "ReviewBoundary: check delivery awaits complete checkmate/elimination adjudication.");
-        var targets = RadiusOfRuinSystem.EligibleTargets(candidate);
-        var newFriendly = targets.Where(id => candidate.AllPieces.Single(p => p.Id == id).Owner == Faction.Rebirth).ToArray();
-        if (newFriendly.Any(friendlyVeiled.Contains))
-            return new(false, "DecisionRequired: count repeat applications or distinct friendly pieces for The Fall.");
+        var targets = radiusSuppressed ? Array.Empty<string>() : RadiusOfRuinSystem.EligibleTargets(candidate);
+        var newFriendly = targets.Where(id => candidate.AllPieces.Single(p => p.Id == id).Owner == Faction.Rebirth && !friendlyVeiled.Contains(id)).ToArray();
         int mercy = 0;
         if (ActivePlayer == Faction.Rebirth && action.Kind == ActionKind.Move && removed == null)
         {
@@ -186,6 +189,7 @@ public sealed class ReviewMatch
 
     private void StartOwnerTurn()
     {
+        if (ActivePlayer == Faction.Rebirth) radiusSuppressed = false;
         RadiusOfRuinSystem.OnOwnerTurnStart(board, ActivePlayer);
         if (ActivePlayer == Faction.Rebirth) DashUnlocked = graveyard.Count(p => p.Owner == Faction.Rebirth) >= 3;
         events.Add($"{TurnNumber}: {ActivePlayer} Start; owner Veils cleared");
@@ -195,6 +199,7 @@ public sealed class ReviewMatch
     {
         board = NewBoard();
         graveyard.Clear(); friendlyVeiled.Clear(); actions.Clear(); events.Clear();
+        radiusSuppressed = false;
         activeIndex = 0; TurnNumber = 1; Boons = 0; LeadershipPoints = 0; DashUnlocked = false;
         Outcome = null; Phase = TurnPhase.Start;
         StartOwnerTurn();

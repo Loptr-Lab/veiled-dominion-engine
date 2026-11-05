@@ -128,7 +128,7 @@ Test("Death moves one square into attacked squares; capture decision remains exp
 Test("center is geometrically present but rule-dependent moves explicitly reject", () => {
     var rook = P("rook",PieceType.Rook,Faction.Rebirth,5,6); var board = Board(rook);
     Assert(BoardGeometry.IsValidTile(new(6,6)));
-    Assert(Movement.Validate(board,rook,new(8,6)).Contains("DecisionRequired"));
+    Assert(Movement.Validate(board,rook,new(8,6)).Contains("Void"));
 });
 Test("Sanctuary protects only Rebirth allies; unique pieces are immune", () => {
     var ally = P("ally",PieceType.Pawn,Faction.Rebirth,4,4);
@@ -245,17 +245,17 @@ void MortalCycle(ReviewMatch match, int cycle)
         Begin(match); Accepted(match,new(owner,ActionKind.Move,id,x,y));
     }
 }
-Test("three sacrifices unlock Dash at Rebirth Start; Boon decision never consumes token", () => {
+Test("three sacrifices unlock Dash at Rebirth Start; Boon suppresses until next Rebirth Start", () => {
     var match = Match(P("s1",PieceType.Pawn,Faction.Rebirth,3,1),P("s2",PieceType.Pawn,Faction.Rebirth,4,1),P("s3",PieceType.Pawn,Faction.Rebirth,5,1),
         P("block",PieceType.Pawn,Faction.MortalFactionA,7,4,Seat.East));
     Begin(match); RejectedUnchanged(match,new(Faction.Rebirth,ActionKind.Move,"r",8,4,true),"three friendly");
     Accepted(match,new(Faction.Rebirth,ActionKind.Sacrifice,"s1")); MortalCycle(match,0);
-    RejectedUnchanged(match,new(Faction.Rebirth,ActionKind.SpendBoon),"DecisionRequired");
-    Assert(match.Boons == 1 && !match.DashUnlocked);
+    Accepted(match,new(Faction.Rebirth,ActionKind.SpendBoon));
+    Assert(match.Boons == 0 && !match.DashUnlocked);
     Begin(match); Accepted(match,new(Faction.Rebirth,ActionKind.Sacrifice,"s2")); MortalCycle(match,1);
     Assert(!match.DashUnlocked);
     Begin(match); Accepted(match,new(Faction.Rebirth,ActionKind.Sacrifice,"s3")); MortalCycle(match,2);
-    Assert(match.DashUnlocked && match.Boons == 3);
+    Assert(match.DashUnlocked && match.Boons == 2);
     Begin(match); Accepted(match,new(Faction.Rebirth,ActionKind.Move,"r",10,4,true));
 });
 Test("repeat friendly Veiling is an atomic decision boundary, not a chosen counting rule", () => {

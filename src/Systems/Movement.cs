@@ -41,7 +41,7 @@ public static class Movement
             ? BoardGeometry.Line(piece.Position, target)
             : new[] { piece.Position, target };
         if (path.Count == 0) return "Path leaves the board or is not a straight ray.";
-        if (path.Any(BoardGeometry.IsNeutralCenter)) return "DecisionRequired: central 2x2 occupancy/traversal.";
+        if (path.Any(BoardGeometry.IsNeutralCenter)) return "Central 2x2 is Void and blocks traversal.";
         foreach (var c in path.Skip(1).SkipLast(1))
         {
             var blocker = board.GetPieceAt(c);
