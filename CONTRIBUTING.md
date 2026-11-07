@@ -16,13 +16,9 @@ By contributing to this project, you help scale an extensible, decentralized fra
 
 To maintain a healthy open-source ecosystem while strictly protecting the commercial integrity of the broader brand lore, this repository enforces two distinct licensing boundaries:
 
-### A. The Engine Code and Public Assets (`CC BY-NC-SA 4.0`)
+### A. Software and creative-content licenses
 
-All source code, public-domain design documentation, configuration tooling, and core state machine files in this repository are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License**.
-
-* **What this means for you:** You are completely free to share, copy, remix, transform, and build upon these engine frameworks for *non-commercial* purposes, provided you give appropriate credit and release derivatives under the same license.
-* **Commercial Exclusion:** You may *not* use this material for commercial advantage or monetary compensation without explicit written permission from Loptr Lab.
-* **Full License Text:** See [`LICENSE.md`](./LICENSE.md) in the repository root.
+Follow the existing [licensing map](LICENSE.md): software source, tests and build configuration use [MIT](LICENSE-CODE.md), unless a file says otherwise. Original rules text, narrative, curriculum, documentation and visual assets are separately governed by [LICENSE-CONTENT.md](LICENSE-CONTENT.md). Check file-level exceptions and attribution before reuse. This summary corrects the older blanket noncommercial-code description; no license files or rights are changed.
 
 ### B. Commercial Brand Core & Intellectual Property Restrictions
 
@@ -45,6 +41,10 @@ When contributing code comments, thematic variables, or rulesets derived from hi
   ```
 
 ---
+
+## Current implementation and source authority
+
+Before choosing work, read [the executable setup baseline](docs/DEVELOPMENT_ENVIRONMENT.md#what-these-commands-actually-run) and [canon/implementation boundaries](docs/CANON_AND_CONTINUITY.md). The TypeScript exercise is unfinished and is not the canonical four-player engine; documented movement and network architecture are not evidence of completed runtime behavior. Existing `good first issue` labels may refer to unbuilt systems or disputed rules. Confirm target implementation, reproduction, acceptance, assignment and reviewer on the existing issue before coding.
 
 ## 🏗️ 2. Development Environment Setup
 
