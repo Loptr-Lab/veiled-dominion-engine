@@ -97,3 +97,11 @@ img,svg,video,iframe{max-width:100%}img{height:auto}code{overflow-wrap:anywhere}
 @media(max-width:60rem){.mayhem-play-intro{grid-template-columns:1fr}.mayhem-breath-figure{min-height:15rem}.mayhem-breath-sigil{width:min(65%,18rem)}}
 @media(prefers-reduced-motion:reduce){.mayhem-breath-ring,.mayhem-breath-diamond,.mayhem-breath-inner{animation:none;transform:none;opacity:1}}
 @media(forced-colors:active){.mayhem-breath-inner{stroke:CanvasText}}
+
+/* Mayhem card-to-content rhythm: keep subsequent headings and columns clear of card borders. */
+.mayhem .mayhem-departments{margin-bottom:clamp(2rem,4vw,3.5rem)}
+.mayhem .mayhem-departments + .mayhem-two-column,
+.mayhem .mayhem-departments + h3,
+.mayhem .mayhem-departments + ol{margin-top:clamp(2rem,4vw,3.5rem)}
+.mayhem .mayhem-two-column + h3{margin-top:clamp(2rem,4vw,3.5rem)}
+.mayhem .mayhem-two-column > div > h3:first-child{margin-top:0}
