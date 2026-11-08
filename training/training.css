@@ -77,3 +77,23 @@ img,svg,video,iframe{max-width:100%}img{height:auto}code{overflow-wrap:anywhere}
 .mayhem-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem}.mayhem-wordmark{font-family:Georgia,serif;font-size:1.5em;color:var(--the-light)}.mayhem-footer nav{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:start}.mayhem-footer nav a{min-height:3rem;display:inline-flex;align-items:center}.mayhem-footer>.notice{flex-basis:100%}
 @media(max-width:60rem){.mayhem .mayhem-hero{grid-template-columns:1fr;gap:2rem}.mayhem-hero-art{transform:none;max-width:40rem}.mayhem-hero-art>img{aspect-ratio:16/9}.mayhem h1{font-size:clamp(2.3em,8vw,4em);max-width:19ch}.mayhem-two-column,.mayhem-apply{grid-template-columns:1fr;gap:2rem}.mayhem-rewards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:36rem){.mayhem h1{font-size:2.1em}.mayhem-departments,.mayhem-rewards{grid-template-columns:1fr}.mayhem-header nav{gap:.3rem 1rem}.mayhem-header nav .button{flex-basis:100%}.mayhem-hero-art figcaption{flex-direction:column}.mayhem-hero-art figcaption>span:first-child{max-width:none}.mayhem-arena-notes{padding-left:1rem}}
+
+/* Mayhem breathing sigil: same shared stylesheet, no dependency or script.
+   Static in reduced-motion; no flashing or essential information conveyed by motion. */
+.mayhem-play-intro{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(15rem,.92fr);gap:clamp(1.5rem,4vw,4rem);align-items:start}
+.mayhem-play-notice{min-width:0}
+.mayhem-breath-figure{margin:0;min-width:0;min-height:25rem;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.25rem}
+.mayhem-breath-sigil{display:block;width:min(100%,27rem);height:auto;overflow:visible;color:var(--the-light)}
+.mayhem-breath-halo,.mayhem-breath-ring,.mayhem-breath-cross,.mayhem-breath-diamond,.mayhem-breath-inner,.mayhem-breath-ticks{fill:none;stroke:currentColor;vector-effect:non-scaling-stroke}
+.mayhem-breath-halo{stroke-width:1;opacity:.35;stroke-dasharray:3 12}
+.mayhem-breath-ring{stroke-width:2;opacity:.7;transform-origin:160px 160px;animation:mayhem-breathe 6s ease-in-out infinite}
+.mayhem-breath-cross{stroke-width:2;opacity:.65}
+.mayhem-breath-diamond{stroke-width:3;transform-origin:160px 160px;animation:mayhem-breathe 6s ease-in-out infinite}
+.mayhem-breath-inner{stroke:var(--mayhem-emerald);stroke-width:4;transform-origin:160px 160px;animation:mayhem-breathe 6s ease-in-out infinite reverse}
+.mayhem-breath-core{fill:var(--the-light)}
+.mayhem-breath-ticks{stroke-width:2;opacity:.65}
+.mayhem-breath-figure figcaption{font-size:.68em;font-weight:650;letter-spacing:.15em;color:var(--text-muted);text-align:center}
+@keyframes mayhem-breathe{0%,100%{transform:scale(.94);opacity:.65}50%{transform:scale(1.055);opacity:1}}
+@media(max-width:60rem){.mayhem-play-intro{grid-template-columns:1fr}.mayhem-breath-figure{min-height:15rem}.mayhem-breath-sigil{width:min(65%,18rem)}}
+@media(prefers-reduced-motion:reduce){.mayhem-breath-ring,.mayhem-breath-diamond,.mayhem-breath-inner{animation:none;transform:none;opacity:1}}
+@media(forced-colors:active){.mayhem-breath-inner{stroke:CanvasText}}
