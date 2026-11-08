@@ -126,3 +126,18 @@ img,svg,video,iframe{max-width:100%}img{height:auto}code{overflow-wrap:anywhere}
 .mayhem-pixie-panel a{color:#f0d18b;text-decoration:underline;text-underline-offset:.16em}
 @media(max-width:420px){.mayhem-pixie-panel{max-height:65dvh}.mayhem-pixie-details>summary{min-height:3rem}}
 @media(forced-colors:active){.mayhem-pixie-details>summary,.mayhem-pixie-panel{border:2px solid CanvasText}}
+
+/* Scene-specific PIXIE partner orientation, separate from the persistent corner guide. */
+#partners .mayhem-partners-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(18rem,.85fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+#partners .mayhem-partners-copy{min-width:0}
+#partners .mayhem-pixie-scene{min-width:0;max-width:30rem;margin-inline:auto;padding:clamp(1.3rem,3vw,2.3rem);border:1px solid #88774f;border-radius:1rem;background:#171c20;color:#f3eee5}
+#partners .mayhem-pixie-scene-symbol{display:block;width:min(75%,16rem);height:auto;margin:0 auto 1rem}
+#partners .mayhem-pixie-scene h3{margin:.5rem 0 1rem;font-size:clamp(1.35rem,2vw,1.7rem);color:#f8e5bc}
+#partners .mayhem-pixie-scene p{margin:.6rem 0 1rem}
+#partners .mayhem-pixie-scene ul{padding-left:1.4rem;margin:.7rem 0}
+#partners .mayhem-pixie-scene li{margin:.55rem 0}
+#partners .mayhem-pixie-scene a{color:#f1d28c;text-decoration:underline;text-underline-offset:.2em}
+#partners .mayhem-pixie-scene a:focus-visible{outline:3px solid #fff0ad;outline-offset:3px}
+#partners .mayhem-pixie-scene-note{font-size:.9em;color:#c9cbc9}
+@media(max-width:60rem){#partners .mayhem-partners-layout{grid-template-columns:1fr}#partners .mayhem-pixie-scene{max-width:none;width:100%}}
+@media(forced-colors:active){#partners .mayhem-pixie-scene{border:2px solid CanvasText}}
