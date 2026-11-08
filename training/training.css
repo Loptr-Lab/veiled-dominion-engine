@@ -77,3 +77,52 @@ img,svg,video,iframe{max-width:100%}img{height:auto}code{overflow-wrap:anywhere}
 .mayhem-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem}.mayhem-wordmark{font-family:Georgia,serif;font-size:1.5em;color:var(--the-light)}.mayhem-footer nav{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:start}.mayhem-footer nav a{min-height:3rem;display:inline-flex;align-items:center}.mayhem-footer>.notice{flex-basis:100%}
 @media(max-width:60rem){.mayhem .mayhem-hero{grid-template-columns:1fr;gap:2rem}.mayhem-hero-art{transform:none;max-width:40rem}.mayhem-hero-art>img{aspect-ratio:16/9}.mayhem h1{font-size:clamp(2.3em,8vw,4em);max-width:19ch}.mayhem-two-column,.mayhem-apply{grid-template-columns:1fr;gap:2rem}.mayhem-rewards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:36rem){.mayhem h1{font-size:2.1em}.mayhem-departments,.mayhem-rewards{grid-template-columns:1fr}.mayhem-header nav{gap:.3rem 1rem}.mayhem-header nav .button{flex-basis:100%}.mayhem-hero-art figcaption{flex-direction:column}.mayhem-hero-art figcaption>span:first-child{max-width:none}.mayhem-arena-notes{padding-left:1rem}}
+
+/* Mayhem breathing sigil: same shared stylesheet, no dependency or script.
+   Static in reduced-motion; no flashing or essential information conveyed by motion. */
+.mayhem-play-intro{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(15rem,.92fr);gap:clamp(1.5rem,4vw,4rem);align-items:start}
+.mayhem-play-notice{min-width:0}
+.mayhem-breath-figure{margin:0;min-width:0;min-height:25rem;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.25rem}
+.mayhem-breath-sigil{display:block;width:min(100%,27rem);height:auto;overflow:visible;color:var(--the-light)}
+.mayhem-breath-halo,.mayhem-breath-ring,.mayhem-breath-cross,.mayhem-breath-diamond,.mayhem-breath-inner,.mayhem-breath-ticks{fill:none;stroke:currentColor;vector-effect:non-scaling-stroke}
+.mayhem-breath-halo{stroke-width:1;opacity:.35;stroke-dasharray:3 12}
+.mayhem-breath-ring{stroke-width:2;opacity:.7;transform-origin:160px 160px;animation:mayhem-breathe 6s ease-in-out infinite}
+.mayhem-breath-cross{stroke-width:2;opacity:.65}
+.mayhem-breath-diamond{stroke-width:3;transform-origin:160px 160px;animation:mayhem-breathe 6s ease-in-out infinite}
+.mayhem-breath-inner{stroke:var(--mayhem-emerald);stroke-width:4;transform-origin:160px 160px;animation:mayhem-breathe 6s ease-in-out infinite reverse}
+.mayhem-breath-core{fill:var(--the-light)}
+.mayhem-breath-ticks{stroke-width:2;opacity:.65}
+.mayhem-breath-figure figcaption{font-size:.68em;font-weight:650;letter-spacing:.15em;color:var(--text-muted);text-align:center}
+@keyframes mayhem-breathe{0%,100%{transform:scale(.94);opacity:.65}50%{transform:scale(1.055);opacity:1}}
+@media(max-width:60rem){.mayhem-play-intro{grid-template-columns:1fr}.mayhem-breath-figure{min-height:15rem}.mayhem-breath-sigil{width:min(65%,18rem)}}
+@media(prefers-reduced-motion:reduce){.mayhem-breath-ring,.mayhem-breath-diamond,.mayhem-breath-inner{animation:none;transform:none;opacity:1}}
+@media(forced-colors:active){.mayhem-breath-inner{stroke:CanvasText}}
+
+/* Mayhem card-to-content rhythm: keep subsequent headings and columns clear of card borders. */
+.mayhem .mayhem-departments{margin-bottom:clamp(2rem,4vw,3.5rem)}
+.mayhem .mayhem-departments + .mayhem-two-column,
+.mayhem .mayhem-departments + h3,
+.mayhem .mayhem-departments + ol{margin-top:clamp(2rem,4vw,3.5rem)}
+.mayhem .mayhem-two-column + h3{margin-top:clamp(2rem,4vw,3.5rem)}
+.mayhem .mayhem-two-column > div > h3:first-child{margin-top:0}
+
+/* Keep sponsorship table visually separate from the following approval guidance. */
+.mayhem #community-funding .table-wrap{margin-bottom:clamp(2rem,4vw,3.5rem)}
+.mayhem #community-funding .table-wrap + .mayhem-two-column{margin-top:clamp(2rem,4vw,3.5rem)}
+
+/* Persistent, contextual PIXIE entry — static and keyboard-operable. */
+.mayhem-pixie{position:fixed;right:clamp(.8rem,2vw,1.5rem);bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:100;max-width:min(24rem,calc(100vw - 2rem));font-family:inherit}
+.mayhem-pixie-details{position:relative;display:flex;flex-direction:column;align-items:flex-end}
+.mayhem-pixie-details>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;min-width:6.5rem;min-height:3.2rem;padding:.6rem .85rem;background:#121820;color:#fff5dc;border:2px solid #d4b46c;border-radius:2rem;font-size:1rem;font-weight:750;box-shadow:0 3px 18px #000a}
+.mayhem-pixie-details>summary::-webkit-details-marker{display:none}
+.mayhem-pixie-details>summary:focus-visible,.mayhem-pixie-panel a:focus-visible{outline:3px solid #f5dc80;outline-offset:3px}
+.mayhem-pixie-mark{font-size:1.55rem;line-height:1;color:#e7d09a}
+.mayhem-pixie-panel{position:absolute;right:0;bottom:calc(100% + .7rem);width:min(23rem,calc(100vw - 2rem));max-height:min(72dvh,40rem);overflow:auto;overscroll-behavior:contain;background:#121820;color:#f4f0e8;border:2px solid #d4b46c;border-radius:1rem;padding:1.2rem;box-shadow:0 10px 36px #000c;font-size:.96rem;line-height:1.55}
+.mayhem-pixie-panel h2{font-size:1.3rem;line-height:1.2;margin:0 0 .75rem;color:#fff5dc}
+.mayhem-pixie-panel h3{font-size:1.05rem;margin:.85rem 0 .4rem;color:#fff5dc}
+.mayhem-pixie-panel p{margin:.5rem 0}
+.mayhem-pixie-panel ul{padding-left:1.3rem;margin:.5rem 0}
+.mayhem-pixie-panel li{margin:.35rem 0}
+.mayhem-pixie-panel a{color:#f0d18b;text-decoration:underline;text-underline-offset:.16em}
+@media(max-width:420px){.mayhem-pixie-panel{max-height:65dvh}.mayhem-pixie-details>summary{min-height:3rem}}
+@media(forced-colors:active){.mayhem-pixie-details>summary,.mayhem-pixie-panel{border:2px solid CanvasText}}
