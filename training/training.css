@@ -109,3 +109,20 @@ img,svg,video,iframe{max-width:100%}img{height:auto}code{overflow-wrap:anywhere}
 /* Keep sponsorship table visually separate from the following approval guidance. */
 .mayhem #community-funding .table-wrap{margin-bottom:clamp(2rem,4vw,3.5rem)}
 .mayhem #community-funding .table-wrap + .mayhem-two-column{margin-top:clamp(2rem,4vw,3.5rem)}
+
+/* Persistent, contextual PIXIE entry — static and keyboard-operable. */
+.mayhem-pixie{position:fixed;right:clamp(.8rem,2vw,1.5rem);bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:100;max-width:min(24rem,calc(100vw - 2rem));font-family:inherit}
+.mayhem-pixie-details{position:relative;display:flex;flex-direction:column;align-items:flex-end}
+.mayhem-pixie-details>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;min-width:6.5rem;min-height:3.2rem;padding:.6rem .85rem;background:#121820;color:#fff5dc;border:2px solid #d4b46c;border-radius:2rem;font-size:1rem;font-weight:750;box-shadow:0 3px 18px #000a}
+.mayhem-pixie-details>summary::-webkit-details-marker{display:none}
+.mayhem-pixie-details>summary:focus-visible,.mayhem-pixie-panel a:focus-visible{outline:3px solid #f5dc80;outline-offset:3px}
+.mayhem-pixie-mark{font-size:1.55rem;line-height:1;color:#e7d09a}
+.mayhem-pixie-panel{position:absolute;right:0;bottom:calc(100% + .7rem);width:min(23rem,calc(100vw - 2rem));max-height:min(72dvh,40rem);overflow:auto;overscroll-behavior:contain;background:#121820;color:#f4f0e8;border:2px solid #d4b46c;border-radius:1rem;padding:1.2rem;box-shadow:0 10px 36px #000c;font-size:.96rem;line-height:1.55}
+.mayhem-pixie-panel h2{font-size:1.3rem;line-height:1.2;margin:0 0 .75rem;color:#fff5dc}
+.mayhem-pixie-panel h3{font-size:1.05rem;margin:.85rem 0 .4rem;color:#fff5dc}
+.mayhem-pixie-panel p{margin:.5rem 0}
+.mayhem-pixie-panel ul{padding-left:1.3rem;margin:.5rem 0}
+.mayhem-pixie-panel li{margin:.35rem 0}
+.mayhem-pixie-panel a{color:#f0d18b;text-decoration:underline;text-underline-offset:.16em}
+@media(max-width:420px){.mayhem-pixie-panel{max-height:65dvh}.mayhem-pixie-details>summary{min-height:3rem}}
+@media(forced-colors:active){.mayhem-pixie-details>summary,.mayhem-pixie-panel{border:2px solid CanvasText}}
