@@ -105,3 +105,7 @@ img,svg,video,iframe{max-width:100%}img{height:auto}code{overflow-wrap:anywhere}
 .mayhem .mayhem-departments + ol{margin-top:clamp(2rem,4vw,3.5rem)}
 .mayhem .mayhem-two-column + h3{margin-top:clamp(2rem,4vw,3.5rem)}
 .mayhem .mayhem-two-column > div > h3:first-child{margin-top:0}
+
+/* Keep sponsorship table visually separate from the following approval guidance. */
+.mayhem #community-funding .table-wrap{margin-bottom:clamp(2rem,4vw,3.5rem)}
+.mayhem #community-funding .table-wrap + .mayhem-two-column{margin-top:clamp(2rem,4vw,3.5rem)}
