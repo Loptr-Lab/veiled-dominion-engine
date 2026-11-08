@@ -40,3 +40,40 @@ img,svg,video,iframe{max-width:100%}img{height:auto}code{overflow-wrap:anywhere}
 @media(max-width:44rem){.grid{grid-template-columns:1fr}.actions{align-items:stretch}.actions .button{flex:1 1 100%;justify-content:flex-start}h1{font-size:2.1em}.masthead h1 br{display:none}.display-controls{flex-direction:column}dl{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 @media(forced-colors:active){.brief,.panel,.button,select{border:1px solid CanvasText}:focus-visible{outline-color:Highlight}}
+
+/* Gods of Mayhem: scoped brand variant of the existing shared training components.
+   No motion; emerald/violet are decorative accents, not body-text foregrounds. */
+:root[data-brand=mayhem]{--void:#101319;--surface:#181e24;--text-primary:#f1eee5;--text-muted:#bbc5c0;--the-light:#d5ad62;--line:#68766e;--mayhem-emerald:#147d64;--mayhem-lime:#c2e45a;--mayhem-violet:#8f6cc9;--mayhem-ink:#101319;--gutter:clamp(1rem,4vw,4rem)}
+:root[data-brand=mayhem][data-theme=light]{--void:#f1eee5;--surface:#e7e8df;--text-primary:#101319;--text-muted:#45534b;--the-light:#685018;--line:#68766e;--mayhem-lime:#c2e45a}
+.mayhem .masthead,.mayhem main,.mayhem footer{width:min(calc(100% - 2 * var(--gutter)),84rem)}
+.mayhem .masthead{padding-block:1rem}.mayhem-header-row{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.mayhem-brand{display:flex;align-items:center;gap:.9rem;text-decoration:none;color:var(--text-primary);font-size:.9em;font-weight:750;letter-spacing:.06em}
+.mayhem-brand img{width:3rem;height:3rem;border-radius:.25rem;flex:none}.mayhem-of{font:italic 1em Georgia,serif;color:var(--the-light)}
+.mayhem-header nav{display:flex;align-items:center;gap:1rem 1.5rem;flex-wrap:wrap}.mayhem-header nav>a{min-height:3rem;display:inline-flex;align-items:center;font-size:.88em;text-decoration:none}
+.mayhem-header nav>a:hover{text-decoration:underline}.mayhem .button{gap:1rem;border-radius:.2rem;font-weight:600}.mayhem .button:hover{background:var(--surface)}
+.mayhem .mayhem-primary{background:var(--mayhem-lime);color:var(--mayhem-ink);border:1px solid var(--mayhem-lime);border-radius:.2rem}
+.mayhem .mayhem-primary:hover{background:#d3f175;color:#101319}.mayhem .eyebrow{font-size:.72em;font-weight:650;letter-spacing:.08em;text-transform:uppercase}
+.mayhem main{padding-top:0}.mayhem main>section{padding-block:clamp(2.5rem,6vw,5rem);margin:0}.mayhem main>section+section{border-top:1px solid var(--line)}
+.mayhem .mayhem-hero{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(2rem,5vw,5rem);align-items:center;padding-block:4rem 5rem}
+.mayhem-hero-copy{min-width:0}.mayhem h1,.mayhem h2{font-family:Georgia,'Times New Roman',serif;font-weight:400}.mayhem h1{font-size:clamp(2.4em,4.7vw,4em);line-height:1.06;max-width:15ch;margin-block:1.5rem 2rem;letter-spacing:-.035em}
+.mayhem h2{font-size:clamp(1.8em,3.6vw,2.8em);line-height:1.15;letter-spacing:-.025em}.mayhem em{color:var(--the-light)}.mayhem h3{font-weight:600}
+.mayhem-dot{display:inline-block;width:.5rem;height:.5rem;background:var(--mayhem-lime);border-radius:50%;margin-right:.5rem}.mayhem-hero .lead{font-size:1.1em;color:var(--text-primary)}
+.mayhem-caption{color:var(--text-muted);font-size:.8em;margin-top:1.5rem;max-width:52ch}
+.mayhem-hero-art{margin:0;position:relative;min-width:0;border:1px solid var(--line);border-top:3px solid var(--the-light);background:#101319;transform:rotate(1deg)}
+.mayhem-hero-art>img{display:block;width:100%;aspect-ratio:1/1.04;object-fit:cover;object-position:center;filter:none}
+.mayhem-hero-art figcaption{padding:1.5rem;color:#f1eee5;background:#101319;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;font-size:.8em}
+.mayhem-hero-art figcaption>span:first-child{color:#d5ad62;font-size:.8em;letter-spacing:.12em;max-width:14ch;flex-shrink:0}.mayhem-hero-art figcaption>span:last-child{font-family:Georgia,serif;font-style:italic;font-size:1.1em}
+.mayhem-two-column{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(2rem,6vw,6rem);align-items:start}.mayhem-two-column>*{min-width:0}.mayhem-two-column h3{margin-block:1.6rem .8rem}.mayhem-two-column h3:first-child{margin-top:0}
+.mayhem-arena-notes{border-left:3px solid var(--mayhem-emerald);padding-left:2rem}.mayhem-number{font-family:Georgia,serif;font-size:3em;color:var(--the-light);line-height:1.1}.mayhem-number span{font-family:var(--font-main);font-size:.3em;color:var(--text-muted);display:block;margin-top:.6rem}
+.mayhem blockquote{margin:2rem 0;font-family:Georgia,serif;font-size:1.3em}.mayhem cite{display:block;font-family:var(--font-main);font-size:.6em;margin-top:1rem;font-style:normal}
+.mayhem-departments{gap:1.25rem}.mayhem .panel{border-radius:.25rem;box-shadow:none}.mayhem-departments .panel{display:flex;flex-direction:column;align-items:flex-start;border-top:2px solid var(--mayhem-emerald)}
+.mayhem-departments h3{font-family:Georgia,serif;font-size:1.65em;font-weight:400;max-width:20ch}.mayhem-departments .panel>a{margin-top:auto;min-height:3rem;display:flex;align-items:center;gap:1rem}
+.mayhem-rewards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-block:2rem}.mayhem-rewards .panel{padding:1.5rem;border-top:2px solid var(--mayhem-violet)}
+.mayhem-rewards h3{font-family:Georgia,serif;font-size:1.2em;font-weight:400}.mayhem-rewards p:not(.mayhem-price){font-size:.85em;color:var(--text-muted)}.mayhem-price{font-family:Georgia,serif;color:var(--the-light);font-size:2.5em;line-height:1}
+.mayhem-apply{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(2rem,6vw,6rem);align-items:start}.mayhem-apply>*{min-width:0}.mayhem-application{border-top:3px solid var(--the-light)}
+.mayhem label:not(.choice){display:block;margin-top:1.25rem;font-weight:600}.mayhem input[type=url],.mayhem textarea,.mayhem select{width:100%;max-width:100%;padding:.7rem;background:var(--void);color:var(--text-primary);border:1px solid var(--line);border-radius:.2rem;min-height:3rem;margin-block:.5rem 1rem;font:inherit}
+.mayhem textarea{resize:vertical}.mayhem .notice{font-size:.85em}.mayhem .choice{align-items:flex-start}.mayhem .choice input{flex:none;width:1.25rem;height:1.25rem;min-height:1.25rem;margin:.4rem .6rem 0 0;accent-color:var(--mayhem-emerald)}
+.mayhem [aria-invalid=true]{border-color:var(--the-light);outline:2px solid var(--the-light)}.mayhem #application-errors:not(:empty){border-left:3px solid var(--the-light);padding:1rem;margin-block:1rem}.mayhem #draft-review{border-top:1px solid var(--line);margin-top:1.5rem;padding-top:1.5rem}
+.mayhem-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem}.mayhem-wordmark{font-family:Georgia,serif;font-size:1.5em;color:var(--the-light)}.mayhem-footer nav{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:start}.mayhem-footer nav a{min-height:3rem;display:inline-flex;align-items:center}.mayhem-footer>.notice{flex-basis:100%}
+@media(max-width:60rem){.mayhem .mayhem-hero{grid-template-columns:1fr;gap:2rem}.mayhem-hero-art{transform:none;max-width:40rem}.mayhem-hero-art>img{aspect-ratio:16/9}.mayhem h1{font-size:clamp(2.3em,8vw,4em);max-width:19ch}.mayhem-two-column,.mayhem-apply{grid-template-columns:1fr;gap:2rem}.mayhem-rewards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:36rem){.mayhem h1{font-size:2.1em}.mayhem-departments,.mayhem-rewards{grid-template-columns:1fr}.mayhem-header nav{gap:.3rem 1rem}.mayhem-header nav .button{flex-basis:100%}.mayhem-hero-art figcaption{flex-direction:column}.mayhem-hero-art figcaption>span:first-child{max-width:none}.mayhem-arena-notes{padding-left:1rem}}
