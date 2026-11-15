@@ -33,77 +33,16 @@ const report = process.env.MAYHEM_AXE_REPORT || "/tmp/mayhem-axe.json";
     "keyboard skip link",
   );
   await p.keyboard.press("Enter");
-  await p.locator("button[type=submit]").click();
-  ok(
-    (await p.locator("#application-errors a").count()) === 4,
-    "required validation",
-  );
-  ok(
-    await p
-      .locator("#application-errors")
-      .evaluate((e) => e === document.activeElement),
-    "error focus",
-  );
-  for (const d of ["strategy", "production", "operations", "community"]) {
-    await p.locator(`[data-department=${d}]`).click();
-    ok(
-      (await p.locator("#department").inputValue()) === d,
-      "department route " + d,
-    );
-  }
-  await p
-    .locator("#proposal")
-    .fill(
-      "I can document accessible playtests and provide a bounded handoff. <script>window.injected=true</script>",
-    );
-  await p.locator("#availability").selectOption("one bounded task");
-  await p.locator("#acknowledge").check();
-  for (const url of [
-    "javascript:alert(1)",
-    "http://example.com",
-    "https://user:pass@example.com",
-  ]) {
-    await p.locator("#work").fill(url);
-    await p.locator("button[type=submit]").click();
-    ok(
-      (await p.locator("#work").getAttribute("aria-invalid")) === "true",
-      "unsafe URL rejected " + url,
-    );
-  }
-  await p.locator("#work").fill("https://example.com/portfolio");
-  await p.locator("button[type=submit]").click();
-  ok(await p.locator("#draft-review").isVisible(), "review shown");
-  ok(
-    await p
-      .locator("#draft-title")
-      .evaluate((e) => e === document.activeElement),
-    "review focus",
-  );
-  const draft = await p.locator("#draft-text").inputValue();
-  ok(draft.includes("<script>"), "literal text retained");
-  ok(!(await p.evaluate(() => window.injected)), "no injected script");
-  const mail = new URL(await p.locator("#email-draft").getAttribute("href"));
-  ok(
-    mail.pathname === "questions@loptrlab.com" &&
-      mail.searchParams.get("body") === draft,
-    "mail handoff exact",
-  );
-  const dl = await Promise.all([
-    p.waitForEvent("download"),
-    p.locator("#download-draft").click(),
-  ]);
-  ok(fs.readFileSync(await dl[0].path(), "utf8") === draft, "download exact");
-  await p
-    .locator("#proposal")
-    .fill("I can help organize one accessible rules review.");
-  ok(
-    !(await p.locator("#draft-review").isVisible()) &&
-      !(await p.locator("#email-draft").getAttribute("href")),
-    "editing invalidates old draft",
-  );
-  await p.locator("button[type=reset]").click();
-  ok((await p.locator("#proposal").inputValue()) === "", "reset clears");
-  await p.locator("summary").click();
+  ok(await p.locator('form').count() === 0, 'no application or disability collection form');
+  ok(await p.locator('#adaptive-participation').isVisible(), 'existing laboratory extended');
+  ok(await p.locator('a[href="#adaptive-participation"]').count() > 0, 'laboratory discovery');
+  const guide=p.locator('.mayhem-pixie summary');
+  await guide.focus(); await p.keyboard.press('Enter');
+  ok(await p.locator('.mayhem-pixie-panel').isVisible(), 'keyboard opens contextual PIXIE');
+  ok(await guide.locator('img').count() === 1, 'approved sigil reused');
+  await p.keyboard.press('Enter');
+  ok(await p.locator('a[href="https://github.com/Loptr-Lab/veiled-dominion-engine/issues"]').count()>0,'existing public contribution route');
+  await p.getByText("Reading settings",{exact:true}).click();
   await p.locator("[name=training-theme]").selectOption("light");
   await p.locator("[name=training-text-size]").selectOption("largest");
   await p.reload();
@@ -167,7 +106,7 @@ const report = process.env.MAYHEM_AXE_REPORT || "/tmp/mayhem-axe.json";
   const nojs = await browser.newContext({ javaScriptEnabled: false });
   const n = await nojs.newPage();
   await n.goto(base + "/mayhem/");
-  ok(await n.locator("noscript a").isVisible(), "no JS direct contact");
+  ok(await n.locator('a[href="https://github.com/Loptr-Lab/veiled-dominion-engine/issues"]').count()>0, "no-JS public contribution route");
   await n.goto(base + "/");
   ok(
     (await n.locator('a[href="mayhem/"]').count()) > 0,

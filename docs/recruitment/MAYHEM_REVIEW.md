@@ -81,3 +81,7 @@ NODE_PATH=/tmp/mayhem-browser-tools/node_modules node scripts/test-mayhem-browse
 ## Production gates
 
 Do not merge or promote this branch without separate approval. Before launch: confirm artwork ownership/publication channels; test physical iPad Safari/VoiceOver; verify inbox ownership and agree review/privacy/retention responsibilities; approve selection and participant-record procedures; configure and verify the proposed subdomain; approve public copy and LinkedIn changes only after the destination works. Campaign rewards remain unavailable concepts until budgets, fulfillment, rights and terms pass their separate gates.
+
+## Adaptive participation and repair amendment — 15 November 2026
+
+See the [existing canonical consolidation handoff](https://github.com/ibloud/ibloud.github.io/blob/review/ifixit-pilot-record/docs/PIXIE_CONSOLIDATION.md#adaptive-employment--implementation-and-source-record-15-november-2026) for source register, continuity audit, file inventory, tests, preview/release record and remaining acceptance gates. This review adds no live provider, affiliation, data collection, employment promise or third-party outreach. Existing approval gates remain.
