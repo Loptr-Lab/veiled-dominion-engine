@@ -2,7 +2,7 @@
 
 **State:** fixture-only compatibility experiment, not a published ATproto/Pentaract game, registration, accessibility certification or deployed app.
 
-**Collaboration:** [Upstream issue #29](https://github.com/gamesgamesgamesgamesgames/lexicon/issues/29). Canonical game sources remain [GDD](../../../../docs/design/GDD.md), [rulebook](../../../../docs/RULEBOOK_v0.1), and [continuity policy](../../../../docs/CANON_AND_CONTINUITY.md); this test does not set canon.
+**Collaboration:** [Upstream issue #29](https://github.com/gamesgamesgamesgamesgames/lexicon/issues/29). Canonical game sources remain [GDD](../../../docs/design/GDD.md), [rulebook](../../../docs/RULEBOOK_v0.1), and [continuity policy](../../../docs/CANON_AND_CONTINUITY.md); this test does not set canon.
 
 ## Checked contract (2026-11-15)
 - [Game record lexicon](https://github.com/gamesgamesgamesgamesgames/lexicon/blob/main/src/lexicons/games/gamesgamesgamesgames/game.json): required `name`, `createdAt`, `applicationType`; optional `summary`, `modes`, `themes`, `websites`.
