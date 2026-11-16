@@ -1,5 +1,8 @@
 # Contributing to Veiled Dominion Engine
 
+> **Licensing review pending:** This repository has conflicting published software and creative-content terms. Read [the public disclosure and next actions](docs/LICENSING_REVIEW.md). This notice does not change or revoke existing grants.
+
+
 Read [AGENTS.md](AGENTS.md) first for the shared reading requirement, local authority, checks and existing-work/release boundaries. This route supplements the contribution requirements below.
 
 ## Mission and participation terms
