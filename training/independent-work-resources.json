@@ -1,0 +1,462 @@
+{
+  "reviewed": "2026-11-14",
+  "purpose": "Small teaching reference for this pathway; Made-Sick remains the general resource directory.",
+  "resources": [
+    {
+      "id": "mirlo",
+      "name": "Mirlo",
+      "url": "https://docs.mirlo.space/",
+      "group": "primary",
+      "geographicScope": "Online / international project",
+      "eligibility": "Contribution guide welcomes bug reports, feature requests, translations and code; task suitability must be agreed.",
+      "offers": "Volunteer contributions; no paid vacancy verified.",
+      "contactRoute": "https://github.com/funmusicplace/mirlo/blob/main/CONTRIBUTING.md",
+      "sources": [
+        "https://github.com/funmusicplace/mirlo/blob/main/CONTRIBUTING.md",
+        "https://docs.mirlo.space/"
+      ],
+      "lastChecked": "2026-11-14",
+      "lastAttempted": "2026-11-14",
+      "status": "official-source-read",
+      "confirmedFacts": [
+        "The official contribution guide welcomes reports, ideas, translations and code.",
+        "It asks contributors to talk first via hi@mirlo.space, its published Mastodon account or Fun Music Place Discord, and follow its code of conduct."
+      ],
+      "priorResearch": [],
+      "proposedPartnership": "Proposal only: ask about one bounded learner contribution or support conversation through the published process. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Current task availability, maintainer capacity, supervision and accessibility support.",
+        "Any compensation or formal partnership requires separate agreement."
+      ]
+    },
+    {
+      "id": "metabrainz",
+      "name": "MetaBrainz / MusicBrainz Picard",
+      "url": "https://metabrainz.org/projects",
+      "group": "primary",
+      "geographicScope": "Online / international project",
+      "eligibility": "Picard welcomes community contributions; discuss coding with Phillip Wolfer or Zas before starting.",
+      "offers": "Volunteer code, translations, plugins, documentation and community support.",
+      "contactRoute": "https://github.com/metabrainz/picard/blob/master/CONTRIBUTING.md",
+      "sources": [
+        "https://github.com/metabrainz/picard/blob/master/CONTRIBUTING.md",
+        "https://metabrainz.org/projects"
+      ],
+      "lastChecked": "2026-11-14",
+      "lastAttempted": "2026-11-14",
+      "status": "official-source-read",
+      "confirmedFacts": [
+        "Picard’s guide describes a volunteer collaborative project and several contribution routes.",
+        "Picard v3 development is in flux; discuss code with maintainers first and start small."
+      ],
+      "priorResearch": [],
+      "proposedPartnership": "Proposal only: ask about one bounded learner contribution or support conversation through the published process. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Current issue suitability, review capacity and access needs.",
+        "No paid placement, mentoring commitment or graduate partnership verified."
+      ]
+    },
+    {
+      "id": "funkwhale",
+      "name": "Funkwhale",
+      "url": "https://docs.funkwhale.audio/developer/index.html",
+      "group": "primary",
+      "geographicScope": "Online / international project",
+      "eligibility": "Confirm current contributor prerequisites with project maintainers.",
+      "offers": "Developer contribution documentation; no paid work verified.",
+      "contactRoute": "https://docs.funkwhale.audio/developer/index.html",
+      "sources": [
+        "https://docs.funkwhale.audio/developer/index.html"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Prior research identifies a developer documentation route."
+      ],
+      "proposedPartnership": "Proposal only: ask about one bounded learner contribution or support conversation through the published process. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Current official instructions could not be re-read: proxy blocked access.",
+        "Confirm contribution/contact process, open work, review capacity and accessibility before starting."
+      ]
+    },
+    {
+      "id": "contra",
+      "name": "Contra",
+      "url": "https://contra.com/features/find-freelance-jobs",
+      "group": "primary",
+      "geographicScope": "Platform / countries and payment support vary",
+      "eligibility": "Confirm current terms, age, location, identity and payment eligibility yourself.",
+      "offers": "Possible paid client-discovery channel; no client or income guarantee.",
+      "contactRoute": "https://contra.com/features/find-freelance-jobs",
+      "sources": [
+        "https://contra.com/features/find-freelance-jobs",
+        "https://contra.com/policies/terms"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Prior research identifies a freelance job-discovery feature and platform terms."
+      ],
+      "proposedPartnership": "Proposal only: ask about one bounded learner contribution or support conversation through the published process. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Current fees, eligibility, access, demand and listings: official pages blocked by proxy.",
+        "Read current terms before creating an account or agreeing work."
+      ]
+    },
+    {
+      "id": "ndi",
+      "name": "National Disability Institute Small Business Hub",
+      "url": "https://www.disabilitysmallbusiness.org/",
+      "group": "primary",
+      "geographicScope": "United States",
+      "eligibility": "Disability-focused business resource; confirm eligibility and service availability directly.",
+      "offers": "Business support, education and referrals; not verified client placement or a funding award.",
+      "contactRoute": "https://www.disabilitysmallbusiness.org/",
+      "sources": [
+        "https://www.disabilitysmallbusiness.org/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Prior research identifies disability-focused small-business support."
+      ],
+      "proposedPartnership": "Proposal only: ask about one bounded learner contribution or support conversation through the published process. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Current services, contact route, eligibility and availability could not be rechecked because the proxy blocked access.",
+        "Ask about viability planning, customer discovery, accessibility and qualified benefits counseling."
+      ]
+    },
+    {
+      "id": "sbdc",
+      "name": "Local Small Business Development Centers",
+      "url": "https://www.sba.gov/counseling/local-assistance/resource-partners/",
+      "group": "primary",
+      "geographicScope": "United States / local service areas",
+      "eligibility": "Use the SBA resource-partner route to locate a center serving your area; confirm local eligibility.",
+      "offers": "Business counseling, training and local referrals; no funding or client guarantee.",
+      "contactRoute": "https://www.sba.gov/counseling/local-assistance/resource-partners/",
+      "sources": [
+        "https://www.sba.gov/counseling/local-assistance/resource-partners/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Prior research identifies SBA resource partners, including SBDCs."
+      ],
+      "proposedPartnership": "Proposal only: ask about one bounded learner contribution or support conversation through the published process. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Current local services, intake, access formats and any training fees need confirmation; official page blocked by proxy."
+      ]
+    },
+    {
+      "id": "minnesota-vrs",
+      "name": "Minnesota VRS — state example",
+      "url": "https://apps.deed.state.mn.us/ddp/PolicyDetail.aspx?pol=52",
+      "group": "primary",
+      "geographicScope": "Minnesota only",
+      "eligibility": "Individual VRS eligibility and an appropriate approved employment plan; not a nationwide entitlement.",
+      "offers": "State vocational-rehabilitation small-business policy; individual decisions, not guaranteed payment.",
+      "contactRoute": "https://mn.gov/deed/job-seekers/disabilities/",
+      "sources": [
+        "https://apps.deed.state.mn.us/ddp/PolicyDetail.aspx?pol=52",
+        "https://mn.gov/deed/job-seekers/disabilities/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Existing Training guidance records individual eligibility, employment planning and written authorization before relying on support."
+      ],
+      "proposedPartnership": "Proposal only: ask about one bounded learner contribution or support conversation through the published process. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Small-business policy text and current approval conditions could not be rechecked: proxy blocked access.",
+        "Ask the applicable state program what plan, viability evidence, costs and written preapproval are required.",
+        "No promise of payment for Loptr Lab training, equipment or ongoing expenses."
+      ]
+    },
+    {
+      "id": "resonate",
+      "name": "Resonate",
+      "url": "https://resonate.coop/",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Inactive / historical reference.",
+      "contactRoute": "https://resonate.coop/",
+      "sources": [
+        "https://resonate.coop/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Research correction supplied for review: the official homepage says the cooperative is closed as of 2026. Do not treat it as active."
+      ],
+      "proposedPartnership": "No outreach proposed: archival study only. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "ampled",
+      "name": "Ampled",
+      "url": "https://github.com/Ampled",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Archive, not client placement.",
+      "contactRoute": "https://github.com/Ampled",
+      "sources": [
+        "https://github.com/Ampled"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Research correction supplied for review: closed in 2023; code and documentation are archival."
+      ],
+      "proposedPartnership": "No outreach proposed: archival study only. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "unfound",
+      "name": "UnFound",
+      "url": "https://www.uk.coop/unfound",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Historical accelerator material.",
+      "contactRoute": "https://www.uk.coop/unfound",
+      "sources": [
+        "https://www.uk.coop/unfound"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Located accelerator application material was for 2023; no current intake verified."
+      ],
+      "proposedPartnership": "No outreach proposed unless current service, identity and fit are verified first. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "making-space",
+      "name": "Making Space",
+      "url": "https://making-space.com/",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Adjacent opportunity platform; current roles unverified.",
+      "contactRoute": "https://making-space.com/",
+      "sources": [
+        "https://making-space.com/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Has advertised freelance and contract opportunities; do not classify it as employer-only. Historical listings do not establish an open role."
+      ],
+      "proposedPartnership": "No outreach proposed unless current service, identity and fit are verified first. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "fau-accesstech",
+      "name": "FAU AccessTECH",
+      "url": "https://www.fau.edu/education/centersandprograms/",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Employment-adjacent paid internship research.",
+      "contactRoute": "https://www.fau.edu/education/centersandprograms/",
+      "sources": [
+        "https://www.fau.edu/education/centersandprograms/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Research correction: AccessTECH documents paid internships and portfolio experience; confirm the exact current program page and intake."
+      ],
+      "proposedPartnership": "No outreach proposed unless current service, identity and fit are verified first. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "bit",
+      "name": "BIT",
+      "url": "https://blindinstituteoftechnology.org/",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Employment-focused paid-apprenticeship research; identity unresolved.",
+      "contactRoute": "https://blindinstituteoftechnology.org/",
+      "sources": [
+        "https://blindinstituteoftechnology.org/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Research correction supplied for review: BIT documents paid apprenticeships; these are employment-focused. Confirm organization identity, current program, eligibility and intake before using."
+      ],
+      "proposedPartnership": "No outreach proposed unless current service, identity and fit are verified first. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "melwood",
+      "name": "Melwood abilIT",
+      "url": "https://melwood.org/",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Employment-focused training/support.",
+      "contactRoute": "https://melwood.org/",
+      "sources": [
+        "https://melwood.org/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Research correction: abilIT provides disability-focused training and employment support."
+      ],
+      "proposedPartnership": "No outreach proposed unless current service, identity and fit are verified first. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "kevuru",
+      "name": "Kevuru",
+      "url": "https://kevurugames.com/",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Adjacent commercial vendor.",
+      "contactRoute": "https://kevurugames.com/",
+      "sources": [
+        "https://kevurugames.com/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Outsourcing/outstaffing; no verified graduate-client pathway."
+      ],
+      "proposedPartnership": "No outreach proposed unless current service, identity and fit are verified first. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "subvert",
+      "name": "Subvert",
+      "url": "https://subvert.fm/",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Adjacent cooperative marketplace.",
+      "contactRoute": "https://subvert.fm/",
+      "sources": [
+        "https://subvert.fm/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Cooperative music marketplace; open developer-contribution program or graduate partnership not verified."
+      ],
+      "proposedPartnership": "No outreach proposed unless current service, identity and fit are verified first. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "guilded",
+      "name": "Guilded",
+      "url": "https://www.guilded.coop/",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Adjacent contracting/payment infrastructure.",
+      "contactRoute": "https://www.guilded.coop/",
+      "sources": [
+        "https://www.guilded.coop/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Freelancer contracting/payment infrastructure; client-finding and developer referrals not confirmed."
+      ],
+      "proposedPartnership": "No outreach proposed unless current service, identity and fit are verified first. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    },
+    {
+      "id": "catchafire",
+      "name": "Catchafire",
+      "url": "https://www.catchafire.org/",
+      "group": "adjacent",
+      "geographicScope": "Confirm organization and geographic service area",
+      "eligibility": "Not reverified; do not infer eligibility or open intake.",
+      "offers": "Volunteer projects, not paid client work.",
+      "contactRoute": "https://www.catchafire.org/",
+      "sources": [
+        "https://www.catchafire.org/"
+      ],
+      "lastChecked": null,
+      "lastAttempted": "2026-11-14",
+      "status": "recheck-required",
+      "confirmedFacts": [],
+      "priorResearch": [
+        "Volunteer nonprofit projects; not paid freelance placement."
+      ],
+      "proposedPartnership": "No outreach proposed unless current service, identity and fit are verified first. No organization has agreed to a Loptr Lab partnership.",
+      "unknowns": [
+        "Official source and current opportunity status require rechecking; external pages were unavailable in this environment.",
+        "No graduate-client route or Loptr Lab partnership is established."
+      ]
+    }
+  ]
+}

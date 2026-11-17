@@ -1,0 +1,2 @@
+permission_id,case_id,rights_type,claimed_holder,scope,evidence_reference,territory,term,status,limitations
+"""PERM-1""","""AI-MUSIC-001""","""underlying composition, master, processing and adaptation""","""unknown""","""No documented authority for the encountered recording; synthetic brief only is included""","""unknown""","""unknown""","""unknown""","""unknown""","""No real recording or permission record inspected; a prompt and platform plan cannot transfer underlying rights"""

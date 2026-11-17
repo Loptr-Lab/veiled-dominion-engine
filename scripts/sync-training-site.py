@@ -13,8 +13,20 @@ for item in sorted((source/'docs').rglob('*')):
  if not item.is_file(): continue
  rel=item.relative_to(source/'docs')
  out=target/rel; out.parent.mkdir(parents=True,exist_ok=True)
- text=item.read_text().replace('https://loptr-lab.github.io/training/',origin)
+ try:
+  text=item.read_text().replace('https://loptr-lab.github.io/training/',origin)
+ except UnicodeDecodeError:
+  shutil.copyfile(item,out)
+  continue
  if item.suffix=='.html':
+  # Keep publication-only verification and social metadata unless authored upstream.
+  if out.exists():
+   previous=out.read_text().split('</head>')[0]
+   for tag in re.findall(r'<meta\b[^>]*>|<script type="application/ld\+json">.*?</script>',previous,re.S):
+    key=re.search(r"(?:name|property)=[\"']([^\"']+)",tag)
+    if key and re.search(r"(?:name|property)=[\"']"+re.escape(key[1])+r"[\"']",text): continue
+    if not key and 'application/ld+json' not in tag: continue
+    if tag not in text: text=text.replace('</head>',tag+'\n</head>',1)
   path=rel.as_posix()
   if path.endswith('index.html'): path=path[:-10]
   url=origin+path

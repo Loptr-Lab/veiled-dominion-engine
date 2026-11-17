@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0.0",
+  "exported_at": "2026-11-09T07:57:13.234500+00:00",
+  "package_id": "LL-LEGAL-SAMPLE-1",
+  "title": "AI-MUSIC-001: synthetic provenance and HOLD report",
+  "visibility": "public_synthetic",
+  "professional_review": "PENDING",
+  "evidence": [
+    {
+      "artifact_id": "AI-MUSIC-001-F1",
+      "case_id": "AI-MUSIC-001",
+      "source_application": "fictional local text editor",
+      "source_record_reference": "synthetic/brief.txt",
+      "original_filename": "brief.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 86,
+      "sha256": "2d0f9085cf9d9619f1c7eec0ef894ce63e884baab590307f38e3ddb45706e72f",
+      "source_creation": {
+        "value": "unknown",
+        "timezone": "unknown",
+        "clock_source": "unknown",
+        "basis": "unavailable"
+      },
+      "source_publication": {
+        "value": "unknown",
+        "timezone": "unknown",
+        "clock_source": "unknown",
+        "basis": "unavailable"
+      },
+      "acquired_at": {
+        "value": "2026-11-01T12:00:00Z",
+        "timezone": "UTC",
+        "clock_source": "fictional exercise clock",
+        "basis": "synthetic example; not a real observation"
+      },
+      "observed_at": {
+        "value": "2026-11-01T12:00:00Z",
+        "timezone": "UTC",
+        "clock_source": "fictional exercise clock",
+        "basis": "synthetic example; not a real observation"
+      },
+      "actor_claim": "Fictional creator A; not independently authenticated",
+      "custody_event_ids": [
+        "EV-1",
+        "EV-2",
+        "EV-3"
+      ],
+      "permission_id": "PERM-1",
+      "legal_hold": "unknown",
+      "release_status": "HOLD",
+      "verification_method": "Compare the included synthetic text bytes with SHA-256; not an artist-authentication method",
+      "limitations": "Not the encountered recording. No source recording, source filename or private metadata included. Hash does not prove title, consent or authenticity.",
+      "evidence_status": "fictional_example",
+      "visibility": "public_synthetic",
+      "supersedes": "unknown"
+    }
+  ],
+  "timeline": [
+    {
+      "event_id": "EV-1",
+      "artifact_id": "AI-MUSIC-001-F1",
+      "case_id": "AI-MUSIC-001",
+      "kind": "acquisition",
+      "event_time": {
+        "value": "2026-11-01T12:00:00Z",
+        "timezone": "UTC",
+        "clock_source": "fictional exercise clock",
+        "basis": "synthetic example; not a real observation"
+      },
+      "recorded_at": {
+        "value": "2026-11-01T12:00:00Z",
+        "timezone": "UTC",
+        "clock_source": "fictional exercise clock",
+        "basis": "synthetic example; not a real observation"
+      },
+      "actor_claim": "Fictional custodian",
+      "description": "Synthetic acquisition of the included text brief; source recording not acquired.",
+      "input_hash": "2d0f9085cf9d9619f1c7eec0ef894ce63e884baab590307f38e3ddb45706e72f",
+      "output_hash": "2d0f9085cf9d9619f1c7eec0ef894ce63e884baab590307f38e3ddb45706e72f",
+      "supersedes": "unknown"
+    },
+    {
+      "event_id": "EV-2",
+      "artifact_id": "AI-MUSIC-001-F1",
+      "case_id": "AI-MUSIC-001",
+      "kind": "observation",
+      "event_time": {
+        "value": "2026-11-01T12:00:00Z",
+        "timezone": "UTC",
+        "clock_source": "fictional exercise clock",
+        "basis": "synthetic example; not a real observation"
+      },
+      "recorded_at": {
+        "value": "2026-11-01T12:00:00Z",
+        "timezone": "UTC",
+        "clock_source": "fictional exercise clock",
+        "basis": "synthetic example; not a real observation"
+      },
+      "actor_claim": "Fictional custodian",
+      "description": "Initial exercise note: source creation time not supplied.",
+      "input_hash": "2d0f9085cf9d9619f1c7eec0ef894ce63e884baab590307f38e3ddb45706e72f",
+      "output_hash": "2d0f9085cf9d9619f1c7eec0ef894ce63e884baab590307f38e3ddb45706e72f",
+      "supersedes": "unknown"
+    },
+    {
+      "event_id": "EV-3",
+      "artifact_id": "AI-MUSIC-001-F1",
+      "case_id": "AI-MUSIC-001",
+      "kind": "correction",
+      "event_time": {
+        "value": "2026-11-01T12:00:00Z",
+        "timezone": "UTC",
+        "clock_source": "fictional exercise clock",
+        "basis": "synthetic example; not a real observation"
+      },
+      "recorded_at": {
+        "value": "2026-11-01T12:00:00Z",
+        "timezone": "UTC",
+        "clock_source": "fictional exercise clock",
+        "basis": "synthetic example; not a real observation"
+      },
+      "actor_claim": "Fictional custodian",
+      "description": "Clarification appended: observation is not original creation/publication; prior note retained.",
+      "input_hash": "2d0f9085cf9d9619f1c7eec0ef894ce63e884baab590307f38e3ddb45706e72f",
+      "output_hash": "2d0f9085cf9d9619f1c7eec0ef894ce63e884baab590307f38e3ddb45706e72f",
+      "supersedes": "EV-2"
+    }
+  ],
+  "contributors": [
+    {
+      "contributor_id": "CON-1",
+      "case_id": "AI-MUSIC-001",
+      "role": "proposed creative direction",
+      "claim": "Fictional creator proposes an original brief; no artist approval or output authorship asserted",
+      "evidence_ids": [
+        "AI-MUSIC-001-F1"
+      ],
+      "status": "fictional_example"
+    }
+  ],
+  "permissions": [
+    {
+      "permission_id": "PERM-1",
+      "case_id": "AI-MUSIC-001",
+      "rights_type": "underlying composition, master, processing and adaptation",
+      "claimed_holder": "unknown",
+      "scope": "No documented authority for the encountered recording; synthetic brief only is included",
+      "evidence_reference": "unknown",
+      "territory": "unknown",
+      "term": "unknown",
+      "status": "unknown",
+      "limitations": "No real recording or permission record inspected; a prompt and platform plan cannot transfer underlying rights"
+    }
+  ],
+  "authorities": [
+    {
+      "source_id": "COPY-01",
+      "title": "Copyright Act",
+      "url": "https://www.copyright.gov/title17/",
+      "jurisdiction": "US federal",
+      "version": "Office edition through 2025-12-18; individual enactment dates vary",
+      "effective_date": "See version; unknown where not established",
+      "verified_on": "2026-11-09",
+      "section": "17 USC 101–103, 106, 114, 201, 204",
+      "limitations": "Web research retrieval; direct HTTP 403. No project-specific title or permission verified."
+    },
+    {
+      "source_id": "COPY-02",
+      "title": "AI Copyrightability Part 2",
+      "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf",
+      "jurisdiction": "US federal",
+      "version": "2025-01 report; no contractual effective date",
+      "effective_date": "See version; unknown where not established",
+      "verified_on": "2026-11-09",
+      "section": "II.C–F, V",
+      "limitations": "Web-retrieved PDF, direct HTTP 403; agency interpretation, not clearance."
+    },
+    {
+      "source_id": "EVID-01",
+      "title": "Federal Rules of Evidence",
+      "url": "https://www.uscourts.gov/sites/default/files/document/federal-rules-of-evidence.pdf",
+      "jurisdiction": "US federal courts",
+      "version": "Edition amended to 2025-12-01; rule-specific dates in text",
+      "effective_date": "See version; unknown where not established",
+      "verified_on": "2026-11-09",
+      "section": "Rules 901, 902(13)–(14)",
+      "limitations": "Court-hosted PDF retrieved; two obsolete guessed URLs inaccessible. No admissibility determination."
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "DEC-1",
+      "case_id": "AI-MUSIC-001",
+      "question": "May the proposed continuation process the encountered recording and be commercially released?",
+      "decision": "hold",
+      "reason": "Underlying title, input/processing/adaptation authority, feature/plan and actual output are unresolved",
+      "needed_evidence": "Verified separate composition/master chains; signed permissions and scoped review; exact provider conditions and actual-result assessment",
+      "next_action": "Keep source unprocessed; seek qualified review privately or create independent music with authorized inputs",
+      "responsible_role": "Fictional producer and qualified reviewing professional",
+      "professional_review": "PENDING",
+      "source_ids": [
+        "COPY-01",
+        "COPY-02",
+        "EVID-01"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+contributor_id,case_id,role,claim,evidence_ids,status
+"""CON-1""","""AI-MUSIC-001""","""proposed creative direction""","""Fictional creator proposes an original brief; no artist approval or output authorship asserted""","[""AI-MUSIC-001-F1""]","""fictional_example"""

@@ -18,3 +18,30 @@ Study two directions of translation: a pinball machine **simulated in software**
 5. Scope physical components, budget, maintenance, and maker supervision only after the relevant software and accessibility questions are answered.
 
 This index is a pointer, not approval to build, a partnership with a venue or artist, a funding promise, or a transfer of project ownership. Corridors and Duet keep their own rules and release decisions. Generalized lessons can inform the [game development](./game-development.md) and [hybrid creative technology](./hybrid-creative-technology.md) tracks; Veiled Dominion changes require its own engine review.
+
+## Read before you repair · iFixit
+
+Start with [Device Safety](https://www.ifixit.com/Info/Device_Safety), then
+[Identifying Major Electronic Components](https://www.ifixit.com/Guide/Identifying+Major+Electronic+Components/27244)
+as a diagram-reading activity. Name three components and their functions without
+opening or powering the instrument. Record the external model/condition, the
+manufacturer’s exact-model manual, revision and unanswered compatibility questions.
+A general iFixit guide does not verify a synthesizer or firmware retrofit.
+
+Unplugging is not proof that stored electrical energy is gone. Mains circuits,
+capacitors, CRTs, damaged batteries and unknown electrical faults require a
+qualified technician; minors also need appropriate adult supervision. An adult
+without technical competence is not a substitute. No soldering, discharging,
+bypassing protections or flashing is part of this exercise.
+
+[Community Repair](https://www.ifixit.com/Wiki/Community_Repair) is a starting
+point for supervised learning, not a verified local session, mentor or paid role.
+Confirm age rules, accessibility, costs and safeguarding with the actual host.
+Keep a private sketch, spoken note or text with the source, three component
+explanations, one uncertainty and one safe next step; there is no public posting.
+
+Reading is free; parts, tools, supervision and travel may cost money. EDU has
+institutional terms; Loptr Lab’s eligibility, kit allocation or staff support is
+not established. [Made-Sick’s resource records](https://made-sick.org/directory.html#resource-ifixit-repair-learning)
+own the dated external descriptions. No endorsement, sponsorship, grant or
+iFixit affiliation is claimed.

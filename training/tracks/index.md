@@ -1,5 +1,7 @@
 # Career tracks
 
+[Build your independent-work pathway](../independent-work.html) after choosing the work: project contributions, paid client delivery or business preparation.
+
 Choose the work you want to do before comparing equipment. For every track, document: work tasks, software and workflow requirements, compute requirements, accessibility considerations, minimum and preferred capabilities, and questions requiring individual assessment.
 
 | Track | Begin with these tasks |

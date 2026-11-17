@@ -36,7 +36,11 @@ Read the [owner-confirmed studio direction](https://github.com/ibloud/ibloud.git
 6. **Resume.** In a later session, choose the same project, select “Resume my checkpoint” and paste the issue URL. PIXIE reads the current public issue and latest comment page. Open the full GitHub discussion for older comments.
 
 
+[Build your independent-work pathway](./independent-work.html): contribute to a real project, deliver paid client work, or prepare a sustainable freelance business.
+
 ## From work to portfolio evidence
+
+Use the [existing training-plan evidence fields](./templates/training-plan.html#portfolio-evidence) for scope, personal contribution, accessibility checks, tools and AI assistance, sources, review status, display permission and unfinished work. Keep proposed, submitted, accepted and deployed status separate.
 
 [Chris Tran’s career advice and optional coaching](https://made-sick.org/directory.html#resource-chris-tran-career) can help gaming professionals explain their work and prepare relevant professional conversations. The Made-Sick card holds the source, attribution and free/commercial distinctions.
 

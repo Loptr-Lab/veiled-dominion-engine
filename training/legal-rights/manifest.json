@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "LL-LEGAL-SAMPLE-1",
+  "exported_at": "2026-11-09T07:57:13.234500+00:00",
+  "visibility": "public_synthetic",
+  "professional_review": "PENDING",
+  "excluded": "All real protected media, mail, contracts, identity, medical, financial, benefits and housing evidence",
+  "members": [
+    {
+      "path": "authorities.csv",
+      "size_bytes": 1276,
+      "sha256": "39f203fed4471473c24c4680b11aa38ae210fa331d3f6e4959afa7d2169ca6b1"
+    },
+    {
+      "path": "contributors.csv",
+      "size_bytes": 268,
+      "sha256": "6111fad95a03d09694c85d72be2e973348167f5e9a8c9c9099a46763dbf322b5"
+    },
+    {
+      "path": "decisions.csv",
+      "size_bytes": 746,
+      "sha256": "55341cfb9263598af260b54ddfdd3c7f0c9c6501d35123e5b7dbc49d0af599b6"
+    },
+    {
+      "path": "evidence-package.schema.json",
+      "size_bytes": 16074,
+      "sha256": "39337c947b288819fd5456172ddc2a4ab173f4e6815474bd0024753eb611f016"
+    },
+    {
+      "path": "evidence.csv",
+      "size_bytes": 1495,
+      "sha256": "6ec49d784d0d16115788b4eee106a477979a9823f6bfcbf120e2d3fcbaebdfaa"
+    },
+    {
+      "path": "package.json",
+      "size_bytes": 8335,
+      "sha256": "9a244f3566d1b39d32d3b9314d57d87c558b41ed4fa31e46211e00be4b304d78"
+    },
+    {
+      "path": "permissions.csv",
+      "size_bytes": 485,
+      "sha256": "c42bee272bf77f211eaab0c944803d8fe1dc750db6a5a9e2859d2f9a06679265"
+    },
+    {
+      "path": "report.css",
+      "size_bytes": 1022,
+      "sha256": "5685e10dea63376972a31b43772163aea4abed19429c353d217f7aa443ecc9aa"
+    },
+    {
+      "path": "report.html",
+      "size_bytes": 6197,
+      "sha256": "8990ff5e1d0a68f20272194312d70192115d43de2ac9533a5fcf2e31754caf6d"
+    },
+    {
+      "path": "report.pdf",
+      "size_bytes": 59321,
+      "sha256": "faccaf65e32ccabbdd6abd477a8270237ed5690f5d1a618d484d27267c831ec9"
+    },
+    {
+      "path": "synthetic/brief.txt",
+      "size_bytes": 86,
+      "sha256": "2d0f9085cf9d9619f1c7eec0ef894ce63e884baab590307f38e3ddb45706e72f"
+    },
+    {
+      "path": "timeline.csv",
+      "size_bytes": 2091,
+      "sha256": "b2c310c87c836f1e7bc5aab7585ffafd2d54794e9dabdc9333d5c47c56a8529c"
+    }
+  ]
+}

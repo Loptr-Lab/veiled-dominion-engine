@@ -1,0 +1,29 @@
+/* Optional reading tools. No network, account, analytics or publishing. */
+(() => {
+ 'use strict';
+ const $=id=>document.getElementById(id),form=$('threshold-notes');if(!form)return;
+ const book=$('threshold-book'),fields=['threshold-position','threshold-observation','threshold-connection','threshold-draft'],key='loptr.threshold-notes.v1';
+ const allowedBooks=new Set([...book.options].map(o=>o.value));
+ const status=$('threshold-notes-status'),keep=$('threshold-save-local');let currentBook=book.value,notebook={};
+ function prompt(){const card=document.getElementById(book.value);$('threshold-prompt').textContent=card?.dataset.readingQuestion||'What connection did you notice?';}
+ function record(){return {schema:'loptr.threshold-note/v1',book:book.value,fields:Object.fromEntries(fields.map(id=>[id,$(id).value])),kind:'reader reflection and proposed original work'};}
+ function capture(){notebook[currentBook]=Object.fromEntries(fields.map(id=>[id,$(id).value]));}
+ function save(){capture();if(!keep.checked)return;try{localStorage.setItem(key,JSON.stringify({schema:'loptr.threshold-notebook/v1',selectedBook:book.value,notes:notebook}));status.textContent='Notes kept on this browser only. Export them before clearing browser data.';}catch{status.textContent='Browser storage is unavailable. Your notes remain in this page; download them to keep a copy.';}}
+ try{const saved=JSON.parse(localStorage.getItem(key)||'null');if(saved?.schema==='loptr.threshold-notebook/v1'&&allowedBooks.has(saved.selectedBook)&&saved.notes&&Object.entries(saved.notes).every(([id,note])=>allowedBooks.has(id)&&note&&fields.every(field=>typeof note[field]==='string'&&note[field].length<=$(field).maxLength))){notebook=saved.notes;book.value=saved.selectedBook;currentBook=book.value;for(const id of fields)$(id).value=notebook[currentBook]?.[id]||'';keep.checked=true;status.textContent='Restored notes you chose to keep on this browser. They have not been submitted.';}}catch{}
+ function choose(){capture();currentBook=book.value;for(const id of fields)$(id).value=notebook[currentBook]?.[id]||'';prompt();save();}
+ prompt();book.addEventListener('change',choose);form.addEventListener('input',save);form.addEventListener('submit',e=>e.preventDefault());
+ keep.addEventListener('change',()=>{if(keep.checked)save();else{try{localStorage.removeItem(key);status.textContent='Browser copy removed. Notes remain in this page until you clear or leave it.';}catch{status.textContent='Could not remove the browser copy. Use browser site-data settings to clear saved notes.';}}});
+ document.querySelectorAll('[data-choose-book]').forEach(link=>link.addEventListener('click',()=>{book.value=link.dataset.chooseBook;choose();requestAnimationFrame(()=>book.focus());}));
+ $('threshold-download').addEventListener('click',()=>{const note=record(),title=book.selectedOptions[0].textContent;const text=['# The Threshold · reading reflection',title,'','Reading rhythm: 15 minutes a day.','Status: reader reflection and proposed original work; not accepted canon.','','## Reading position',note.fields['threshold-position'],'','## Observation in my own words',note.fields['threshold-observation'],'','## Project connection',note.fields['threshold-connection'],'','## Proposed original task',note.fields['threshold-draft'],'','Reading source: https://loptrlab.com/training/threshold.html#'+note.book].join('\n');const url=URL.createObjectURL(new Blob([text],{type:'text/markdown'})),a=document.createElement('a');a.href=url;a.download='threshold-'+note.book+'-reflection.md';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status.textContent='Reading note download prepared. Nothing was published or submitted.';});
+ $('threshold-clear').addEventListener('click',()=>{try{localStorage.removeItem(key);}catch{status.textContent='Browser storage could not be cleared. Use browser site-data settings; the current fields are unchanged.';return;}notebook={};for(const id of fields)$(id).value='';keep.checked=false;status.textContent='Reading notes cleared from this page and browser. Downloaded files are unchanged.';});
+ let remaining=15*60*1000,deadline=0,interval=null;
+ const clock=$('threshold-timer'),start=$('threshold-start'),pause=$('threshold-pause'),timerStatus=$('threshold-status');
+ function paint(){const seconds=Math.ceil(remaining/1000);clock.textContent=String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0');}
+ function stop(){if(interval!==null)clearInterval(interval);interval=null;}
+ function tick(){remaining=Math.max(0,deadline-Date.now());paint();if(remaining===0){stop();start.disabled=false;start.textContent='Start another 15 minutes';pause.disabled=true;timerStatus.textContent='Your fifteen minutes are complete. Pause here, continue reading or write a reflection when you are ready.';}}
+ start.addEventListener('click',()=>{if(remaining===0)remaining=15*60*1000;deadline=Date.now()+remaining;start.disabled=true;pause.disabled=false;timerStatus.textContent='Reading timer started. You can pause at any time.';interval=setInterval(tick,1000);});
+ pause.addEventListener('click',()=>{remaining=Math.max(0,deadline-Date.now());stop();paint();start.disabled=false;start.textContent='Resume timer';pause.disabled=true;timerStatus.textContent='Timer paused. Your reading place is yours to keep.';});
+ $('threshold-reset').addEventListener('click',()=>{stop();remaining=15*60*1000;paint();start.disabled=false;start.textContent='Start 15 minutes';pause.disabled=true;timerStatus.textContent='Timer reset. Reading notes are unchanged.';});
+ $('threshold-clock').hidden=false;paint();
+ window.addEventListener('beforeunload',event=>{capture();if(!keep.checked&&Object.values(notebook).some(note=>Object.values(note).some(value=>value.trim()))){event.preventDefault();event.returnValue='';}});
+})();

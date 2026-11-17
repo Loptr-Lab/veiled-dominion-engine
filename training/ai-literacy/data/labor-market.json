@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-11-07",
+  "metric": "Projected percent change in employment",
+  "geography": "United States",
+  "population": "Wage and salary employment across all industries plus self-employment in each named occupation or occupational group",
+  "observationPeriod": {
+    "base": 2024,
+    "projection": 2034
+  },
+  "units": "percent",
+  "retrievedOn": "2026-11-07",
+  "lastVerified": "2026-11-07",
+  "verificationMethod": "Original publisher pages retrieved with connected web research tool; chart data checked against values below.",
+  "refresh": "Manual source review through a reviewed pull request; no automatic refresh.",
+  "records": [
+    {
+      "occupation": "Computer and mathematical occupations",
+      "code": "15-0000",
+      "value": 10.1,
+      "sourceUrl": "https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm",
+      "publicationDate": "2026-01",
+      "sourceLocation": "Chart 3; occupational employment table"
+    },
+    {
+      "occupation": "All occupations",
+      "code": "00-0000",
+      "value": 3.1,
+      "sourceUrl": "https://www.bls.gov/opub/ted/2026/artificial-intelligence-information-technology-and-employment-2024-34.htm",
+      "publicationDate": "2026-07-16",
+      "sourceLocation": "Selected occupations chart"
+    },
+    {
+      "occupation": "Data scientists",
+      "code": "15-2051",
+      "value": 33.5,
+      "sourceUrl": "https://www.bls.gov/opub/ted/2026/artificial-intelligence-information-technology-and-employment-2024-34.htm",
+      "publicationDate": "2026-07-16",
+      "sourceLocation": "Selected occupations chart"
+    },
+    {
+      "occupation": "Software developers",
+      "code": "15-1252",
+      "value": 15.8,
+      "sourceUrl": "https://www.bls.gov/opub/ted/2026/artificial-intelligence-information-technology-and-employment-2024-34.htm",
+      "publicationDate": "2026-07-16",
+      "sourceLocation": "Selected occupations chart"
+    }
+  ]
+}

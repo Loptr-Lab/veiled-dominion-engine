@@ -18,3 +18,8 @@ Document minimum and preferred capability levels; do not name a product until th
 ## Development equipment
 
 Use the [development environment and equipment guide](../technology-planning/development-environment.html) to compare local, cloud, and hybrid workflows, accessible peripherals, backup, and minimum versus preferred requirements. Do not assume that one device suits every language, toolchain, or test workload.
+
+
+## Optional AI tool practice
+
+Use the [existing game-development tool exercise](game-development.html#optional-ai-tools) for Claude coding review, Meshy/alternative prop evaluation and later animation studies. Each candidate includes prerequisites, costs/rights/privacy checks and untested status. No purchase, subscription or promotional credit is required.
