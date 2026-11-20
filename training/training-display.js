@@ -17,6 +17,24 @@
   apply();
   system.addEventListener('change', apply);
   document.addEventListener('DOMContentLoaded', () => {
+    const schema = document.querySelector('#site-breadcrumbs');
+    if (schema) {
+      try {
+        const items = JSON.parse(schema.textContent || '{}').itemListElement || [];
+        if (items.length) {
+          const nav = document.createElement('nav'); nav.className = 'training-breadcrumbs'; nav.setAttribute('aria-label', 'Breadcrumb');
+          const ol = document.createElement('ol');
+          items.forEach((item, index) => {
+            const li = document.createElement('li');
+            if (index === items.length - 1) { li.setAttribute('aria-current', 'page'); li.textContent = item.name || ''; }
+            else { const a = document.createElement('a'); a.href = item.item; a.textContent = item.name || ''; li.append(a); }
+            ol.append(li);
+          });
+          nav.append(ol); const main = document.querySelector('main'); if (main) main.before(nav);
+        }
+      } catch (_) { /* Schema remains available to crawlers. */ }
+    }
+
     const header = document.querySelector('.masthead');
     if (!header) return;
     const settings = document.createElement('details');
