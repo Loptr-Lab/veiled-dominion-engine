@@ -111,3 +111,11 @@ select{max-width:100%}
  .masthead .display-settings{grid-column:2;grid-row:1;margin:0 0 .75rem}
  .masthead :is(nav.actions,.home-routes),.masthead>.button,.masthead>p:has(>.button){grid-column:2;grid-row:2 / span 4}
 }
+
+
+/* Visible breadcrumbs rendered from existing structured data */
+.training-breadcrumbs{max-width:72rem;margin:0 auto;padding:.75rem 1rem;font-size:.9rem}
+.training-breadcrumbs ol{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:0;padding:0}
+.training-breadcrumbs li+li::before{content:"/";opacity:.6;margin-right:.5rem}
+.training-breadcrumbs a{text-underline-offset:3px}
+.training-breadcrumbs [aria-current="page"]{opacity:.75}
