@@ -1,5 +1,8 @@
 # Licensing map
 
+> **Licensing review pending:** This repository has conflicting published software and creative-content terms. Read [the public disclosure and next actions](docs/LICENSING_REVIEW.md). This notice does not change or revoke existing grants.
+
+
 This repository intentionally uses different licenses for software and creative content.
 
 ## Software — MIT
