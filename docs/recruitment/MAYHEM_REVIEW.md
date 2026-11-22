@@ -85,3 +85,16 @@ Do not merge or promote this branch without separate approval. Before launch: co
 ## Adaptive participation and repair amendment — 15 November 2026
 
 See the [existing canonical consolidation handoff](https://github.com/ibloud/ibloud.github.io/blob/review/ifixit-pilot-record/docs/PIXIE_CONSOLIDATION.md#adaptive-employment--implementation-and-source-record-15-november-2026) for source register, continuity audit, file inventory, tests, preview/release record and remaining acceptance gates. This review adds no live provider, affiliation, data collection, employment promise or third-party outreach. Existing approval gates remain.
+
+
+## Organizational support and legal-status alignment — 22 November 2026
+
+Updated `mayhem/index.html` to describe the four owner-designated support destinations (Buy Me a Coffee, Patreon, GitHub Sponsors, PayPal.me/ibloud) as optional organizational support, separate from open play, contribution, belonging and Mayhem's existing free/low-cost participation options. Added Loptr Lab → Gods of Mayhem breadcrumb JSON-LD while retaining the existing noindex/nofollow release setting.
+
+Replaced the prior active-looking corporate sponsorship ladder and percentage allocation with the current platform-channel model. The former $2–$1,000 tier matrix, $2,500 monthly target mix, milestone amounts and sponsor perks are now superseded planning history in `docs/SPONSORSHIP_STRATEGY.md`; they are not current offers or verified receipts. B2B licensing, branded editions, distribution, commissions and royalties remain separate negotiations requiring rights review, an identified contracting party and written terms.
+
+The page now states that public materials reviewed do not establish the payment-account holders, legal recipient, consolidated receipts, reconciled payouts, entity-level financial statements or tax filings. Private provider dashboards, bank records and tax documents were not inspected. It does not claim that no entity or private records exist, and does not claim charitable/tax-deductible status.
+
+Added browser assertions for the breadcrumb, all four support routes, open participation language and financial evidence caveat. Source changes are not a preview, production deployment, legal review, tax reconciliation or launch approval.
+
+The four existing play options are now labelled Paths 0–3, with an explicit note that they are open participation paths rather than membership or sponsorship tiers; the $5 materials target is explicitly optional. This prevents the existing low-cost play guidance from being mistaken for the platform-based organizational support routes.
