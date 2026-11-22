@@ -42,6 +42,16 @@ const report = process.env.MAYHEM_AXE_REPORT || "/tmp/mayhem-axe.json";
   ok(await guide.locator('img').count() === 1, 'approved sigil reused');
   await p.keyboard.press('Enter');
   ok(await p.locator('a[href="https://github.com/Loptr-Lab/veiled-dominion-engine/issues"]').count()>0,'existing public contribution route');
+  ok(await p.locator('#site-breadcrumbs').count() === 1, 'Mayhem breadcrumb JSON-LD');
+  ok(await p.locator('#community-funding').isVisible(), 'open organizational support section');
+  for (const href of [
+    'https://buymeacoffee.com/loptrlab',
+    'https://www.patreon.com/LoptrLab/',
+    'https://github.com/sponsors/ibloud',
+    'https://paypal.me/ibloud',
+  ]) ok(await p.locator('#community-funding a[href="' + href + '"]').count() === 1, 'support route ' + href);
+  ok(/without paying/i.test(await p.locator('#community-funding').innerText()), 'participation is not paywalled');
+  ok(/not establish the legal recipient/i.test(await p.locator('#community-funding').innerText()), 'financial status caveat visible');
   await p.getByText("Reading settings",{exact:true}).click();
   await p.locator("[name=training-theme]").selectOption("light");
   await p.locator("[name=training-text-size]").selectOption("largest");
