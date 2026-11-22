@@ -96,3 +96,5 @@ Replaced the prior active-looking corporate sponsorship ladder and percentage al
 The page now states that public materials reviewed do not establish the payment-account holders, legal recipient, consolidated receipts, reconciled payouts, entity-level financial statements or tax filings. Private provider dashboards, bank records and tax documents were not inspected. It does not claim that no entity or private records exist, and does not claim charitable/tax-deductible status.
 
 Added browser assertions for the breadcrumb, all four support routes, open participation language and financial evidence caveat. Source changes are not a preview, production deployment, legal review, tax reconciliation or launch approval.
+
+The four existing play options are now labelled Paths 0–3, with an explicit note that they are open participation paths rather than membership or sponsorship tiers; the $5 materials target is explicitly optional. This prevents the existing low-cost play guidance from being mistaken for the platform-based organizational support routes.
