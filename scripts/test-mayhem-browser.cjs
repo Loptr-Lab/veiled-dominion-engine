@@ -44,6 +44,7 @@ const report = process.env.MAYHEM_AXE_REPORT || "/tmp/mayhem-axe.json";
   ok(await p.locator('a[href="https://github.com/Loptr-Lab/veiled-dominion-engine/issues"]').count()>0,'existing public contribution route');
   ok(await p.locator('#site-breadcrumbs').count() === 1, 'Mayhem breadcrumb JSON-LD');
   ok(await p.locator('#community-funding').isVisible(), 'open organizational support section');
+  ok(/Open participation paths, not paid tiers/i.test(await p.locator('#play').innerText()), 'play paths are not sponsorship tiers');
   for (const href of [
     'https://buymeacoffee.com/loptrlab',
     'https://www.patreon.com/LoptrLab/',
