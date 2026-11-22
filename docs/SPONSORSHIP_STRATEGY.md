@@ -1,179 +1,71 @@
-# Loptr Lab Sponsorship Strategy
-## Building recurring support for long-term open-source sustainability
+# Loptr Lab organizational support and sponsorship model
 
----
+**Current owner-directed model · 22 November 2026**
 
-Loptr Lab is a pre-seed, people-over-profit, accessibility-first venture working toward a self-sustaining model within a capitalist economy. Money sustains the work; meaningful change for people is its purpose. We accept funding only on terms that keep people and accessibility first. Our long-term vision includes universal basic income. We aim to bring change to life and leave a transparent record of what we tried, what worked, and what failed so others can carry it forward. This mission governs our projects, funding decisions, and partnerships; it is not a temporary marketing position.
+This document records the current support approach. It supersedes the earlier proposed unified sponsorship ladder, monthly target mix, milestone amounts, sponsor perks and percentage-allocation assumptions in the previous version of this file. Those proposals are retained in Git history as planning context; they are not active offers, approved budgets, confirmed receipts or commitments.
 
-Financial support is optional and sustains infrastructure, maintenance, accessibility work, and documented development. Paying does not buy contributor status, canon authority, approvals, ownership, or employment. Participation and accessibility are not sponsorship rewards. Project-specific licenses and existing signed agreements continue to apply.
+## Current support routes
 
+Loptr Lab accepts optional support through the following owner-designated destinations:
 
-## Purpose
+- [Buy Me a Coffee](https://buymeacoffee.com/loptrlab) — creative and lore work.
+- [Patreon](https://www.patreon.com/LoptrLab/) — technical-development support and updates.
+- [GitHub Sponsors](https://github.com/sponsors/ibloud) — open-source and technical work.
+- [PayPal.me/ibloud](https://paypal.me/ibloud) — direct support.
 
-The long-term goal for Loptr Lab is to move from unpredictable one-time
-donations toward a predictable recurring monthly support structure.
+Each platform controls its own current tier names, amounts, fees, terms and any displayed benefits. Refer to the provider's current page for those details. There is no separate unified Loptr Lab or Gods of Mayhem membership price list in this document, and this document does not promise private access, priority service, office hours, response windows, employment, ownership or commercial rights.
 
-A sustainable sponsorship model should not depend on a single donor profile.
-It should create a ladder where individual developers, working professionals,
-and companies can each support the project at a level that matches the value
-they receive.
+## The value boundary
 
-This document outlines the sponsorship ladder, monthly milestone framing, and
-a target distribution model for long-term sustainability.
+Financial support is voluntary and helps sustain shared infrastructure, maintenance, accessibility work and documented creative and technical development.
 
----
+People can discover, play, learn, contribute, collaborate and be heard without paying. Platform tier selection is not a measure of a person's value, belonging, skill, rank or contribution. Payment does not buy contributor status, governance votes, canon authority, private access, approvals, employment, ownership, or rights in any project. Recognition is optional and consent-based. Contributions and paid work remain distinct; a paid commission or other formal engagement requires a separately scoped written agreement before work begins.
 
-## The Monthly Sponsorship Ladder
+Gods of Mayhem's free play, low-cost materials target, reuse options, workshop and public contribution routes are participation choices, not sponsorship levels. The community is not a private fraternity or a pay-to-progress system. Structure, standards and stewardship exist to protect the work and participants, not to exclude people based on their ability to pay.
 
-A sustainable model should target three distinct sponsor profiles. Diversifying
-support reduces the risk that losing one sponsor meaningfully disrupts project
-maintenance.
+## Intended use and current financial evidence
 
-### Community Layer
-**Target tiers:** $2 / month — $5 / month — $10 / month
+Support is intended to help sustain infrastructure, maintenance, accessibility and documented development. This is an organizational purpose, not an approved percentage allocation, restricted-fund policy, audited budget, or promise that a particular stipend, internship, event, product or project will be funded.
 
-These sponsors are individual developers, learners, small contributors, and
-community supporters who want to help keep the work alive and be visibly part
-of the ecosystem.
+The public repository materials reviewed for this update do not establish consolidated receipts, gross-to-net payout reconciliations, platform fees, refunds, chargebacks, bank deposits, expense ledgers, entity-level financial statements, audited accounts, tax returns or information returns. Private provider dashboards, bank records, contracts and tax documents were not inspected. This limitation does not establish that private bookkeeping, filings or a legal entity do not exist.
 
-Possible incentives:
-- GitHub Sponsors badge support
-- name or avatar recognition in `docs/SPONSORS.md` or on a future project site
-- access to early previews, sponsor updates, or private community discussions
+The legal account holder and ultimate recipient for each payment channel, the relevant taxpayer, and any applicable entity or tax classification must be confirmed from the provider account, payout records and underlying legal documents. The name “Loptr Lab” or “PIXIE Holdings” does not by itself establish a legal entity or identify the payee. Do not describe support as charitable or tax-deductible, issue an entity invoice or tax receipt, or present consolidated financials until the actual recipient, legal status and supporting records have been verified.
 
-### Professional Layer
-**Target tiers:** $25 / month — $50 / month — $100 / month
+See the [Loptr Lab legal and business-status register](https://ibloud.github.io/legal-rights/ecosystem-status.html), [Holdings funding and entity-status record](https://github.com/ibloud/pixie-holdings/blob/main/docs/FUNDING-AND-ENTITY-STATUS.md), and [Loptr Lab mission](https://github.com/ibloud/ibloud.github.io/blob/main/MISSION.md).
 
-These sponsors are freelancers, small studios, and technical professionals who
-rely on Loptr Lab tooling, documentation, or open engine work as part of their
-own productivity.
+## Commercial sponsorship and B2B partnerships
 
-Possible incentives:
-- priority issue triage for sponsor-relevant bugs
-- recurring Q&A or office-hours access
-- small logo placement on documentation or project pages
-- clearer maintenance visibility for production-relevant issues
+Corporate game partnerships, branded editions, distribution, commissions, royalty arrangements and paid production are not purchased through ordinary platform support tiers. They require a separate project-specific proposal and agreement identifying:
 
-### Enterprise Layer
-**Target tiers:** $250 / month — $500 / month — $1,000+ / month
+- the actual contracting party and rights holder;
+- scope, deliverables, acceptance criteria and timeline;
+- rights, licenses, territory, term and permitted uses;
+- accessibility requirements and participant protections;
+- compensation, expenses, payment timing, taxes and any revenue waterfall;
+- attribution, confidentiality, data handling and exit/termination terms.
 
-These sponsors are production teams, organizations, or businesses that receive
-meaningful maintenance cost savings by supporting active upkeep of open-source
-tooling rather than carrying a private fork alone.
+No sponsor payment alone grants trademark, artwork, derivative-work, distribution, publishing, royalty-collection or ownership rights. No corporate tier price, service-level agreement, invoicing capability or procurement commitment is currently offered by this strategy.
 
-Possible incentives:
-- prominent logo placement on public-facing project pages
-- target response windows for sponsor-priority issues
-- direct architecture or integration review time
-- formal invoicing or procurement-compatible arrangements by request
+## Accounting and reporting readiness
 
----
+Before publishing organization-wide financial results or making entity-specific tax claims:
 
-## Suggested Public Tier Matrix
+1. Confirm each provider account owner, legal payee, payout destination and tax profile.
+2. Preserve provider statements showing gross receipts, dates, fees, refunds, chargebacks, net payouts and any tax forms.
+3. Match net payouts to the actual receiving account and identify the recipient.
+4. Retain source invoices and receipts for expenses; separate personal, organizational, restricted and project-specific funds.
+5. Reconcile records by tax year and obtain qualified tax/accounting advice on the actual recipient and business structure.
 
-| Tier | Monthly Amount | Intended Sponsor | Suggested Positioning |
-|---|---|---|---|
-| Ashen Witness | $2 / month | Individual supporters | A simple way to help keep the work alive |
-| Veiled Supporter | $5 / month | Community supporters | Recurring support for maintenance, docs, and stability |
-| Circle of Restraint | $10 / month | Highly engaged individuals | Support for deeper architecture and accessibility work |
-| Practitioner Supporter | $25 / month | Freelancers / indie contributors | Helps sustain maintenance and roadmap continuity |
-| Production Supporter | $50 / month | Professionals / small studios | Supports issue triage, documentation, and release-path stability |
-| Studio Ally | $100 / month | Small studios / consultants | Helps fund recurring engineering time and sustainability planning |
-| Infrastructure Patron | $250 / month | Organizations | Supports durable infrastructure and long-horizon maintenance |
-| Strategic Sponsor | $500 / month | Companies / production teams | Supports predictable core maintenance and continuity |
-| Foundational Sponsor | $1,000 / month | Institutional / enterprise sponsors | Strengthens long-term independence and engineering capacity |
+The IRS explains that federal reporting depends on the actual business structure. A sole proprietorship, for example, has no legal identity apart from its individual owner; this document does not determine that Loptr Lab is a sole proprietorship. See [IRS Topic 407: Business income](https://www.irs.gov/taxtopics/tc407), [IRS Publication 583: Starting a Business and Keeping Records](https://www.irs.gov/publications/p583), and [IRS recordkeeping guidance](https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep).
 
----
+## Status vocabulary
 
-## Sustainability Milestones
+- **Current support route:** an owner-designated payment destination; not proof of payout, revenue, recipient identity or tax treatment.
+- **Platform tier:** an option configured and described by that platform; check the provider for current terms.
+- **Proposed:** a future idea or planning assumption, not implemented or binding.
+- **Received / reconciled:** use only after a provider statement and receiving-account record have been matched.
+- **Financial statement:** use only for a prepared statement with a defined reporting entity, period, accounting basis and supporting records.
+- **Entity verified:** use only after official registry evidence and the relevant formation records are inspected.
+- **Tax reviewed:** use only after qualified review of the actual recipient, records and applicable filing requirements.
 
-Monthly goals should be framed around what specific funding levels unlock for
-the ecosystem, not around personal expenses. This keeps the sponsorship model
-legible to contributors, funders, and companies evaluating support.
-
-| Monthly Target | Focus Area | What It Unlocks |
-|---|---|---|
-| **$150 / month** | Zero-Cost Infrastructure | Covers domains, CI runners, hosting, and package/distribution costs so the project is free to operate |
-| **$600 / month** | Guaranteed Maintenance | Supports predictable maintenance hours for PR review, issue triage, dependency/security updates, and documentation upkeep |
-| **$2,000 / month** | Part-Time Core Velocity | Enables a core developer to dedicate a substantial recurring portion of their week to roadmap execution and release reliability |
-| **$5,000+ / month** | Full-Time Sustainability | Supports long-term project independence, deeper maintenance coverage, accessibility implementation, compliance, and strategic growth |
-
----
-
-## Sustainability Math Target Matrix
-
-A healthy baseline target for project sustainability is **$2,500 / month**.
-That is the approximate point where a project can begin transitioning from an
-unpredictable side effort into a secure part-time or semi-independent
-operation.
-
-One plausible target mix:
-
-- **100 community sponsors** at **$5 / month** = **$500 / month**
-- **20 professional sponsors** at **$50 / month** = **$1,000 / month**
-- **2 enterprise sponsors** at **$500 / month** = **$1,000 / month**
-- **Total:** **$2,500 / month**
-
-This distribution matters because it avoids over-reliance on any one sponsor
-class while still recognizing that higher tiers create the largest maintenance
-stability.
-
----
-
-## Execution Notes
-
-A recurring sponsorship model only works if the offer is understandable.
-
-Important implementation notes:
-- keep sponsor tiers legible and tied to concrete value
-- describe what monthly funding unlocks for the project, not just for the team
-- make public recognition optional where privacy matters
-- avoid promising contractual SLA language unless formal support agreements exist
-- mention that invoicing or procurement-compatible support can be arranged for
-  larger organizations when needed
-
-Corporate and institutional supporters often cannot sponsor casually via card
-checkout. Higher-tier descriptions should make clear that direct invoicing or
-other standard procurement paths are possible through direct contact.
-
----
-
-## Relationship to Existing Loptr Lab Docs
-
-This strategy supports and complements:
-- `docs/ACCESSIBILITY_GRANT_POSITIONING.md`
-- `docs/FELLOWSHIP.md`
-- `.github/FUNDING.yml`
-- `README.md`
-
-Together, these documents frame Loptr Lab as:
-- a contributor-ready open prototype ecosystem
-- an accessibility-conscious engineering effort
-- a technically serious fellowship/recruitment environment
-- a project building toward recurring support rather than one-time charity
-
----
-
-## Future Expansion
-
-As sponsorship matures, Loptr Lab may later add:
-- a public sponsor wall
-- a project-site sponsor section
-- sponsor-only updates or roadmap previews
-- direct support packages for studios or organizations
-- a more formal maintenance and procurement page
-
-These should only be added when the project can sustain the operational burden
-that comes with them.
-
----
-
-## Contact
-
-For larger sponsorship, funding, invoicing, or partnership discussions:
-
-**questions@loptrlab.com**
-
----
-
-*This document is a strategy reference for building sustainable recurring support around Loptr Lab open-source work.*
+Independent legal and tax review remains pending. Preserve source dates and prior states when updating this strategy.
