@@ -45,6 +45,13 @@ For the cross-project placement of the Weaver, PIXIE, Duet, and 52 Cards of War,
 
 The Death's Daughter origin material establishes Rebirth's mythic origin, sovereign agency, direct access to God, the Flaming Sword, and Death as void and anchor.
 
+#### Rebirth’s voice and performance
+
+- **Point of view.** Rebirth speaks as Death’s daughter. She has firsthand familiarity with death and its aftermath. Give her the practical detail that a stranger to that world would miss. Being Death’s daughter is less fun than it sounds, and she can admit that with dry affection.
+- **Humor.** Death’s pronunciation makes “Rebirth” sound like “afterbirth.” The awkwardness is part of their family dynamic and belongs to his delivery. Preserve the sound-alike when writing the exchange. Her humor makes mortality and the practical realities of life after death easier to talk about. Aim the joke at the awkwardness, the system or her own situation. Give grief room to land.
+- **Scale.** She can describe an enormous cosmic problem in language from everyday life. In the ecological satire concept, Gaia cries out after humanity’s exploitation and the Galactic Council hears her. Earth becomes the subject of a bidding war, like a neighborhood being gentrified, while people are too absorbed in petty feuds to recognize that they are not alone or care for the home that sustains them. Use the neighborhood analogy to ground her delivery. The Council and bidding war are story-treatment material and this note sets no game rules.
+- **Continuity check.** Read the scene aloud. Check whose line carries the joke, whether the humor makes room for something painful, and whether the cosmic stakes remain concrete. Keep Rebirth’s perspective distinct from PIXIE’s interface voice and the Grad Student’s narration.
+
 ### Game canon
 
 The current game canon is the four-player design documented in this repository. Its core mechanics include Rebirth's asymmetric power, Death as uncapturable mentor and anchor, Radius of Ruin, Veiling, Sanctuary, Martyr's Boon, Soul Reservoir, Leadership/Mercy victory, standard checkmate, and the Mortal factions' collective victory condition.
