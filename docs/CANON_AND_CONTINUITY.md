@@ -89,6 +89,31 @@ Urban Alien Adventures maps its episodes to those lessons:
 
 The mapping establishes thematic continuity, not literal mechanical equivalence.
 
+## Walking the Path — dice, cards, chess
+
+The existing [rules page](../rules.html) names this sequence as stages in the Daughter's education. The [design evolution archive](../VEILED_DOMINION_DESIGN_EVOLUTION.md) preserves the original hybrid's three phases. This is the story/curriculum order, not the current software delivery order or a claim that every stage is playable.
+
+| Stage | Original design record | Narrative reading (interpretation) |
+| --- | --- | --- |
+| Dice — Fortune & Foundation | Chance, resources, risk and establishing a power base. | The Daughter learns to act within circumstances she did not choose. |
+| Cards — Schemes & Skirmishes | Four suits, a War Hand, hidden information, support and defense. | The Queen learns to read competing intentions, negotiate loyalties and distinguish a binding rule from a choice. |
+| Chess — The Fog of War | Spatial positioning, leadership and consequences in the archived hybrid. | Rebirth must exercise her power without making everyone else disposable; winning through restraint rather than domination. |
+
+These phases are distinct from the five curriculum lessons above; no one-to-one stage/lesson mapping is established. In particular, **Rival the Queen** is the final named lesson, not evidence that the Queen must marry the King to win.
+
+### Relationship to Duet and Veiled Dominion
+
+- **Origin:** Death's Daughter supplies the mythic foundation; Rebirth's birth and education precede her mastery.
+- **Duet (experimental, earlier chapter):** the rules page describes pawn promotion into Rebirth, a readiness threshold, and the Sealed Deck reward. The 52-card system is described there through Death's/King's and the Daughter's/Queen's worldviews. The effect of a drawn hand is explicitly unfinished. The page describes these characters learning each other's leadership styles.
+- **Veiled Dominion (current baseline):** the [GDD](design/GDD.md) and [rulebook](RULEBOOK_v0.1) retain one Rebirth player versus three Mortal players on the 14×14 board. Mercy and collective victory demonstrate that control of others is not the only route to winning.
+- **Later chapter (open concept):** the same rules page describes four players against Death and the Daughter as a unified opposing force. Its wording describes them as grown and married; the relationship outcome, control model, any new piece, and win conditions are not settled mechanics. Do not treat that passage as a compulsory marriage requirement or as the current four-player baseline.
+
+The rules page traces the alternative victory philosophy to Lady Violet questioning why there can only be one winner. The Queen's agency and the possibility of victory without an imposed bond are the narrative direction; exact Knight/alliance mechanics and the later campaign outcome require separate design approval.
+
+### Build order and transition boundaries
+
+The rules page expressly deprioritizes dice relative to cards. The archived hybrid is historical; the later chess-first pivot is recorded in the archive. Duet's Sealed Deck unlock is a separate experimental readiness mechanism and does not reverse the educational order. No cross-game resource transfer, unlock criteria for dice-to-cards-to-chess, deck effects, or four-against-two control system is specified here. Do not implement these from the continuity map alone.
+
 ## Cross-repository rules contract
 
 ### Canonical Veiled lifecycle
