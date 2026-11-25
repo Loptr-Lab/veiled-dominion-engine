@@ -1,0 +1,30 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const assert = require('node:assert/strict');
+const root = path.resolve(__dirname, '..');
+const read = p => fs.readFileSync(path.join(root,p),'utf8');
+assert.match(read('AGENTS.md'), /^PACS0001:/m);
+const script = read('training/training-display.js');
+assert.match(script,/PACS0001/);
+const files = fs.readdirSync(path.join(root,'field-notes')).filter(n=>n.endsWith('.html'));
+assert.ok(files.includes('index.html') && files.includes('putting-ourselves-to-work.html') && files.includes('one-universe-many-entrances.html'));
+for(const file of files){
+ const html=read('field-notes/'+file);
+ const matches=[...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*id="field-notes-breadcrumbs"[^>]*>([\s\S]*?)<\/script>/g)];
+ assert.equal(matches.length,1,file);
+ const schema=JSON.parse(matches[0][1]);
+ assert.equal(schema['@type'],'BreadcrumbList',file);
+ assert.ok(schema.itemListElement.length>=2,file);
+ assert.doesNotMatch(html,/id="site-breadcrumbs"|class="training-breadcrumbs"/,file);
+ assert.match(html,/training-display\.js/,file);
+ let ready, inserted=0, settings=0;
+ const control={value:'',addEventListener(){}};
+ const header={prepend(){settings++;}};
+ const document={documentElement:{dataset:{}},addEventListener(n,fn){if(n==='DOMContentLoaded')ready=fn;},querySelector(sel){if(sel==='#site-breadcrumbs')return html.includes('id="site-breadcrumbs"')?{textContent:matches[0][1]}:null;if(sel==='.masthead')return header;if(sel==='main')return {before(){inserted++;}};return null;},createElement(){return {append(){},setAttribute(){},querySelector(){return control;},addEventListener(){}};}};
+ vm.runInNewContext(script,{document,localStorage:{getItem(){return null;}},window:{matchMedia(){return {matches:true,addEventListener(){}};}}});
+ ready();
+ assert.equal(inserted,0,file);
+ assert.equal(settings,1,file);
+}
+console.log('PACS0001: Field Notes metadata and reading controls preserved; duplicate navigation absent in DOM simulation.');

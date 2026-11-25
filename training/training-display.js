@@ -17,6 +17,7 @@
   apply();
   system.addEventListener('change', apply);
   document.addEventListener('DOMContentLoaded', () => {
+    // PACS0001 — Field Notes must retain metadata without this visible navigation — AGENTS.md (known sites, not exhaustive)
     const schema = document.querySelector('#site-breadcrumbs');
     if (schema) {
       try {
