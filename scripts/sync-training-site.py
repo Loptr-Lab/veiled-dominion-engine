@@ -8,11 +8,16 @@ assert (source/'docs/index.html').is_file(), 'Pass a checkout of Loptr-Lab/train
 commit=subprocess.check_output(['git','-C',str(source),'rev-parse','HEAD'],text=True).strip()
 target=root/'training'
 origin='https://loptrlab.com/training/'
+# The branded site shares these assets with Field Notes and Mayhem. Its
+# versions carry production layout and the PACS0001 reading-controls contract.
+shared_assets = {'training.css', 'training-display.js'}
 urls=[]
 for item in sorted((source/'docs').rglob('*')):
  if not item.is_file(): continue
  rel=item.relative_to(source/'docs')
- out=target/rel; out.parent.mkdir(parents=True,exist_ok=True)
+ out=target/rel
+ if rel.as_posix() in shared_assets and out.is_file(): continue
+ out.parent.mkdir(parents=True,exist_ok=True)
  try:
   text=item.read_text().replace('https://loptr-lab.github.io/training/',origin)
  except UnicodeDecodeError:
