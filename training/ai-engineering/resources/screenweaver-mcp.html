@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ScreenWeaver MCP integration — Loptr Lab Training</title>
+<meta name="description" content="A practical, rights-aware guide to connecting ScreenWeaver's remote MCP server to a creator workflow for screenplay and storyboard development.">
+
+<link rel="stylesheet" href="../../training.css?v=20261121">
+<script src="../../training-display.js?v=20261121"></script>
+<script type="application/ld+json" id="site-breadcrumbs">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Loptr Lab Training","item":"https://loptrlab.com/training/"},{"@type":"ListItem","position":2,"name":"AI Engineering","item":"https://loptrlab.com/training/ai-engineering/"},{"@type":"ListItem","position":3,"name":"ScreenWeaver MCP integration","item":"https://loptrlab.com/training/ai-engineering/resources/screenweaver-mcp.html"}]}</script>
+<link rel="canonical" href="https://loptrlab.com/training/ai-engineering/resources/screenweaver-mcp.html">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="masthead">
+<div class="serial">LOPTR LAB / CREATOR OS INTEGRATIONS</div>
+<h1>ScreenWeaver MCP integration</h1>
+<p class="subtitle">Optional screenplay and storyboard workflow · External service · Review before connecting</p>
+<nav class="actions" aria-label="Learning navigation"><a class="button" href="../">AI Engineering</a><a class="button" href="../../">Training home</a><a class="button" href="https://ibloud.github.io/legal-rights/">Legal &amp; Rights</a></nav>
+</header>
+<main id="main">
+<section class="panel guide">
+<h2>Purpose and placement</h2>
+<p><strong>Primary use case: maintain continuity across our creative projects.</strong> Creator OS coordinates the work and tools around it; ScreenWeaver is an optional external production tool for screenplay and storyboard tasks. We use our own stories, pitch projects, characters, worlds, concepts, treatments and production materials as test cases—not generic demo content. The goal is to preserve creative intent, canon, decisions, versions, provenance, rights and next steps as a project moves between research, pitching, writing, storyboarding, production and collaboration.</p><p>ScreenWeaver belongs in the Creator OS creative-production tool directory under storytelling, screenwriting and storyboarding—not in the core platform runtime. It is a replaceable tool, not the system of record for a project identity or history.</p>
+<p><strong>Canonical server URL:</strong> <code>https://app.screenweaver.ai/api/mcp</code></p>
+<p><a href="https://www.screenweaver.ai/mcp">Official ScreenWeaver MCP documentation</a> · <a href="https://www.screenweaver.ai/integrations">Official integrations overview</a></p>
+</section>
+<section class="panel guide">
+<h2>Legal, brand and entity-status routing</h2>
+<p>Project continuity includes rights and contracting context. Before using ScreenWeaver with any Loptr Lab story, pitch, script, character, recording, image, contributor material or confidential project, check the <a href="https://ibloud.github.io/legal-rights/ecosystem-status.html">Ecosystem brands &amp; business-status register</a>, <a href="https://50ways.loptrlab.com/research/brand-stewardship.html">BRAND-001</a> and <a href="https://50ways.loptrlab.com/research/enterprise-001.html">ENTERPRISE-001</a>. These distinguish documented project names from trademark ownership/clearance, project-level rights from entity ownership, and proposed business structures from formed entities. The register is now published in the Loptr Lab portfolio Legal & Rights section. It records official entity/trademark registry verification and independent professional review as pending; publication is not a legal clearance. Do not infer a contracting party, rights holder, clearance or legal entity from the Creator OS ecosystem map.</p>
+</section>
+<section class="panel guide">
+<h2>What it can do</h2>
+<ul>
+<li>List accessible projects and inspect project outlines.</li>
+<li>Read scenes, search screenplay text, and list characters, places and objects.</li>
+<li>Import supported screenplay formats after reviewing a preview.</li>
+<li>Edit screenplay elements and create or update storyboard shots.</li>
+<li>Set a project's aspect ratio.</li>
+</ul>
+<p>The MCP prepares and edits screenplay/storyboard structure. It does not generate storyboard images or finished video through the MCP endpoint; those production actions remain in the ScreenWeaver application. Capabilities can change, so consult the live tool descriptions before relying on a specific operation.</p>
+</section>
+<section class="panel guide">
+<h2>Connection and access</h2>
+<ol>
+<li>Create the project in ScreenWeaver first.</li>
+<li>In a compatible MCP client, add a remote server named <code>ScreenWeaver</code> with the canonical URL above.</li>
+<li>Complete ScreenWeaver's OAuth 2.1 sign-in and consent flow.</li>
+<li>Choose only the ScreenWeaver projects needed for the task; do not grant all-project access by default.</li>
+<li>Start with read-only tasks such as listing projects, reading an outline, or searching a script.</li>
+<li>Before any write operation, identify the target project and requested changes. Review import previews and confirm destructive script changes when prompted.</li>
+</ol>
+<p>No API key is required. ScreenWeaver states that MCP access is included with its Auteur and Studio plans. Check the current plan and consent screen before planning a workflow. The service states that MCP tool use itself does not spend credits, while some other in-app production features may have separate costs.</p>
+<p>Access can be revoked in ScreenWeaver under Connected apps. Project permissions matter: viewers can use read operations; owners and editors can make changes.</p>
+</section>
+<section class="panel guide">
+<h2>Creator OS integration contract</h2>
+<dl>
+<dt>Category</dt><dd>Creative production → storytelling → screenplay and storyboard.</dd>
+<dt>Provider</dt><dd>ScreenWeaver; externally hosted service.</dd>
+<dt>Transport and authentication</dt><dd>Remote MCP over Streamable HTTP; OAuth 2.1. No API key or locally hosted server.</dd>
+<dt>Data boundary</dt><dd>Project data is accessed by ScreenWeaver only after the user authorizes the connection and selects project scope. Use project-specific, minimum-necessary data; do not assume every Creator OS record belongs in ScreenWeaver.</dd><dt>Continuity and source of truth</dt><dd>Creator OS is the creative control plane. My PIXIE/Companion is the private identity, consent and project-persistence boundary for portable project records. ScreenWeaver is an external execution surface for selected screenplay/storyboard work. Preserve a canonical project record outside any single provider: stable project ID, premise/logline, canon and character/world facts, decisions and rationale, pitch/script versions, asset references, provenance and rights, collaborators/permissions, current status and next actions. Sync or export only with explicit user authorization. A provider connection must never silently overwrite canonical project history.</dd>
+<dt>Credential handling</dt><dd>Do not commit OAuth tokens, session data, client secrets or user credentials to GitHub. Do not proxy or persist tokens in Creator OS unless a separately reviewed architecture explicitly requires it.</dd>
+<dt>Action policy</dt><dd>Read first; use least privilege; require explicit user intent for edits; preview imports; confirm destructive script changes; report exactly what was changed. Record material edits as attributable project events with source, timestamp, version and approval; keep prior states recoverable.</dd>
+<dt>Failure behavior</dt><dd>If OAuth, project access, or a tool call fails, stop and report the failure. Do not claim a script or storyboard was updated.</dd>
+<dt>Fallback</dt><dd>Creators can continue with screenplay files such as Fountain or Final Draft and use ScreenWeaver directly; the Creator OS experience must not require this provider.</dd>
+</dl>
+</section>
+<section class="panel guide">
+<h2>Continuity model: one project, multiple tools</h2>
+<p>The continuity layer must outlive any individual app connection. A project retains a stable identity and portable history even if a creator changes screenplay, storyboard, storage or production providers. ScreenWeaver receives only the selected working context and returns proposed or completed changes to reconcile against the canonical project record.</p>
+<ul>
+<li><strong>Identity:</strong> stable project ID, title, owners, collaborators and relationship to a larger pitch, story world or production.</li>
+<li><strong>Creative canon:</strong> approved premise, themes, characters, relationships, locations, world rules, chronology and intentional open questions.</li>
+<li><strong>Decision history:</strong> what changed, why, who approved it, which version it supersedes and what must remain unchanged.</li>
+<li><strong>Artifacts:</strong> pitch decks, treatments, scripts, scene breakdowns, storyboards, references and asset links, each with version and provenance.</li>
+<li><strong>Rights and consent:</strong> ownership/source, licenses, permissions, contributor attribution, likeness/voice/footage consent and reuse restrictions.</li>
+<li><strong>Workflow state:</strong> current phase, dependencies, outstanding questions, next actions and handoff notes.</li>
+</ul>
+<p>Do not treat an MCP conversation, a ScreenWeaver project or a generated artifact as the complete project history. Reconcile changes deliberately; preserve originals and record conflicts rather than silently choosing a winner.</p>
+</section>
+<section class="panel guide">
+<h2>Our projects are the test suite</h2>
+<p>Use our own active stories and pitch projects as longitudinal test cases. Revisit the same project across sessions and tools to test whether its identity, canon, decisions, versions, rights and next steps remain intact—not merely whether one tool call succeeds.</p>
+<ul>
+<li><strong>Stories and story worlds:</strong> test continuity of characters, relationships, locations, chronology, world rules, approved facts and deliberate mysteries across outline, scene and storyboard revisions.</li>
+<li><strong>Pitch projects:</strong> test continuity from initial idea and audience/problem framing through logline, pitch narrative, deck, treatment, feedback, revision rationale and the current ask. Keep each pitch version and intended audience traceable.</li>
+<li><strong>NOT A TOY:</strong> use approved tour/music-video narratives, visual treatments and interlude concepts to test translation from creative intent into scene and shot planning without losing musical and visual direction.</li>
+<li><strong>PLAY IT FORWARD:</strong> use creator-approved stories and media projects to test source attribution, contributor permissions, narrative development and handoffs from source material to treatment/storyboard.</li>
+<li><strong>Deck Workshop:</strong> use game-world and card-project narratives to test characters, setting and presentation continuity while keeping rules, mechanics, card data and source-of-truth game assets distinct.</li>
+</ul>
+<p>These are internal test candidates and proposed workflows, not claims that ScreenWeaver is already connected or that project data has been imported. Select only material we own or are authorized to use. Use synthetic or redacted samples for sensitive, embargoed or third-party material until permissions and data handling are reviewed.</p>
+</section>
+<section class="panel guide">
+<h2>Where it can support Loptr Lab projects</h2>
+<ul>
+<li><strong>NOT A TOY:</strong> develop music-video treatments, visual narratives, tour interludes and shot lists from creator-approved concepts.</li>
+<li><strong>PLAY IT FORWARD:</strong> turn footage, interviews or creator-approved stories into structured scene and storyboard plans.</li>
+<li><strong>Deck Workshop:</strong> explore narrative worlds, character arcs and cinematic presentation as an optional pre-production aid; keep game rules and source-of-truth mechanics separate.</li>
+<li><strong>Creator OS:</strong> let creators bring their own storytelling tools while the continuity layer keeps project identity, history, permissions and handoffs portable across providers.</li>
+</ul>
+<p>These are proposed workflows, not existing integrations or completed project deliverables. Do not upload third-party footage, scripts, likenesses, music or confidential materials unless the project has the necessary rights and permissions. Public availability alone does not establish permission to adapt or redistribute.</p>
+</section>
+<section class="panel guide">
+<h2>Implementation status</h2>
+<ul>
+<li><strong>Implemented in this documentation change:</strong> integration placement, endpoint reference, capabilities, OAuth/project-scope guidance, permission boundaries, action safeguards, continuity architecture, project test cases and limitations.</li>
+<li><strong>Not implemented here:</strong> an in-product Creator OS connector UI, automated OAuth handoff, live MCP tool invocation, token management, project sync, or server-side proxy.</li>
+<li><strong>Needed for a live connection:</strong> the user connects their own ScreenWeaver account and chooses project scope in the supported MCP client. Any future embedded Creator OS connector requires a separate technical design, security review and explicit authorization flow.</li>
+<li><strong>Validation still needed:</strong> test a real authorized account with read-only calls first; then test a disposable project for a reversible edit and confirm the ScreenWeaver History/undo behavior. No account connection or live project edit is claimed by this documentation.</li>
+</ul>
+</section>
+<section class="panel guide">
+<h2>Suggested validation sequence</h2>
+<ol>
+<li><strong>Baseline:</strong> choose one owned story or pitch project and capture its canonical brief, current version, approved facts, decisions, source references, rights and next actions in the continuity record.</li>
+<li><strong>Read-only connection:</strong> authorize ScreenWeaver for one test project; list accessible projects and read its outline/scenes. Compare with the canonical record and note omissions or mismatches.</li>
+<li><strong>Round-trip:</strong> on a disposable copy, make one small, reversible scene or storyboard change. Record the proposed change, user approval, resulting provider version and reconciliation into canonical project history.</li>
+<li><strong>Cross-session recall:</strong> return in a separate session and retrieve the project premise, approved canon, latest pitch/script version, unresolved decisions and next steps. Verify against the canonical record, not model confidence alone.</li>
+<li><strong>Portability:</strong> disconnect or make ScreenWeaver unavailable and confirm that project identity, history, assets and handoff remain usable without it.</li>
+<li><strong>Conflict and recovery:</strong> test a stale version or conflicting edit on disposable data; ensure the conflict is flagged, both source states are preserved and resolution is deliberate.</li>
+</ol>
+<p>Track continuity accuracy, provenance completeness, version integrity, permission enforcement, conflict detection, recovery and portability—not just MCP connectivity. Record client, date, account plan, project scope, tool availability, test input, expected and observed results, and errors without recording secrets. No live account connection or project edit is claimed by this documentation.</p>
+</section>
+</main>
+<footer><p>Learn with curiosity; verify with evidence. This guide describes an optional external service and is not an endorsement or a requirement for any Loptr Lab project.</p></footer>
+</body>
+</html>

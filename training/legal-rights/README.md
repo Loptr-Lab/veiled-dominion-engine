@@ -1,6 +1,6 @@
 # Public evidence exercise and export · v1.0.0
 
-Owning sources: [Legal & Rights hub](https://ibloud.github.io/legal-rights/), [PIXIE specification](https://loptr-lab.github.io/pixie-ecosystem-guide/assets/evidence-workflow.html). Independent professional review: PENDING. All records here are synthetic; never replace them with personal records in this public repository.
+Owning sources: [Legal & Rights hub](https://ibloud.github.io/legal-rights/), [Ecosystem brands & business-status register](https://ibloud.github.io/legal-rights/ecosystem-status.html), [PIXIE specification](https://loptr-lab.github.io/pixie-ecosystem-guide/assets/evidence-workflow.html). Independent professional review: PENDING. All records here are synthetic; never replace them with personal records in this public repository.
 
 `package.json` is the sample analytical source. The schema is copied unchanged from the PIXIE guide, its owning source. `report.html`/`report.css` are the portable selectable-text print source. `report.pdf` is generated using the already available Chromium print renderer, with tagged PDF and document outline enabled. No PDF/site runtime dependency is added.
 

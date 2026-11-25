@@ -300,6 +300,21 @@ Keep the source credits in your review record: Natan Zaretsky for collection dis
 
 [Repair literacy: iFixit references and supervised learning](./maker-game-systems.html#repair-literacy) offers a reading-only start before hardware modification.
 
+## Optional resource: AktionFilm AI — AI film and comics studio
+
+**Level:** Beginner to intermediate; Loptr Lab placement. **Evidence:** Publisher homepage reviewed 19 November 2026; terms, pricing details and hands-on use not tested.
+
+**Learning objective:** Plan one short action beat as a storyboard, then compare an AI-assisted result with your written brief and document what you changed.
+
+[Open the publisher resource](https://www.aktionfilmai.com), then return to this activity.
+
+**Loptr Lab practice:** Write a three-sentence brief for an original action moment with an original character. Make three storyboard panels, by hand or with the tool's storyboard feature. Record which panels were AI-assisted, one result that missed the brief, and one human correction.
+
+**Review:** [VFX and video review](https://educationexpress.uts.edu.au/collections/using-video-for-assessment/resources/video-assessment-criteria-categories/). Mapped categories: Planning and organisation; Technical considerations of audiovisual production; Academic integrity. Record evidence for every category.
+
+**Access and limitations:** The publisher describes script, storyboard, image and video generation, an editor, lip sync and motion, and comics tools. It lists a free account, paid passes from $9.99 a month, and credit-based rendering. These are provider claims, not tested capabilities. The publisher describes its content as R-rated action violence and says it disallows children, sexual violence and nudity; confirm this fits your setting before using it. It also states that you own your outputs and that it does not train on them; verify this in the current terms before uploading unpublished work. Use original characters only, with no real person's likeness. Prices change; confirm before any purchase. A hand-drawn storyboard meets the practice without an account.
+
+**Third-party resource. Not developed, operated, or endorsed by Loptr Lab or PIXIE. Review permissions and privacy information before use.**
 
 ## Optional AI tool practice
 
