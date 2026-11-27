@@ -68,6 +68,8 @@ The *Rebirth, Death's Daughter* film treatment is a brutalist science-fiction re
 
 Duet, Fog Mode, and other prototypes may test alternatives. Experimental behavior must be named as experimental and explicitly promoted by an authoritative design decision before it becomes canonical.
 
+Duet's Fog Mode uses elevation on chessboard squares to model terrain's effect on sight and fog of war. This is a spatial prototype intended to inform a future actual-map, MOBA-style direction for the four-player game. The map transition is a design intention, not an approved map specification or rules change. Duet's exact board layout, elevations, vision values, HP combat, attack modifiers, and handoff rules remain experimental.
+
 Resonance describes psychic intrusion, psychic defense, mastery/restraint, and cinematic feedback. It is presentation language—not a stat, HP system, damage type, or resource.
 
 ### Historical/archive work
