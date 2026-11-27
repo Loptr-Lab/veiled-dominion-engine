@@ -29,6 +29,10 @@ Rebirth's stated immunity to Veiling conflicts with the broader loss-of-control 
 
 ## 4. Verified Document Matrix
 
+### Spatial prototype and map transition
+
+Duet's experimental Fog Mode uses elevation on chessboard squares to test how terrain height shapes sight and fog of war. This is an intentional spatial prototype: lessons from the grid can inform a future actual-map, MOBA-style direction for the four-player game. This design intent does not promote Duet's 8×8 layout, elevation values, sight radii, HP combat, attack modifiers, or hidden-information rules into four-player canon; those mechanics remain experimental until separately reviewed and adopted.
+
 ### Canonical game documentation
 
 - `docs/CANON_AND_CONTINUITY.md` — source hierarchy, continuity boundaries, cross-repository contract, and unresolved decisions.
